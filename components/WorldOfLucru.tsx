@@ -202,8 +202,8 @@ export default function WorldOfLucru() {
     <section className="w-full bg-white py-16 md:py-24">
       <div className=" md:pl-10 overflow-hidden">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-12 pr-14 ps-s md:ps-0">
-          <h2 className="text-2xl md:text-5xl text-[#002538] font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-12 pr-14 ps-6 md:ps-0">
+          <h2 className="text-2xl md:text-3xl text-[#002538] font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
             The <span className="italic">World</span> Of Lucru
           </h2>
           <div className="flex items-center gap-6 mt-4 md:mt-0 font-bold text-base tracking-widest text-[#002538]">
