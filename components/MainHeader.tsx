@@ -7,7 +7,7 @@ import { CgMenuGridR } from 'react-icons/cg';
 function HeaderDropdown({ label, items }: { label: string; items: string[] }) {
     return (
         <div className="relative group flex items-center h-full cursor-pointer">
-            <div className="inline-flex items-center justify-center gap-x-1 text-[15px] font-bold tracking-tight text-white group-hover:text-gray-200 h-full py-4">
+            <div className="inline-flex items-center justify-center gap-x-1 text-sm font-bold tracking-tight text-white group-hover:text-gray-200 h-full py-4">
                 {label}
                 <ChevronDownIcon className="h-4 w-4 stroke-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
             </div>
@@ -45,7 +45,7 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false }: { label: st
         <div className="w-full">
             <button 
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-full flex items-center justify-between px-6 py-4 text-[16px] font-bold transition-colors ${
+                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${
                     isOpen ? 'bg-[#5ec4d6] text-white' : 'text-white border-b border-[#01344a]'
                 }`}
             >
@@ -57,7 +57,7 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false }: { label: st
                     {items.map(item => (
                         <a key={item} href="#" className="flex items-center gap-3 px-8 py-4 border-b border-[#01344a] group">
                             <ChevronRightIcon className="h-4 w-4 text-[#5ec4d6] group-hover:translate-x-1 transition-transform" />
-                            <span className="text-[#5ec4d6] text-[15px] font-bold">{item}</span>
+                            <span className="text-[#5ec4d6] text-xs font-bold">{item}</span>
                         </a>
                     ))}
                 </div>
@@ -102,26 +102,39 @@ export default function MainHeader() {
                 </button>
             </div>
 
-            {/* Main Navigation (Desktop) */}
-            <nav className="hidden md:flex items-center space-x-8 pl-10 pt-2">
-                <Link href="#" className="font-bold tracking-tight text-white hover:text-gray-200">
-                    New Launches
-                </Link>
-                <HeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
-                <HeaderDropdown label="Construction Progress" items={['Updates', 'Reports']} />
-                <HeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
-                <HeaderDropdown label="World Of Nakheel" items={['About', 'Careers']} />
-            </nav>
+            {/* Desktop Navigation & Icons Container (Right Aligned) */}
+            <div className="hidden md:flex items-center space-x-6 h-full">
+                {/* Main Navigation (Desktop) */}
+                <nav className="flex items-center space-x-8">
+                    <Link href="#" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                        New Launches
+                    </Link>
+                    <HeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
+                    <HeaderDropdown label="Construction Progress" items={[
+                        'Como Residences',
+                        'Palm Beach Towers',
+                        'Lagoon Views',
+                        'Palm Jebel Ali',
+                        'Jebel Ali Village',
+                        'Rixos Hotel & Residences',
+                        'District One West',
+                        'District 11 Opal Gardens'
+                    ]} />
+                    <HeaderDropdown label="Developments" items={['Development A', 'Development B']} />
+                    <Link href="#" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                        World Of Lucru
+                    </Link>
+                </nav>
 
-            {/* Right Icons (Desktop) */}
-            <div className="hidden md:flex items-center space-x-6 pt-2 pl-4">
-                <div className="h-5 w-px bg-white/40"></div>
-                <button className="text-white hover:text-gray-200">
-                    <MapPinIcon className="h-6 w-6 stroke-2" />
-                </button>
-                <button className="text-white hover:text-gray-200">
-                    <MagnifyingGlassIcon className="h-6 w-6 stroke-2" />
-                </button>
+                {/* Desktop Icons */}
+                <div className="flex items-center gap-6 pl-6 border-l border-white/40">
+                    <button className="text-white hover:text-gray-200 flex items-center justify-center">
+                        <MapPinIcon className="h-6 w-6 stroke-2" />
+                    </button>
+                    <button className="text-white hover:text-gray-200 flex items-center justify-center">
+                        <MagnifyingGlassIcon className="h-6 w-6 stroke-2" />
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Full Screen Menu Drawer */}
@@ -135,33 +148,23 @@ export default function MainHeader() {
                 leaveTo="opacity-0"
             >
                 <div className="md:hidden fixed inset-0 z-50 bg-[#002538] overflow-y-auto w-full min-h-screen">
-                    {/* Drawer Header Navbar */}
-                    <div className="flex h-20 items-center justify-between px-4 text-white border-b border-[#01344a] sticky top-0 bg-[#002538] z-50">
-                        {/* Logo */}
-                        <div className="shrink-0 pt-2 z-50">
-                            <Link href="/" className="flex items-center gap-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                {/* Replicating the bold NAKHEEL logo */}
-                                <span className="text-[28px] font-black tracking-[-0.05em] uppercase leading-none" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>
-                                    Lucru
-                                </span>
-                            </Link>
-                        </div>
-
-                        {/* Right Icons Matching Design */}
-                        <div className="flex items-center gap-3 pt-2 z-50">
-                            <button className="text-white hover:text-gray-200 hidden xs:block">
-                                <PhoneIcon className="h-6 w-6 stroke-1" />
+                    {/* Header inside drawer */}
+                    <div className="flex items-center justify-between px-6 py-6 border-b border-[#01344a]">
+                        <span className="text-2xl font-black tracking-tight text-white uppercase" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>LUCRU</span>
+                        <div className="flex items-center gap-4">
+                            <a href="tel:800LUCRU" className="text-white hover:text-[#5ec4d6] transition-colors">
+                                <PhoneIcon className="h-6 w-6 stroke-1.5" />
+                            </a>
+                            <button className="text-white hover:text-[#5ec4d6] transition-colors">
+                                <MapPinIcon className="h-6 w-6 stroke-1.5" />
                             </button>
-                            <button className="text-white hover:text-gray-200">
-                                <MapPinIcon className="h-6 w-6 stroke-1" />
+                            <button className="text-white hover:text-[#5ec4d6] transition-colors">
+                                <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
                             </button>
-                            <button className="text-white hover:text-gray-200 hidden xs:block">
-                                <MagnifyingGlassIcon className="h-6 w-6 stroke-1" />
-                            </button>
-                            <div className="h-6 w-px bg-white/40"></div>
+                            <div className="h-6 w-px bg-[#01344a]/40"></div>
                             <button 
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-white hover:text-gray-200 focus:outline-none ml-1"
+                                className="text-white hover:text-gray-200 focus:outline-none"
                                 aria-label="Close menu"
                             >
                                 <XMarkIcon className="h-8 w-8 stroke-1" />
@@ -190,7 +193,7 @@ export default function MainHeader() {
                             ]} 
                         />
                         <MobileHeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
-                        <MobileHeaderDropdown label="World Of Nakheel" items={['About', 'Careers']} />
+                        <MobileHeaderDropdown label="World Of Lucru" items={['About', 'Careers']} />
                     </div>
                 </div>
             </Transition>

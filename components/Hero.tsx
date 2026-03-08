@@ -8,11 +8,11 @@ import 'swiper/css/effect-fade';
 
 function LPattern() {
     const lines = [
-        12, 11, 8, 6, 3, 2, 1, 1
+        12, 11, 9, 7, 5, 3, 2, 1
     ];
 
     return (
-        <div className="absolute left-10 top-40 flex flex-col gap-6 opacity-70 z-10 pointer-events-none">
+        <div className="absolute left-10 top-30 flex flex-col gap-6 opacity-70 z-10 pointer-events-none">
             {lines.map((count, lineIndex) => (
                 <div key={lineIndex} className="flex gap-4">
                     {Array.from({ length: count }).map((_, i) => {

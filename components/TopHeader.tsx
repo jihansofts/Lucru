@@ -5,7 +5,7 @@ import { ChevronDownIcon, PhoneIcon } from '@heroicons/react/20/solid';
 function HoverDropdown({ label, items }: { label: string; items: string[] }) {
     return (
         <div className="relative group flex items-center h-full cursor-pointer">
-            <div className="inline-flex items-center justify-center gap-x-1 text-sm font-bold text-white group-hover:text-[#5ec4d6] transition-colors h-full px-1">
+            <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
                 {label}
                 <ChevronDownIcon className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
             </div>
@@ -40,7 +40,7 @@ function HoverDropdown({ label, items }: { label: string; items: string[] }) {
 
 export default function TopHeader() {
     return (
-        <div className="w-full items-center justify-between text-xs font-medium h-13 relative z-50 hidden md:flex" style={{ backgroundColor: '#002538', color: '#ffffff' }}>
+        <div className="w-full items-center justify-between text-xs font-semibold h-13 relative z-50 hidden md:flex bg-[#002538] text-[#E3D6BF]">
             <div className='flex w-full h-full container mx-auto'>
                 {/* Left empty space or logo placeholder, based on screenshot it's empty on the left */}
                 <div className="flex-1"></div>
@@ -49,16 +49,30 @@ export default function TopHeader() {
                 <nav className="flex items-center space-x-6 px-6 h-full">
                     <HoverDropdown label="E-Services" items={['Service 1', 'Service 2']} />
                     <HoverDropdown label="Media Centre" items={['News', 'Press Releases']} />
-
-                    <Link href="#" className="hover:text-gray-300">Dubai Holding Communities</Link>
-                    <Link href="#" className="hover:text-gray-300">Land Enquiry</Link>
-                    <Link href="#" className="hover:text-gray-300">Contact Us</Link>
+                    <Link href="#" className="relative group flex items-center h-full cursor-pointer">
+                        <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
+                            Dubai Holding Communities
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#5ec4d6] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </Link>
+                    <Link href="#" className="relative group flex items-center h-full cursor-pointer">
+                        <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
+                            Land Enquiry
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#5ec4d6] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </Link>
+                    <Link href="#" className="relative group flex items-center h-full cursor-pointer">
+                        <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
+                            Contact Us
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#5ec4d6] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </Link>
                 </nav>
 
                 {/* Phone Number Section */}
                 <div className="flex h-full items-center px-6 shrink-0 gap-2" style={{ backgroundColor: '#e2dbc8', color: '#002538' }}>
                     <PhoneIcon className="h-5 w-5" />
-                    <span className="font-semibold text-base whitespace-nowrap">800 NAKHEEL</span>
+                    <span className="font-semibold text-base whitespace-nowrap">800 LUCRU</span>
                 </div>
             </div>
         </div>
