@@ -1,0 +1,199 @@
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { Transition } from '@headlessui/react';
+import { ChevronDownIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon, PhoneIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { CgMenuGridR } from 'react-icons/cg';
+
+function HeaderDropdown({ label, items }: { label: string; items: string[] }) {
+    return (
+        <div className="relative group flex items-center h-full cursor-pointer">
+            <div className="inline-flex items-center justify-center gap-x-1 text-[15px] font-bold tracking-tight text-white group-hover:text-gray-200 h-full py-4">
+                {label}
+                <ChevronDownIcon className="h-4 w-4 stroke-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
+            </div>
+            
+            {/* Invisible bridge to prevent hover loss */}
+            <div className="absolute top-full left-0 w-full h-4" />
+            
+            {/* Dropdown Container */}
+            <div className="absolute top-[calc(100%-8px)] left-0 z-50 w-72 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div className="p-6 flex flex-col">
+                    {/* Header inside the dropdown */}
+                    <h3 className="text-[#005c75] text-[18px] font-bold mb-6">{label}</h3>
+                    
+                    {/* Items List with left border */}
+                    <div className="flex flex-col border-l border-gray-200 ml-1">
+                        {items.map((item) => (
+                            <a
+                                key={item}
+                                href="#"
+                                className="block py-2.5 pl-5 text-[14px] font-medium text-gray-600 hover:text-[#005c75] transition-colors"
+                            >
+                                {item}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function MobileHeaderDropdown({ label, items, defaultOpen = false }: { label: string; items: string[], defaultOpen?: boolean }) {
+    const [isOpen, setIsOpen] = useState(defaultOpen);
+    return (
+        <div className="w-full">
+            <button 
+                onClick={() => setIsOpen(!isOpen)}
+                className={`w-full flex items-center justify-between px-6 py-4 text-[16px] font-bold transition-colors ${
+                    isOpen ? 'bg-[#5ec4d6] text-white' : 'text-white border-b border-[#01344a]'
+                }`}
+            >
+                {label}
+                <ChevronDownIcon className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-white' : ''}`} />
+            </button>
+            {isOpen && (
+                <div className="flex flex-col bg-[#002538]">
+                    {items.map(item => (
+                        <a key={item} href="#" className="flex items-center gap-3 px-8 py-4 border-b border-[#01344a] group">
+                            <ChevronRightIcon className="h-4 w-4 text-[#5ec4d6] group-hover:translate-x-1 transition-transform" />
+                            <span className="text-[#5ec4d6] text-[15px] font-bold">{item}</span>
+                        </a>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+}
+
+export default function MainHeader() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    return (
+        <header className="absolute inset-x-0 top-0 md:top-13 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white transparent bg-linear-to-b from-black/80 md:from-black/50 to-transparent">
+            {/* Logo */}
+            <div className="shrink-0 pt-2 z-50">
+                <Link href="/" className="flex items-center gap-1">
+                    {/* Replicating the bold NAKHEEL logo */}
+                    <span className="text-[28px] md:text-[34px] font-black tracking-[-0.05em] uppercase leading-none" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>
+                        Lucru
+                    </span>
+                </Link>
+            </div>
+
+            {/* Mobile Menu Button - Shown only on Mobile */}
+            <div className="md:hidden flex items-center gap-4 pt-2 z-50">
+                <button className="text-white hover:text-gray-200" aria-label="Call us">
+                    <PhoneIcon className="h-6 w-6 stroke-1.5" />
+                </button>
+                <button className="text-white hover:text-gray-200" aria-label="Location">
+                    <MapPinIcon className="h-6 w-6 stroke-1.5" />
+                </button>
+                <button className="text-white hover:text-gray-200" aria-label="Search">
+                    <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
+                </button>
+                <div className="h-6 w-px bg-white/40"></div>
+                <button 
+                    onClick={() => setIsMobileMenuOpen(true)}
+                    className="text-white hover:text-gray-200 focus:outline-none"
+                    aria-label="Open menu"
+                >
+                    <CgMenuGridR className="h-7 w-7" />
+                </button>
+            </div>
+
+            {/* Main Navigation (Desktop) */}
+            <nav className="hidden md:flex items-center space-x-8 pl-10 pt-2">
+                <Link href="#" className="font-bold tracking-tight text-white hover:text-gray-200">
+                    New Launches
+                </Link>
+                <HeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
+                <HeaderDropdown label="Construction Progress" items={['Updates', 'Reports']} />
+                <HeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
+                <HeaderDropdown label="World Of Nakheel" items={['About', 'Careers']} />
+            </nav>
+
+            {/* Right Icons (Desktop) */}
+            <div className="hidden md:flex items-center space-x-6 pt-2 pl-4">
+                <div className="h-5 w-px bg-white/40"></div>
+                <button className="text-white hover:text-gray-200">
+                    <MapPinIcon className="h-6 w-6 stroke-2" />
+                </button>
+                <button className="text-white hover:text-gray-200">
+                    <MagnifyingGlassIcon className="h-6 w-6 stroke-2" />
+                </button>
+            </div>
+
+            {/* Mobile Full Screen Menu Drawer */}
+            <Transition
+                show={isMobileMenuOpen}
+                enter="transition-opacity duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="transition-opacity duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+            >
+                <div className="md:hidden fixed inset-0 z-50 bg-[#002538] overflow-y-auto w-full min-h-screen">
+                    {/* Drawer Header Navbar */}
+                    <div className="flex h-20 items-center justify-between px-4 text-white border-b border-[#01344a] sticky top-0 bg-[#002538] z-50">
+                        {/* Logo */}
+                        <div className="shrink-0 pt-2 z-50">
+                            <Link href="/" className="flex items-center gap-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                {/* Replicating the bold NAKHEEL logo */}
+                                <span className="text-[28px] font-black tracking-[-0.05em] uppercase leading-none" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>
+                                    Lucru
+                                </span>
+                            </Link>
+                        </div>
+
+                        {/* Right Icons Matching Design */}
+                        <div className="flex items-center gap-3 pt-2 z-50">
+                            <button className="text-white hover:text-gray-200 hidden xs:block">
+                                <PhoneIcon className="h-6 w-6 stroke-1" />
+                            </button>
+                            <button className="text-white hover:text-gray-200">
+                                <MapPinIcon className="h-6 w-6 stroke-1" />
+                            </button>
+                            <button className="text-white hover:text-gray-200 hidden xs:block">
+                                <MagnifyingGlassIcon className="h-6 w-6 stroke-1" />
+                            </button>
+                            <div className="h-6 w-px bg-white/40"></div>
+                            <button 
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-white hover:text-gray-200 focus:outline-none ml-1"
+                                aria-label="Close menu"
+                            >
+                                <XMarkIcon className="h-8 w-8 stroke-1" />
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Menu Items */}
+                    <div className="flex flex-col w-full pb-10">
+                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                            New Launches
+                        </Link>
+                        <MobileHeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
+                        <MobileHeaderDropdown 
+                            label="Construction Progress" 
+                            defaultOpen={true}
+                            items={[
+                                'Como Residences', 
+                                'Palm Beach Towers', 
+                                'Lagoon Views', 
+                                'Palm Jebel Ali', 
+                                'Jebel Ali Village',
+                                'Rixos Hotel & Residences',
+                                'District One West',
+                                'District 11 Opal Gardens'
+                            ]} 
+                        />
+                        <MobileHeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
+                        <MobileHeaderDropdown label="World Of Nakheel" items={['About', 'Careers']} />
+                    </div>
+                </div>
+            </Transition>
+        </header>
+    );
+}
