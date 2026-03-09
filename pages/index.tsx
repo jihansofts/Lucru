@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import WorldOfLucru from "@/components/WorldOfLucru";
 import OurNewLaunches from "@/components/OurNewLaunches";
 import LucruWayOfLife from "@/components/LucruWayOfLife";
+import MobileAppSection from "@/components/MobileAppSection";
+
 export default function Home() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function Home() {
         <WorldOfLucru />
         <LucruWayOfLife />
         <OurNewLaunches/>
+        <MobileAppSection />
       </main>
     </>
   );

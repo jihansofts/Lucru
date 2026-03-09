@@ -5,7 +5,18 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   reactStrictMode: true,
   images: {
-    remotePatterns: [new URL('https://images.pexels.com/**')],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "api.qrserver.com",
+        pathname: "/v1/create-qr-code/**",
+      },
+    ],
   },
 };
 
