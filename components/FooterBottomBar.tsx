@@ -1,0 +1,62 @@
+"use client";
+
+import React, { useState } from 'react';
+import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import FooterSitemap from './FooterSitemap';
+
+const FooterBottomBar = () => {
+  const [isSitemapOpen, setIsSitemapOpen] = useState(false);
+
+  return (
+    <div className="w-full hidden lg:flex flex-col">
+      <div className="w-full bg-[#001f2a] text-white py-5 px-6 md:px-12 border-t border-white/5 order-1 z-10 relative">
+        <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 mt-1">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+            <div className="flex items-center h-8">
+              <span className="text-[26px] font-black tracking-widest uppercase leading-none transform scale-y-110">
+                LUCRU
+              </span>
+            </div>
+            <div className="hidden sm:block h-[20px] w-px bg-white/30 mt-1"></div>
+            <span className="text-[11px] font-semibold tracking-wide mt-1">
+              © Copyright 2026 Lucru. All rights reserved.
+            </span>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-8 lg:gap-10 mt-2 lg:mt-0">
+            <a href="tel:+971800LUCRU" className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
+              <PhoneIcon className="w-[14px] h-[14px] stroke-[2.5] text-[#8fa0a8]" />
+              <span className="text-[11px] font-bold tracking-[0.1em]">+971 800 LUCRU</span>
+            </a>
+            
+            <a href="mailto:info@lucru.com" className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
+              <EnvelopeIcon className="w-[15px] h-[15px] stroke-[2] text-[#8fa0a8]" />
+              <span className="text-[11px] font-bold tracking-[0.1em]">ENQUIRE NOW</span>
+            </a>
+
+            <button 
+              onClick={() => setIsSitemapOpen(!isSitemapOpen)}
+              className="border border-white hover:bg-white hover:text-[#001f2a] transition-colors duration-300 px-6 py-2.5 text-[11px] font-bold tracking-[0.15em] uppercase ml-0 sm:ml-4 cursor-pointer"
+            >
+              {isSitemapOpen ? 'COLLAPSE SITEMAP -' : 'EXPAND SITEMAP +'}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div 
+        className={`w-full bg-white order-2 grid transition-all duration-700 ease-in-out ${
+          isSitemapOpen 
+            ? 'grid-rows-[1fr] opacity-100' 
+            : 'grid-rows-[0fr] opacity-0'
+        }`}
+      >
+        <div className="overflow-hidden">
+          <FooterSitemap />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FooterBottomBar;
