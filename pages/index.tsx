@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import WorldOfLucru from "@/components/WorldOfLucru";
+import OurNewLaunches from "@/components/OurNewLaunches";
 import LucruWayOfLife from "@/components/LucruWayOfLife";
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
       </Head>
       <main className="min-h-screen bg-zinc-50 dark:bg-black">
         <Hero />
+        <OurNewLaunches />
         <WorldOfLucru />
         <LucruWayOfLife />
+        <OurNewLaunches/>
       </main>
     </>
   );
