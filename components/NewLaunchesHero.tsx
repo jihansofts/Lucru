@@ -8,6 +8,7 @@ import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 
 
 
@@ -17,7 +18,7 @@ const slidesData = [
         title: "Medical",
         subtitle: "Professionals",
         description: "Opportunities across leading GCC healthcare groups...",
-        image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
+        image: "https://images.pexels.com/photos/4006979/pexels-photo-4006979.jpeg",
         link: "/jobs/medical"
     },
     {
@@ -25,7 +26,7 @@ const slidesData = [
         title: "Engineering",
         subtitle: "& Construction",
         description: "Be part of the world's most ambitious mega-projects.",
-        image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
+        image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg",
         link: "/jobs/engineering"
     },
     {
@@ -33,7 +34,7 @@ const slidesData = [
         title: "Hospitality",
         subtitle: "& Catering",
         description: "Experience luxury roles in top 5-star hotels globally.",
-        image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+        image: "https://images.pexels.com/photos/3770091/pexels-photo-3770091.jpeg",
         link: "/jobs/hospitality"
     },
     {
@@ -41,7 +42,7 @@ const slidesData = [
         title: "IT &",
         subtitle: "Technology",
         description: "Lead digital transformation initiatives worldwide.",
-        image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+        image: "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg",
         link: "/jobs/technology"
     },
     {
@@ -49,7 +50,7 @@ const slidesData = [
         title: "Oil & Gas",
         subtitle: "Sector",
         description: "High-yield onshore and offshore technical roles.",
-        image: "https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg",
+        image: "https://images.pexels.com/photos/5884386/pexels-photo-5884386.jpeg",
         link: "/jobs/oil-gas"
     }
 ];
@@ -73,13 +74,15 @@ export default function NewLaunchesHero() {
                     <SwiperSlide key={slide.id}>
                         {/* Background Image */}
                         <div className="absolute inset-0 w-full h-full">
-                            <img
+                            <Image
+                            height={700}
+                            width={1200}
                                 src={slide.image}
                                 alt={`${slide.title} ${slide.subtitle}`}
                                 className="object-cover w-full h-full"
                             />
                             {/* Overlay Gradient for Text Readability */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+                            <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent" />
                         </div>
                     </SwiperSlide>
                 ))}

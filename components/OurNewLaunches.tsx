@@ -6,7 +6,7 @@ const newLaunchesData: CardData[] = [
     id: 1,
     title: "Registered Nurses",
     subtitle: "Saudi Arabia",
-    image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+    image: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg",
     description: "Urgently needed experienced nurses for top-tier hospitals in Riyadh.",
     link: "/jobs/nursing",
     status: "URGENT"
@@ -15,16 +15,16 @@ const newLaunchesData: CardData[] = [
     id: 2,
     title: "Civil Engineers",
     subtitle: "UAE",
-    image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+    image: "https://images.pexels.com/photos/5584052/pexels-photo-5584052.jpeg",
     description: "Leading construction firms seeking qualified site engineers and project managers.",
     link: "/jobs/engineering",
     status: "URGENT"
   },
   {
     id: 3,
-    title: "Skilled Welders,",
+    title: "Skilled Welders",
     subtitle: "Qatar",
-    image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
+    image: "https://images.pexels.com/photos/35136696/pexels-photo-35136696.jpeg",
     description: "Immediate openings for certified 6G welders and fabricators for oil & gas projects.",
     link: "/jobs/welding",
     status: "URGENT"
@@ -33,7 +33,7 @@ const newLaunchesData: CardData[] = [
     id: 4,
     title: "Hospitality Staff",
     subtitle: "Kuwait",
-    image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
+    image: "https://images.pexels.com/photos/19814054/pexels-photo-19814054.jpeg",
     description: "5-star hotels hiring front desk executives, chefs, and housekeeping supervisors.",
     link: "/jobs/hospitality",
     status: "URGENT"

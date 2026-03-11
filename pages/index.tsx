@@ -5,8 +5,7 @@ import OurNewLaunches from "@/components/OurNewLaunches";
 import LucruWayOfLife from "@/components/LucruWayOfLife";
 import MobileAppSection from "@/components/MobileAppSection";
 import SubscribeSection from "@/components/SubscribeSection";
-import FooterBottomBar from "@/components/FooterBottomBar";
-import SimpleFooter from "@/components/SimpleFooter";
+
 
 export default function Home() {
   return (
