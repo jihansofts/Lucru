@@ -70,7 +70,7 @@ export default function MainHeader() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="absolute inset-x-0 top-0 md:top-13 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white transparent bg-linear-to-b from-black/80 md:from-black/50 to-transparent">
+        <header className="fixed inset-x-0 top-0 md:top-13 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all">
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
                 <Link href="/" className="flex items-center gap-1">
@@ -106,7 +106,7 @@ export default function MainHeader() {
             <div className="hidden md:flex items-center space-x-6 h-full">
                 {/* Main Navigation (Desktop) */}
                 <nav className="flex items-center space-x-8">
-                    <Link href="#" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                    <Link href="/new-launches" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
                         New Launches
                     </Link>
                     <HeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
@@ -174,7 +174,7 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link href="/new-launches" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
                             New Launches
                         </Link>
                         <MobileHeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />

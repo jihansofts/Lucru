@@ -6,6 +6,8 @@ import { Montserrat } from "next/font/google";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FooterBottomBar from "@/components/FooterBottomBar";
+import SimpleFooter from "@/components/SimpleFooter";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,7 +18,7 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: false,
     });
   }, []);
@@ -26,6 +28,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <TopHeader />
       <MainHeader />
       <Component {...pageProps} />
+      <FooterBottomBar />
+      <SimpleFooter />
     </div>
   );
 }

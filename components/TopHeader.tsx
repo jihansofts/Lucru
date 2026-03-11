@@ -40,7 +40,7 @@ function HoverDropdown({ label, items }: { label: string; items: string[] }) {
 
 export default function TopHeader() {
     return (
-        <div className="w-full items-center justify-between text-xs font-semibold h-13 relative z-50 hidden md:flex bg-[#002538] text-[#E3D6BF]">
+        <div className="w-full items-center justify-between text-xs font-semibold h-13 sticky top-0 z-50 hidden md:flex bg-[#002538] text-[#E3D6BF]">
             <div className='flex w-full h-full container mx-auto'>
                 {/* Left empty space or logo placeholder, based on screenshot it's empty on the left */}
                 <div className="flex-1"></div>

@@ -35,12 +35,6 @@ export default function Home() {
         <div data-aos="fade-up">
           <SubscribeSection />
         </div>
-        <div data-aos="fade-up">
-          <FooterBottomBar />
-        </div>
-        <div data-aos="fade-up">
-          <SimpleFooter />
-        </div>
       </main>
     </>
   );
