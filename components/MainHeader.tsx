@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
 import { ChevronDownIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon, PhoneIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { CgMenuGridR } from 'react-icons/cg';
+import logo from '@/public/logo.png';
 
 function HeaderDropdown({ label, items }: { label: string; items: string[] }) {
     return (
@@ -11,16 +13,16 @@ function HeaderDropdown({ label, items }: { label: string; items: string[] }) {
                 {label}
                 <ChevronDownIcon className="h-4 w-4 stroke-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
             </div>
-            
+
             {/* Invisible bridge to prevent hover loss */}
             <div className="absolute top-full left-0 w-full h-4" />
-            
+
             {/* Dropdown Container */}
             <div className="absolute top-[calc(100%-8px)] left-0 z-50 w-72 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <div className="p-6 flex flex-col">
                     {/* Header inside the dropdown */}
                     <h3 className="text-[#005c75] text-[18px] font-bold mb-6">{label}</h3>
-                    
+
                     {/* Items List with left border */}
                     <div className="flex flex-col border-l border-gray-200 ml-1">
                         {items.map((item) => (
@@ -43,11 +45,10 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false }: { label: st
     const [isOpen, setIsOpen] = useState(defaultOpen);
     return (
         <div className="w-full">
-            <button 
+            <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${
-                    isOpen ? 'bg-[#5ec4d6] text-white' : 'text-white border-b border-[#01344a]'
-                }`}
+                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${isOpen ? 'bg-[#5ec4d6] text-white' : 'text-white border-b border-[#01344a]'
+                    }`}
             >
                 {label}
                 <ChevronDownIcon className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-white' : ''}`} />
@@ -73,11 +74,13 @@ export default function MainHeader() {
         <header className="fixed inset-x-0 top-0 md:top-13 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all">
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
-                <Link href="/" className="flex items-center gap-1">
-                    {/* Replicating the bold NAKHEEL logo */}
-                    <span className="text-[28px] md:text-[34px] font-black tracking-[-0.05em] uppercase leading-none" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>
-                        Lucru
-                    </span>
+                <Link href="/" className="flex items-center" aria-label="Lucru home">
+                    <Image
+                        src={logo}
+                        alt="Lucru"
+                        priority
+                        className="h-10 md:h-20 w-auto"
+                    />
                 </Link>
             </div>
 
@@ -93,7 +96,7 @@ export default function MainHeader() {
                     <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
                 </button>
                 <div className="h-6 w-px bg-white/40"></div>
-                <button 
+                <button
                     onClick={() => setIsMobileMenuOpen(true)}
                     className="text-white hover:text-gray-200 focus:outline-none"
                     aria-label="Open menu"
@@ -150,7 +153,14 @@ export default function MainHeader() {
                 <div className="md:hidden fixed inset-0 z-50 bg-[#002538] overflow-y-auto w-full min-h-screen">
                     {/* Header inside drawer */}
                     <div className="flex items-center justify-between px-6 py-6 border-b border-[#01344a]">
-                        <span className="text-2xl font-black tracking-tight text-white uppercase" style={{ fontFamily: 'var(--font-montserrat-black), sans-serif', transform: 'scaleY(1.1)' }}>LUCRU</span>
+                        <Link href="/" aria-label="Lucru home" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Image
+                                src={logo}
+                                alt="Lucru"
+                                priority
+                                className="h-10 w-auto"
+                            />
+                        </Link>
                         <div className="flex items-center gap-4">
                             <a href="tel:800LUCRU" className="text-white hover:text-[#5ec4d6] transition-colors">
                                 <PhoneIcon className="h-6 w-6 stroke-1.5" />
@@ -162,7 +172,7 @@ export default function MainHeader() {
                                 <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
                             </button>
                             <div className="h-6 w-px bg-[#01344a]/40"></div>
-                            <button 
+                            <button
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-white hover:text-gray-200 focus:outline-none"
                                 aria-label="Close menu"
@@ -178,19 +188,19 @@ export default function MainHeader() {
                             New Launches
                         </Link>
                         <MobileHeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
-                        <MobileHeaderDropdown 
-                            label="Construction Progress" 
+                        <MobileHeaderDropdown
+                            label="Construction Progress"
                             defaultOpen={true}
                             items={[
-                                'Como Residences', 
-                                'Palm Beach Towers', 
-                                'Lagoon Views', 
-                                'Palm Jebel Ali', 
+                                'Como Residences',
+                                'Palm Beach Towers',
+                                'Lagoon Views',
+                                'Palm Jebel Ali',
                                 'Jebel Ali Village',
                                 'Rixos Hotel & Residences',
                                 'District One West',
                                 'District 11 Opal Gardens'
-                            ]} 
+                            ]}
                         />
                         <MobileHeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
                         <MobileHeaderDropdown label="World Of Lucru" items={['About', 'Careers']} />
