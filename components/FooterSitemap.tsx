@@ -3,95 +3,85 @@ import Link from 'next/link';
 
 const sitemapData = [
   {
-    title: "New Launches",
+    title: "Job Categories",
     links: [
-      { text: "Palm Central Private Residences", href: "#" },
-      { text: "Bay Grove Residences", href: "#" },
-      { text: "Bay Villas, Dubai Islands", href: "#" },
-      { text: "Palm Jebel Ali", href: "#" },
-      { text: "Como Residences", href: "#" },
-      { text: "Naya Residences", href: "#" }
+      { text: "Healthcare & Medical", href: "#" },
+      { text: "Engineering & Construction", href: "#" },
+      { text: "Oil & Gas", href: "#" },
+      { text: "Hospitality & Catering", href: "#" },
+      { text: "IT & Technology", href: "#" },
+      { text: "Logistics & Transport", href: "#" }
     ],
     subsections: [
       {
-        title: "Construction Progress",
+        title: "Latest Openings",
         links: [
-          { text: "Como Residences", href: "#" },
-          { text: "Palm Beach Towers", href: "#" },
-          { text: "Lagoon Views", href: "#" },
-          { text: "Palm Jebel Ali", href: "#" },
-          { text: "Jebel Ali Village", href: "#" },
-          { text: "Rixos Hotel & Residences", href: "#" },
-          { text: "District One West", href: "#" },
-          { text: "District 11 Opal Gardens", href: "#" }
+          { text: "Registered Nurses - KSA", href: "#" },
+          { text: "Civil Engineers - UAE", href: "#" },
+          { text: "Skilled Welders - Qatar", href: "#" },
+          { text: "Hotel Managers - Kuwait", href: "#" },
+          { text: "Software Devs - UK", href: "#" },
+          { text: "HVAC Techs - Oman", href: "#" },
+          { text: "Heavy Drivers - UAE", href: "#" },
+          { text: "Safety Officers - Qatar", href: "#" }
         ]
       }
     ]
   },
   {
-    title: "Lucru Collections",
+    title: "Top Destinations",
     links: [
-      { text: "Palm Jumeirah", href: "#" },
-      { text: "Palm Jebel Ali", href: "#" },
-      { text: "Dubai Islands", href: "#" },
-      { text: "The World", href: "#" },
-      { text: "District One", href: "#" },
-      { text: "Meydan", href: "#" }
+      { text: "Saudi Arabia (KSA)", href: "#" },
+      { text: "United Arab Emirates (UAE)", href: "#" },
+      { text: "Qatar", href: "#" },
+      { text: "Kuwait", href: "#" },
+      { text: "Oman", href: "#" },
+      { text: "Bahrain", href: "#" }
     ],
     subsections: []
   },
   {
-    title: "Lucru Projects",
+    title: "Employer Services",
     links: [
-      { text: "Jumeirah Islands", href: "#" },
-      { text: "Jumeirah Park", href: "#" },
-      { text: "Jumeirah Heights", href: "#" },
-      { text: "The Palm Tower", href: "#" },
-      { text: "Shoreline Apartments", href: "#" },
-      { text: "Palma Residences", href: "#" },
-      { text: "Palm Views", href: "#" },
-      { text: "Marina Residences", href: "#" },
-      { text: "Azure Residences", href: "#" },
-      { text: "Club Vista Mare", href: "#" },
-      { text: "Golden Mile", href: "#" },
-      { text: "Al Furjan", href: "#" },
-      { text: "Masakin Al Furjan", href: "#" },
-      { text: "Jumeirah Village Circle", href: "#" },
-      { text: "Jumeirah Village Triangle", href: "#" },
-      { text: "Discovery Gardens", href: "#" },
-      { text: "Nad Al Sheba Villas", href: "#" },
-      { text: "Warsan Village", href: "#" },
-      { text: "Veneto", href: "#" },
-      { text: "Badrah", href: "#" },
-      { text: "International City", href: "#" }
+      { text: "Permanent Staffing", href: "#" },
+      { text: "Contract & Temporary Staffing", href: "#" },
+      { text: "Executive Search", href: "#" },
+      { text: "Mass Recruitment", href: "#" },
+      { text: "Overseas Deployment", href: "#" },
+      { text: "Visa & Immigration Processing", href: "#" },
+      { text: "Pre-Departure Orientation", href: "#" },
+      { text: "Payroll Management", href: "#" },
+      { text: "Trade Testing & Certification", href: "#" },
+      { text: "Medical Assessment Coordination", href: "#" },
+      { text: "Background Verification", href: "#" }
     ],
     subsections: []
   },
   {
-    title: "Meydan",
+    title: "Candidate Services",
     links: [
-      { text: "Canal Front Residences", href: "#" },
-      { text: "District 11 Opal Gardens", href: "#" }
+      { text: "Submit Resume", href: "#" },
+      { text: "Interview Preparation", href: "#" }
     ],
     subsections: [
       {
-        title: "District One",
+        title: "Resources",
         links: [
-          { text: "Lagoon Views", href: "#" },
-          { text: "District One West", href: "#" },
-          { text: "Naya Residences", href: "#" }
+          { text: "Career Counseling", href: "#" },
+          { text: "Skill Development", href: "#" },
+          { text: "Relocation Guide", href: "#" }
         ]
       }
     ]
   },
   {
-    title: "World Of Lucru",
+    title: "About Lucru",
     links: [
       { text: "Who We Are", href: "#" },
-      { text: "People", href: "#" },
-      { text: "HSSE", href: "#" },
+      { text: "Our Team", href: "#" },
+      { text: "Client Testimonials", href: "#" },
       { text: "Corporate Social Responsibility", href: "#" },
-      { text: "Community Management", href: "#" }
+      { text: "Accreditations", href: "#" }
     ],
     subsections: []
   },
@@ -104,21 +94,21 @@ const sitemapData = [
         links: [
           { text: "Blogs", href: "#" },
           { text: "Press Releases", href: "#" },
-          { text: "Media Kit", href: "#" }
+          { text: "Company News", href: "#" }
         ]
       },
       {
         title: "E-Services",
         links: [
-          { text: "Lucru Quick Pay", href: "#" },
-          { text: "Lucru Online Services", href: "#" },
-          { text: "Meydan Online Services", href: "#" }
+          { text: "Employer Portal", href: "#" },
+          { text: "Candidate Portal", href: "#" },
+          { text: "Application Tracking", href: "#" }
         ]
       },
       {
         title: "",
         links: [
-          { text: "Land Enquiry", href: "#" },
+          { text: "Submit Inquiry", href: "#" },
           { text: "Contact Us", href: "#" },
           { text: "Whistleblowing", href: "#" },
           { text: "Terms & Conditions", href: "#" },

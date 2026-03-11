@@ -36,7 +36,7 @@ export default function LaunchCard({ title, subtitle, image, description, link }
           href={link}
           className="w-full inline-block text-center border border-[#002538] text-[#002538] px-6 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors mt-auto"
         >
-          DISCOVER MORE
+          VIEW DETAILS
         </Link>
       </div>
     </div>

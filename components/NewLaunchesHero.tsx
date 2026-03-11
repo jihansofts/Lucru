@@ -14,43 +14,43 @@ import 'swiper/css/pagination';
 const slidesData = [
     {
         id: 1,
-        title: "Bay Villas,",
-        subtitle: "Dubai Islands",
-        description: "Your next great inspiration...",
+        title: "Medical",
+        subtitle: "Professionals",
+        description: "Opportunities across leading GCC healthcare groups...",
         image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
-        link: "/bay-villas"
+        link: "/jobs/medical"
     },
     {
         id: 2,
-        title: "Como",
-        subtitle: "Residences",
-        description: "Cosmopolitan mode of living in the sky.",
+        title: "Engineering",
+        subtitle: "& Construction",
+        description: "Be part of the world's most ambitious mega-projects.",
         image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-        link: "/como-residences"
+        link: "/jobs/engineering"
     },
     {
         id: 3,
-        title: "Palm Central",
-        subtitle: "Private Residences",
-        description: "Experience luxury living by the sea.",
+        title: "Hospitality",
+        subtitle: "& Catering",
+        description: "Experience luxury roles in top 5-star hotels globally.",
         image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-        link: "/palm-central"
+        link: "/jobs/hospitality"
     },
     {
         id: 4,
-        title: "Bay Grove",
-        subtitle: "Residences",
-        description: "Extra-ordinary lifestyle close to the city.",
+        title: "IT &",
+        subtitle: "Technology",
+        description: "Lead digital transformation initiatives worldwide.",
         image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
-        link: "/bay-grove"
+        link: "/jobs/technology"
     },
     {
         id: 5,
-        title: "District One",
-        subtitle: "West",
-        description: "A secure gated community experience.",
+        title: "Oil & Gas",
+        subtitle: "Sector",
+        description: "High-yield onshore and offshore technical roles.",
         image: "https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg",
-        link: "/district-one-west"
+        link: "/jobs/oil-gas"
     }
 ];
 
@@ -121,7 +121,7 @@ export default function NewLaunchesHero() {
                                 href={data.link}
                                 className="inline-block border border-white text-white px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors"
                             >
-                                LEARN MORE
+                                VIEW JOBS
                             </Link>
                         </div>
                     );

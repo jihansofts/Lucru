@@ -12,26 +12,26 @@ import 'swiper/css/effect-fade';
 const slidesData = [
     {
         id: 1,
-        surtitle: "Life at the Edge of the Sea",
-        title: "Bay Grove Residences",
+        surtitle: "Connecting Global Talent",
+        title: "Your Premier Recruitment Partner",
         position: "left",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4",
-        link: "/bay-grove-residences"
+        link: "/find-jobs"
     },
     {
         id: 2,
-        surtitle: "Your Next Great Inspiration...",
-        title: "Palm Jebel Ali",
+        surtitle: "Unlock Global Opportunities...",
+        title: "Overseas Careers Await",
         position: "left",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     },
     {
         id: 3,
-        surtitle: "Cosmopolitan mode of living",
-        title: "Como Residences",
+        surtitle: "Expert Manpower Solutions",
+        title: "We Supply The Best Workforces",
         position: "right",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4",
-        link: "/como-residences"
+        link: "/hire-talent"
     }
 ];
 

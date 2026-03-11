@@ -79,7 +79,7 @@ export default function MainHeader() {
                         src={logo}
                         alt="Lucru"
                         priority
-                        className="h-10 md:h-20 w-auto"
+                        className="h-10 md:h-18 w-auto"
                     />
                 </Link>
             </div>
@@ -109,23 +109,19 @@ export default function MainHeader() {
             <div className="hidden md:flex items-center space-x-6 h-full">
                 {/* Main Navigation (Desktop) */}
                 <nav className="flex items-center space-x-8">
-                    <Link href="/new-launches" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
-                        New Launches
+                    <Link href="/find-jobs" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                        Find Jobs
                     </Link>
-                    <HeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
-                    <HeaderDropdown label="Construction Progress" items={[
-                        'Como Residences',
-                        'Palm Beach Towers',
-                        'Lagoon Views',
-                        'Palm Jebel Ali',
-                        'Jebel Ali Village',
-                        'Rixos Hotel & Residences',
-                        'District One West',
-                        'District 11 Opal Gardens'
+                    <HeaderDropdown label="Hire Talent" items={['Submit Staffing Request', 'Permanent Placement', 'Contract Staffing']} />
+                    <HeaderDropdown label="Our Services" items={[
+                        'Manpower Provision',
+                        'Executive Search',
+                        'Visa & Immigration Assistance',
+                        'Pre-Departure Training',
+                        'Payroll & Compliance'
                     ]} />
-                    <HeaderDropdown label="Developments" items={['Development A', 'Development B']} />
-                    <Link href="#" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
-                        World Of Lucru
+                    <Link href="/about-us" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                        About Us
                     </Link>
                 </nav>
 
@@ -184,26 +180,24 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="/new-launches" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
-                            New Launches
+                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                            Find Jobs
                         </Link>
-                        <MobileHeaderDropdown label="Latest Handovers" items={['Project 1', 'Project 2']} />
+                        <MobileHeaderDropdown label="Hire Talent" items={['Submit Staffing Request', 'Permanent Placement', 'Contract Staffing']} />
                         <MobileHeaderDropdown
-                            label="Construction Progress"
+                            label="Our Services"
                             defaultOpen={true}
                             items={[
-                                'Como Residences',
-                                'Palm Beach Towers',
-                                'Lagoon Views',
-                                'Palm Jebel Ali',
-                                'Jebel Ali Village',
-                                'Rixos Hotel & Residences',
-                                'District One West',
-                                'District 11 Opal Gardens'
+                                'Manpower Provision',
+                                'Executive Search',
+                                'Visa & Immigration Assistance',
+                                'Pre-Departure Training',
+                                'Payroll & Compliance'
                             ]}
                         />
-                        <MobileHeaderDropdown label="Developments" items={['Residential', 'Commercial']} />
-                        <MobileHeaderDropdown label="World Of Lucru" items={['About', 'Careers']} />
+                        <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                            About Us
+                        </Link>
                     </div>
                 </div>
             </Transition>

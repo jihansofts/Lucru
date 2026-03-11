@@ -10,7 +10,7 @@ const SubscribeSection = () => {
         {/* Left Side: Subscribe */}
         <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-6 w-full md:w-auto">
           <h3 className="text-brand-navy font-semibold text-base md:text-[17px] whitespace-nowrap">
-            Subscribe to our mailing list
+            Subscribe for job alerts
           </h3>
           <div className="relative w-full sm:w-[320px] md:w-[360px] lg:w-[400px]">
             <input 

@@ -52,7 +52,7 @@ export default function LucruWayOfLife() {
     <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
       <div className="md:px-20 px-4 md:pl-20 mb-8 md:mb-8 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-425">
         <h2 className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-[#002538] font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-          A <span className="italic">Lucru</span> Way Of Life
+          Your <span className="italic">Career</span> Journey
         </h2>
         {/* Navigation Arrows */}
         <div className="hidden md:flex items-center gap-4 mt-4 md:mt-0">

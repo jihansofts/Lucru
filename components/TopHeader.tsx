@@ -47,17 +47,17 @@ export default function TopHeader() {
 
                 {/* Navigation Links */}
                 <nav className="flex items-center space-x-6 px-6 h-full">
-                    <HoverDropdown label="E-Services" items={['Service 1', 'Service 2']} />
-                    <HoverDropdown label="Media Centre" items={['News', 'Press Releases']} />
+                    <HoverDropdown label="Candidates" items={['Job Search', 'Upload Resume', 'Interview Tips']} />
+                    <HoverDropdown label="Employers" items={['Post a Job', 'Our Services', 'Why Choose Us']} />
                     <Link href="#" className="relative group flex items-center h-full cursor-pointer">
                         <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
-                            Dubai Holding Communities
+                            Global Reach
                         </div>
                         <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#5ec4d6] opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                     <Link href="#" className="relative group flex items-center h-full cursor-pointer">
                         <div className="inline-flex items-center justify-center gap-x-1 text-xs font-semibold bg-[#002538] text-[#E3D6BF] transition-colors h-full px-1">
-                            Land Enquiry
+                            Submit Inquiry
                         </div>
                         <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#5ec4d6] opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>

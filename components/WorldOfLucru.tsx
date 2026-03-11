@@ -4,210 +4,210 @@ import PropertyCarousel, { CardData } from './PropertyCarousel';
 const cardsData: CardData[] = [
   {
     id: 1,
-    title: "BAY GROVE",
-    subtitle: "RESIDENCES",
+    title: "SAUDI",
+    subtitle: "ARABIA",
     image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    description: "Experience luxury living by the sea with spectacular views and premium amenities.",
-    link: "/bay-grove",
-    status: "NEW"
+    description: "Mega projects and healthcare facilities hiring thousands of skilled professionals.",
+    link: "/destinations/ksa",
+    status: "URGENT"
   },
   {
     id: 2,
-    title: "BAY VILLAS",
-    subtitle: "DUBAI ISLANDS",
+    title: "UNITED ARAB",
+    subtitle: "EMIRATES",
     image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
-    description: "The unique Dubai Islands offer an extra-ordinary lifestyle close to the city yet worlds away. Live amidst beaches and prolific landscaped green spaces.",
-    link: "/bay-villas",
-    status: "LIVE"
+    description: "Leading destination for hospitality, engineering, and service sector jobs.",
+    link: "/destinations/uae",
+    status: "ACTIVE"
   },
   {
     id: 3,
-    title: "PALM",
-    subtitle: "JEBEL ALI",
+    title: "STATE OF",
+    subtitle: "QATAR",
     image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
-    description: "Your next great inspiration, a vision of absolute luxury and exclusive island living.",
-    link: "/palm-jebel-ali",
-    status: "NEW"
+    description: "Lucrative opportunities in oil & gas, construction, and infrastructure development.",
+    link: "/destinations/qatar",
+    status: "URGENT"
   },
   {
     id: 4,
-    title: "COMO",
-    subtitle: "RESIDENCES",
+    title: "KINGDOM OF",
+    subtitle: "BAHRAIN",
     image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-    description: "Cosmopolitan mode of living in the sky with 360-degree panoramic views.",
-    link: "/como",
-    status: "LIVE"
+    description: "Growing financial hub offering diverse roles in banking, retail, and IT.",
+    link: "/destinations/bahrain",
+    status: "ACTIVE"
   },
   {
     id: 5,
-    title: "RIXOS",
-    subtitle: "RESIDENCES",
+    title: "SULTANATE OF",
+    subtitle: "OMAN",
     image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-    description: "All-inclusive resort style living with world-class hospitality.",
-    link: "/rixos",
-    status: "NEW"
+    description: "Steady demand for medical staff, educators, and technical specialists.",
+    link: "/destinations/oman",
+    status: "URGENT"
   },
   {
     id: 6,
-    title: "DISTRICT ONE",
-    subtitle: "WEST",
+    title: "STATE OF",
+    subtitle: "KUWAIT",
     image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    description: "Experience the ultimate luxury lifestyle in the heart of Dubai with a stunning crystal lagoon.",
-    link: "/district-one-west",
-    status: "LIVE"
+    description: "Excellent packages for experienced engineers, doctors, and heavy equipment operators.",
+    link: "/destinations/kuwait",
+    status: "ACTIVE"
   },
   {
     id: 7,
-    title: "JEBEL ALI",
-    subtitle: "VILLAGE",
+    title: "UNITED",
+    subtitle: "KINGDOM",
     image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
-    description: "A reimagined community offering spacious townhouses and rolling hills in a tranquil setting.",
-    link: "/jebel-ali-village",
-    status: "NEW"
+    description: "Tier-2 sponsorship roles available for registered nurses and senior carers.",
+    link: "/destinations/uk",
+    status: "URGENT"
   },
   {
     id: 8,
-    title: "LAGOON",
-    subtitle: "VIEWS",
+    title: "EUROPEAN",
+    subtitle: "UNION",
     image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
-    description: "Elevate your everyday with serene water views and contemporary Mediterranean architecture.",
-    link: "/lagoon-views",
-    status: "LIVE"
+    description: "Opportunities across manufacturing, agriculture, and logistics sectors.",
+    link: "/destinations/eu",
+    status: "ACTIVE"
   },
   {
     id: 9,
-    title: "OPAL",
-    subtitle: "GARDENS",
+    title: "MEDICAL",
+    subtitle: "PROFESSIONALS",
     image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-    description: "A sanctuary of luxury offering meticulously crafted villas with private lush landscapes.",
-    link: "/opal-gardens",
-    status: "NEW"
+    description: "Nurses, doctors, and lab technicians in high demand globally.",
+    link: "/sectors/medical",
+    status: "URGENT"
   },
   {
     id: 10,
-    title: "PALM BEACH",
-    subtitle: "TOWERS",
+    title: "CONSTRUCTION",
+    subtitle: "& ENGINEERING",
     image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-    description: "Exceptional beachfront living where luxury meets the soothing rhythm of the sea.",
-    link: "/palm-beach-towers",
-    status: "LIVE"
+    description: "Civil, MEP, and QA/QC engineers for massive infrastructure developments.",
+    link: "/sectors/engineering",
+    status: "ACTIVE"
   },
   {
     id: 11,
-    title: "THE ESTATES",
-    subtitle: "DUBAI HILLS",
+    title: "HOSPITALITY",
+    subtitle: "& CATERING",
     image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    description: "An enclave of majesty and grandeur where every detail is meticulously curated.",
-    link: "/the-estates",
-    status: "NEW"
+    description: "Chefs, waitstaff, and hotel managers for 5-star properties.",
+    link: "/sectors/hospitality",
+    status: "URGENT"
   },
   {
     id: 12,
-    title: "MARINA",
-    subtitle: "RESIDENCES",
+    title: "OIL & GAS",
+    subtitle: "SECTOR",
     image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
-    description: "Wake up to the gentle lap of waves and unparalleled views of the marina skyline.",
-    link: "/marina-residences",
-    status: "LIVE"
+    description: "Offshore and onshore roles for experienced technicians and riggers.",
+    link: "/sectors/oil-gas",
+    status: "ACTIVE"
   },
   {
     id: 13,
-    title: "BLUEWATERS",
-    subtitle: "BAY",
+    title: "IT &",
+    subtitle: "TECHNOLOGY",
     image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
-    description: "Experience vibrant waterfront living inspired by Miami's modern aesthetic.",
-    link: "/bluewaters-bay",
-    status: "NEW"
+    description: "Software developers, network engineers, and cybersecurity experts.",
+    link: "/sectors/it",
+    status: "URGENT"
   },
   {
     id: 14,
-    title: "NAD AL SHEBA",
-    subtitle: "VILLAS",
+    title: "LOGISTICS",
+    subtitle: "& TRANSPORT",
     image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-    description: "Spacious Mediterranean-styled villas located in an exclusive residential community.",
-    link: "/nad-al-sheba-villas",
-    status: "LIVE"
+    description: "Heavy duty drivers, warehouse managers, and supply chain analysts.",
+    link: "/sectors/logistics",
+    status: "ACTIVE"
   },
   {
     id: 15,
-    title: "JUMEIRAH",
-    subtitle: "ISLANDS",
+    title: "RETAIL &",
+    subtitle: "SALES",
     image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-    description: "A spectacular picturesque community of luxury villas set amidst sparkling waterfalls.",
-    link: "/jumeirah-islands",
-    status: "NEW"
+    description: "Store managers, merchandisers, and customer service representatives.",
+    link: "/sectors/retail",
+    status: "URGENT"
   },
   {
     id: 16,
-    title: "THE GARDENS",
-    subtitle: "RESIDENCES",
+    title: "EDUCATION",
+    subtitle: "& ACADEMICS",
     image: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    description: "Find tranquility in this lush, verdant community designed for family-centric living.",
-    link: "/the-gardens",
-    status: "LIVE"
+    description: "International school teachers, professors, and academic administrators.",
+    link: "/sectors/education",
+    status: "ACTIVE"
   },
   {
     id: 17,
-    title: "AL FURJAN",
-    subtitle: "VILLAGE",
+    title: "FACILITY",
+    subtitle: "MANAGEMENT",
     image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
-    description: "A vibrant neighborhood celebrating the true spirit of community and connection.",
-    link: "/al-furjan",
-    status: "NEW"
+    description: "HVAC technicians, electricians, and maintenance supervisors.",
+    link: "/sectors/facility",
+    status: "URGENT"
   },
   {
     id: 18,
-    title: "WARSAN",
-    subtitle: "VILLAGE",
+    title: "DOMESTIC",
+    subtitle: "WORKERS",
     image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
-    description: "Modern family townhouses located in a bustling, self-sustained community hub.",
-    link: "/warsan-village",
-    status: "LIVE"
+    description: "Trained caregivers, nannies, and household managers.",
+    link: "/sectors/domestic",
+    status: "ACTIVE"
   },
   {
     id: 19,
-    title: "TILAL",
-    subtitle: "AL GHAF",
+    title: "MANUFACTURING",
+    subtitle: "& PRODUCTION",
     image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-    description: "Resort-style living centered around a stunning recreational lagoon and white sandy beaches.",
-    link: "/tilal-al-ghaf",
-    status: "NEW"
+    description: "Machine operators, CNC programmers, and production supervisors.",
+    link: "/sectors/manufacturing",
+    status: "URGENT"
   },
   {
     id: 20,
-    title: "THE OASIS",
-    subtitle: "BY LUCRU",
+    title: "SECURITY",
+    subtitle: "SERVICES",
     image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-    description: "An exclusive sanctuary of opulent villas blending seamlessly with nature and waterways.",
-    link: "/the-oasis",
-    status: "LIVE"
+    description: "SIRA/PSBD certified security guards and safety officers.",
+    link: "/sectors/security",
+    status: "ACTIVE"
   }
 ];
 
 export default function WorldOfLucru() {
-  const [activeTab, setActiveTab] = React.useState<'NEW' | 'LIVE'>('NEW');
+  const [activeTab, setActiveTab] = React.useState<'URGENT' | 'ACTIVE'>('URGENT');
 
   const filteredCards = cardsData.filter(card => card.status === activeTab);
 
   const titleNode = (
     <>
-      The <span className="italic">World</span> Of Lucru
+      <span className="italic">Global</span> Reach
     </>
   );
 
   const headerAction = (
     <div className="flex items-center gap-6 font-bold text-base tracking-widest text-[#002538]">
       <button 
-        onClick={() => setActiveTab('NEW')}
-        className={`transition-colors cursor-pointer ${activeTab === 'NEW' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
+        onClick={() => setActiveTab('URGENT')}
+        className={`transition-colors cursor-pointer ${activeTab === 'URGENT' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
       >
-        NEW
+        URGENT
       </button>
       <button 
-        onClick={() => setActiveTab('LIVE')}
-        className={`transition-colors cursor-pointer ${activeTab === 'LIVE' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
+        onClick={() => setActiveTab('ACTIVE')}
+        className={`transition-colors cursor-pointer ${activeTab === 'ACTIVE' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
       >
-        LIVE
+        ACTIVE
       </button>
     </div>
   );

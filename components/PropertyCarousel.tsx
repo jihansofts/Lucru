@@ -123,7 +123,7 @@ export default function PropertyCarousel({
                     </p>
                     
                     <a href={card.link} className="absolute bottom-16 inline-flex border border-[#e2dbc8] text-[#e2dbc8] px-6 py-3 text-xs font-bold tracking-widest uppercase hover:bg-[#e2dbc8] hover:text-[#001c29] transition-colors">
-                      Discover More
+                      VIEW DETAILS
                     </a>
                   </div>
                   

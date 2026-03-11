@@ -12,22 +12,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lucru - Your Next Great Inspiration</title>
-        <meta name="description" content="Luchru - Dubai Real Estate" />
+        <title>Lucru - Global Manpower Solutions</title>
+        <meta name="description" content="Lucru - Premier Overseas Recruitment and Manpower Agency" />
       </Head>
       <main className="min-h-screen bg-zinc-50 dark:bg-black overflow-hidden">
         <Hero />
         <div data-aos="fade-up">
           <OurNewLaunches />
         </div>
-        <div data-aos="fade-up">
-          <WorldOfLucru />
-        </div>
+        
         <div data-aos="fade-up">
           <LucruWayOfLife />
         </div>
         <div data-aos="fade-up">
-          <OurNewLaunches />
+          <WorldOfLucru />
         </div>
         <div data-aos="fade-up">
           <MobileAppSection />

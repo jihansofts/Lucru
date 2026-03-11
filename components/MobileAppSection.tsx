@@ -11,22 +11,19 @@ const MobileAppSection = () => {
         {/* Left Content */}
         <div className="w-full md:w-1/2 md:pr-10 lg:pr-20 z-20 flex flex-col items-start md:items-start text-left md:text-left">
           <h2 className="text-[44px] leading-tight md:text-5xl lg:text-6xl text-brand-navy font-serif mb-4 md:mb-4">
-            <span className="italic">My Lucru</span> App
+            <span className="italic">Lucru</span> Jobs App
           </h2>
 
           <p className="hidden md:block text-brand-navy text-sm md:text-base lg:text-lg mb-4 md:mb-6 font-medium leading-relaxed">
-            Designed for ease and elegance, the My Lucru App puts your
-            properties at your fingertips, anytime, anywhere. From seamless service
-            requests to secure payments and personalised support, it&apos;s your gateway
-            to effortless living.
+            Designed for ease and elegance, the Lucru Jobs App puts international career opportunities at your fingertips, anytime, anywhere. From discovering new openings to direct employer interactions, it&apos;s your passport to global success.
           </p>
 
           <ul className="md:block hidden mb-5 md:mb-6 space-y-2 text-left">
             {[
-              "Access your properties securely",
-              "Raise and track services",
-              "Make online payments",
-              "Schedule customer care meetings"
+              "Browse daily updated job listings",
+              "Apply with a single tap",
+              "Track your application status",
+              "Schedule interviews with employers"
             ].map((item, index) => (
               <li key={index} className="flex items-center text-brand-navy font-medium text-xs sm:text-sm md:text-base">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-navy mr-2 md:mr-3 shrink-0"></span>
@@ -36,7 +33,7 @@ const MobileAppSection = () => {
           </ul>
 
           <div className="mb-4 md:mb-4">
-            <h3 className="text-[#006A80] md:text-brand-navy font-semibold text-xl md:text-lg">Download My Lucru App</h3>
+            <h3 className="text-[#006A80] md:text-brand-navy font-semibold text-xl md:text-lg">Download Lucru Jobs App</h3>
           </div>
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-3 md:gap-3 w-50 sm:w-auto">
