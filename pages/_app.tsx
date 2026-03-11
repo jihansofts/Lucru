@@ -3,6 +3,9 @@ import type { AppProps } from "next/app";
 import TopHeader from "@/components/TopHeader";
 import MainHeader from "@/components/MainHeader";
 import { Montserrat } from "next/font/google";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -11,6 +14,13 @@ const montserrat = Montserrat({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className={`${montserrat.variable} font-sans`}>
       <TopHeader />
