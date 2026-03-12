@@ -137,7 +137,7 @@ const renderLinks = (links: {text: string, href: string}[]) => {
 
 const FooterSitemap = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 py-10 lg:py-16">
+    <div className="w-full max-w-350 mx-auto px-6 md:px-12 py-10 lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-12">
         {sitemapData.map((column, index) => (
           <div key={index} className="flex flex-col border-[#e8e8e8] sm:border-l sm:pl-6 first:border-l-0 first:pl-0">
