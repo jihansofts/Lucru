@@ -76,7 +76,7 @@ export default function MainHeader() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="fixed inset-x-0 top-0 md:top-13 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all">
+        <header className="sticky top-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all">
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
                 <Link href="/" className="flex items-center" aria-label="Lucru home">
@@ -84,7 +84,7 @@ export default function MainHeader() {
                         src={logo}
                         alt="Lucru"
                         priority
-                        className="h-10 md:h-18 w-auto"
+                        className="h-10 md:h-16 w-auto"
                     />
                 </Link>
             </div>
@@ -122,12 +122,12 @@ export default function MainHeader() {
                         { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
                         { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
                     ]} />
-                    <HeaderDropdown label="Our Services" items={[
-                        { label: 'Manpower Provision', href: '#' },
-                        { label: 'Executive Search', href: '#' },
-                        { label: 'Visa & Immigration Assistance', href: '#' },
-                        { label: 'Pre-Departure Training', href: '#' },
-                        { label: 'Payroll & Compliance', href: '#' }
+                    <HeaderDropdown label="Our Services" href="/our-services" items={[
+                        { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
+                        { label: 'Executive Search', href: '/our-services/executive-search' },
+                        { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
+                        { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
+                        { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
                     ]} />
                     <Link href="/about-us" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
                         About Us
@@ -202,11 +202,11 @@ export default function MainHeader() {
                             defaultOpen={true}
                             onClose={() => setIsMobileMenuOpen(false)}
                             items={[
-                                { label: 'Manpower Provision', href: '#' },
-                                { label: 'Executive Search', href: '#' },
-                                { label: 'Visa & Immigration Assistance', href: '#' },
-                                { label: 'Pre-Departure Training', href: '#' },
-                                { label: 'Payroll & Compliance', href: '#' }
+                                { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
+                                { label: 'Executive Search', href: '/our-services/executive-search' },
+                                { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
+                                { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
+                                { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
                             ]}
                         />
                         <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
