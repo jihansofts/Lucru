@@ -181,7 +181,7 @@ export default function PermanentPlacement() {
                       alt={item.title}
                       width={600}
                       height={400}
-                      className="object-cover w-full h-[280px] md:h-[320px]"
+                      className="object-cover w-full h-70 md:h-80"
                     />
                     <div className="absolute top-4 left-4 bg-[#002538] text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       {item.step}
@@ -221,7 +221,7 @@ export default function PermanentPlacement() {
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
-                  <div className="relative w-full aspect-[4/3] overflow-hidden mb-6">
+                  <div className="relative w-full aspect-4/3 overflow-hidden mb-6">
                     <Image
                       src={card.image}
                       alt={card.title}

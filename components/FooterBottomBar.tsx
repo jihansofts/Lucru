@@ -10,14 +10,14 @@ const FooterBottomBar = () => {
   return (
     <div className="w-full hidden lg:flex flex-col">
       <div className="w-full bg-[#001f2a] text-white py-5 px-6 md:px-12 border-t border-white/5 order-1 z-10 relative">
-        <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 mt-1">
+        <div className="max-w-350 mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 mt-1">
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
             <div className="flex items-center h-8">
               <span className="text-[26px] font-black tracking-widest uppercase leading-none transform scale-y-110">
                 LUCRU
               </span>
             </div>
-            <div className="hidden sm:block h-[20px] w-px bg-white/30 mt-1"></div>
+            <div className="hidden sm:block h-5 w-px bg-white/30 mt-1"></div>
             <span className="text-[11px] font-semibold tracking-wide mt-1">
               © Copyright 2026 Lucru. All rights reserved.
             </span>
@@ -25,13 +25,13 @@ const FooterBottomBar = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-8 lg:gap-10 mt-2 lg:mt-0">
             <a href="tel:+971800LUCRU" className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
-              <PhoneIcon className="w-[14px] h-[14px] stroke-[2.5] text-[#8fa0a8]" />
-              <span className="text-[11px] font-bold tracking-[0.1em]">+971 800 LUCRU</span>
+              <PhoneIcon className="w-3.5h-3.5 stroke-[2.5] text-[#8fa0a8]" />
+              <span className="text-[11px] font-bold tracking-widest">+971 800 LUCRU</span>
             </a>
             
             <a href="mailto:info@lucru.com" className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
-              <EnvelopeIcon className="w-[15px] h-[15px] stroke-[2] text-[#8fa0a8]" />
-              <span className="text-[11px] font-bold tracking-[0.1em]">ENQUIRE NOW</span>
+              <EnvelopeIcon className="w-3.75 h-3.75 stroke-2 text-[#8fa0a8]" />
+              <span className="text-[11px] font-bold tracking-widest">ENQUIRE NOW</span>
             </a>
 
             <button 

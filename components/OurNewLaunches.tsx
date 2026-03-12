@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import PropertyCarousel, { CardData } from './PropertyCarousel';
 
 const newLaunchesData: CardData[] = [
@@ -42,9 +43,9 @@ const newLaunchesData: CardData[] = [
 
 export default function OurNewLaunches() {
   const headerAction = (
-    <a href="/find-jobs" className="border border-[#002538] text-[#002538] px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors">
+    <Link href="/find-jobs" className="border border-[#002538] text-[#002538] px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors">
       VIEW ALL JOBS
-    </a>
+    </Link>
   );
 
   const titleNode = (

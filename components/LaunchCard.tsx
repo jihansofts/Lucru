@@ -14,7 +14,7 @@ export interface LaunchCardProps {
 export default function LaunchCard({ title, subtitle, image, description, link }: LaunchCardProps) {
   return (
     <div className="flex flex-col h-full bg-white group cursor-pointer border border-transparent hover:border-gray-200 transition-colors duration-300">
-      <div className="relative w-full aspect-[4/3] overflow-hidden mb-6">
+      <div className="relative w-full aspect-4/3 overflow-hidden mb-6">
         <Image
           src={image}
           alt={`${title} ${subtitle}`}
@@ -23,12 +23,12 @@ export default function LaunchCard({ title, subtitle, image, description, link }
         />
       </div>
       
-      <div className="flex flex-col flex-grow px-2 pb-4">
+      <div className="flex flex-col grow px-2 pb-4">
         <h3 className="text-xl md:text-2xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
           {title} <span className="font-bold">{subtitle}</span>
         </h3>
         
-        <p className="text-sm text-gray-500 mb-8 flex-grow leading-relaxed">
+        <p className="text-sm text-gray-500 mb-8 grow leading-relaxed">
           {description}
         </p>
         

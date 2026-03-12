@@ -164,7 +164,7 @@ export default function ContractStaffing() {
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
-                  <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <div className="relative w-full aspect-4/3 overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.title}
