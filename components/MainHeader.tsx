@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
@@ -74,9 +74,32 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false, onClose }: { 
 
 export default function MainHeader() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isTopHeaderVisible, setIsTopHeaderVisible] = useState(true);
+
+    useEffect(() => {
+        const TOP_HEADER_HEIGHT = 52;
+
+        const updateHeaderOffset = () => {
+            if (window.innerWidth < 768) {
+                setIsTopHeaderVisible(false);
+                return;
+            }
+
+            setIsTopHeaderVisible(window.scrollY < TOP_HEADER_HEIGHT);
+        };
+
+        updateHeaderOffset();
+        window.addEventListener('scroll', updateHeaderOffset, { passive: true });
+        window.addEventListener('resize', updateHeaderOffset);
+
+        return () => {
+            window.removeEventListener('scroll', updateHeaderOffset);
+            window.removeEventListener('resize', updateHeaderOffset);
+        };
+    }, []);
 
     return (
-        <header className="sticky top-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all">
+        <header className={`fixed inset-x-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all duration-300 ${isTopHeaderVisible ? 'top-0 md:top-13' : 'top-0'}`}>
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
                 <Link href="/" className="flex items-center" aria-label="Lucru home">
