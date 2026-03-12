@@ -25,7 +25,7 @@ const FooterBottomBar = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-8 lg:gap-10 mt-2 lg:mt-0">
             <a href="tel:+971800LUCRU" className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
-              <PhoneIcon className="w-3.5h-3.5 stroke-[2.5] text-[#8fa0a8]" />
+              <PhoneIcon className="w-3.5 h-3.5 stroke-[2.5] text-[#8fa0a8]" />
               <span className="text-[11px] font-bold tracking-widest">+971 800 LUCRU</span>
             </a>
             
