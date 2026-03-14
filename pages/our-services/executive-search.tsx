@@ -91,7 +91,7 @@ export default function ExecutiveSearch() {
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
                             <div className="lg:w-5/12" data-aos="fade-up">
-                                <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                     Find Your Next <span className="italic font-bold">Leader</span>
                                 </h2>
                                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">Confidential. Targeted. Guaranteed.</h3>
@@ -101,7 +101,7 @@ export default function ExecutiveSearch() {
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
                                     Through a research-driven methodology and deep industry networks, we identify, assess, and engage exceptional leaders who align with your vision, culture, and strategic objectives.
                                 </p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-[#002538] text-[#002538] px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors">
+                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
                                     START A SEARCH
                                 </Link>
                             </div>
@@ -111,7 +111,7 @@ export default function ExecutiveSearch() {
                                     {benefits.map((item, i) => (
                                         <div key={i} className="border border-gray-200 rounded-sm p-6 flex flex-col items-center text-center hover:border-[#006A80] hover:shadow-md transition-all duration-300 group" data-aos="fade-up" data-aos-delay={i * 80}>
                                             <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                                            <h5 className="text-[#002538] font-bold text-sm mb-2">{item.title}</h5>
+                                            <h5 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h5>
                                             <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                                         </div>
                                     ))}
@@ -125,7 +125,7 @@ export default function ExecutiveSearch() {
                 <section className="py-20 md:py-28 bg-[#f7f5f2]">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-12" data-aos="fade-up">
-                            <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                 Our <span className="italic font-bold">Approach</span>
                             </h2>
                         </div>
@@ -134,10 +134,10 @@ export default function ExecutiveSearch() {
                                 <div key={i} className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`} data-aos="fade-up">
                                     <div className="md:w-1/2 relative overflow-hidden">
                                         <Image src={item.image} alt={item.title} width={600} height={400} className="object-cover w-full h-70 md:h-80" />
-                                        <div className="absolute top-4 left-4 bg-[#002538] text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.step}</div>
+                                        <div className="absolute top-4 left-4 bg-brand-dark text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.step}</div>
                                     </div>
                                     <div className="md:w-1/2">
-                                        <h3 className="text-2xl md:text-3xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h3>
+                                        <h3 className="text-2xl md:text-3xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h3>
                                         <p className="text-gray-600 text-sm md:text-base leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>
@@ -147,12 +147,12 @@ export default function ExecutiveSearch() {
                 </section>
 
                 {/* Metrics */}
-                <section className="py-16 bg-[#002538]">
+                <section className="py-16 bg-brand-dark">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-10" data-aos="fade-up">
                             {metrics.map((m, i) => (
                                 <div key={i} className="text-center">
-                                    <div className="text-4xl md:text-5xl font-light text-[#5ec4d6] mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{m.value}</div>
+                                    <div className="text-4xl md:text-5xl font-light text-brand-primary mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{m.value}</div>
                                     <div className="text-xs font-bold tracking-wider text-gray-400 uppercase">{m.label}</div>
                                 </div>
                             ))}
@@ -164,8 +164,8 @@ export default function ExecutiveSearch() {
                 <section className="py-20 md:py-28 bg-[#f7f5f2]">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-12" data-aos="fade-up">
-                            <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">EXPLORE MORE</p>
-                            <h2 className="text-4xl md:text-5xl text-[#002538] font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">EXPLORE MORE</p>
+                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                 Related <span className="italic font-bold">Services</span>
                             </h2>
                         </div>
@@ -177,7 +177,7 @@ export default function ExecutiveSearch() {
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <h4 className="text-[#002538] font-bold text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h4>
+                                        <h4 className="text-brand-dark font-bold text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h4>
                                         <ArrowRightIcon className="w-5 h-5 text-[#006A80] stroke-2 group-hover:translate-x-1 transition-transform duration-300" />
                                     </div>
                                 </Link>

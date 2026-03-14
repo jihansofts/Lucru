@@ -47,7 +47,7 @@ export default function ServicesHero({ title, titleAccent, subtitle, image, brea
                                     {crumb.label}
                                 </Link>
                             ) : (
-                                <span className="text-[#5ec4d6] uppercase font-semibold">{crumb.label}</span>
+                                <span className="text-brand-primary uppercase font-semibold">{crumb.label}</span>
                             )}
                         </React.Fragment>
                     ))}

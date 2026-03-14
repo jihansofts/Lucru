@@ -64,7 +64,7 @@ export default function HiringProcess() {
         <section className="py-20 md:py-28 bg-[#f7f5f2]">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <div className="mb-12" data-aos="fade-up">
-                    <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                         Our Hiring <span className="italic font-bold">Process</span>
                     </h2>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl">
@@ -100,7 +100,7 @@ export default function HiringProcess() {
                                 {String(index + 1).padStart(2, '0')}
                             </div>
                             <step.icon className="w-10 h-10 text-[#006A80] mb-6 stroke-1" />
-                            <h4 className="text-[#002538] font-bold text-base mb-3">{step.title}</h4>
+                            <h4 className="text-brand-dark font-bold text-base mb-3">{step.title}</h4>
                             <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
                         </div>
                     ))}

@@ -23,7 +23,7 @@ export default function ResponsiveLaunchGrid({ titleNode, description, items }: 
     <section className="py-20 md:py-32 md:px-12 lg:px-24 max-w-7xl mx-auto overflow-hidden">
       <div className="mb-10 md:mb-16 max-w-3xl px-6 md:px-0 flex flex-col md:flex-row md:items-end justify-between" data-aos="fade-up">
         <div>
-          <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+          <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
             {titleNode}
           </h2>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -65,13 +65,13 @@ export default function ResponsiveLaunchGrid({ titleNode, description, items }: 
           <div className="absolute top-1/2 -translate-y-1/2 -left-4 right-0 md:right-0 z-40 flex justify-between pointer-events-none">
             <button 
               onClick={() => swiperRef.current?.slidePrev()}
-              className="text-[#989b9c] hover:text-[#5ec4d6] transition-colors cursor-pointer bg-white/50 rounded-full p-1 shadow-sm pointer-events-auto -ml-3"
+              className="text-[#989b9c] hover:text-brand-primary transition-colors cursor-pointer bg-white/50 rounded-full p-1 shadow-sm pointer-events-auto -ml-3"
             >
               <ChevronLeftIcon className="w-8 h-8 stroke-2" />
             </button>
             <button 
               onClick={() => swiperRef.current?.slideNext()}
-              className="text-[#989b9c] hover:text-[#5ec4d6] transition-colors cursor-pointer bg-white/50 rounded-full p-1 shadow-sm pointer-events-auto mr-1"
+              className="text-[#989b9c] hover:text-brand-primary transition-colors cursor-pointer bg-white/50 rounded-full p-1 shadow-sm pointer-events-auto mr-1"
             >
               <ChevronRightIcon className="w-8 h-8 stroke-2" />
             </button>
@@ -84,7 +84,7 @@ export default function ResponsiveLaunchGrid({ titleNode, description, items }: 
                 <div
                     key={dotIndex}
                     onClick={() => swiperRef.current?.slideTo(dotIndex)}
-                    className={`w-2 h-2 transition-all duration-300 cursor-pointer ${dotIndex === activeIndex ? 'bg-[#002538] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                    className={`w-2 h-2 transition-all duration-300 cursor-pointer ${dotIndex === activeIndex ? 'bg-brand-dark scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
                 />
             ))}
         </div>

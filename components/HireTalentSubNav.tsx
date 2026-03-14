@@ -25,7 +25,7 @@ export default function HireTalentSubNav() {
                                 className={`whitespace-nowrap px-5 py-4 text-sm font-bold tracking-tight transition-colors border-b-2 ${
                                     isActive
                                         ? 'text-[#006A80] border-[#006A80]'
-                                        : 'text-gray-500 border-transparent hover:text-[#002538] hover:border-gray-300'
+                                        : 'text-gray-500 border-transparent hover:text-brand-dark hover:border-gray-300'
                                 }`}
                             >
                                 {item.label}

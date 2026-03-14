@@ -74,7 +74,7 @@ export default function ManpowerProvision() {
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
                             <div className="lg:w-5/12" data-aos="fade-up">
-                                <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                     Your Workforce, <span className="italic font-bold">Delivered</span>
                                 </h2>
                                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">Reliable. Compliant. Scalable.</h3>
@@ -84,7 +84,7 @@ export default function ManpowerProvision() {
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
                                     Whether you need 10 electricians or 1,000 construction workers, Lucru&apos;s end-to-end recruitment process ensures quality, speed, and full regulatory compliance at every step.
                                 </p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-[#002538] text-[#002538] px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors">
+                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
                                     REQUEST WORKERS
                                 </Link>
                             </div>
@@ -94,7 +94,7 @@ export default function ManpowerProvision() {
                                     {benefits.map((item, i) => (
                                         <div key={i} className="border border-gray-200 rounded-sm p-6 flex flex-col items-center text-center hover:border-[#006A80] hover:shadow-md transition-all duration-300 group" data-aos="fade-up" data-aos-delay={i * 80}>
                                             <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                                            <h5 className="text-[#002538] font-bold text-sm mb-2">{item.title}</h5>
+                                            <h5 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h5>
                                             <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                                         </div>
                                     ))}
@@ -108,7 +108,7 @@ export default function ManpowerProvision() {
                 <section className="py-20 md:py-28 bg-[#f7f5f2]">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-12" data-aos="fade-up">
-                            <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                 Industries <span className="italic font-bold">We Serve</span>
                             </h2>
                         </div>
@@ -120,7 +120,7 @@ export default function ManpowerProvision() {
                                         <div className="absolute bottom-3 right-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">{item.positions} placed</div>
                                     </div>
                                     <div className="p-6">
-                                        <h3 className="text-xl text-[#002538] font-bold mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h3>
+                                        <h3 className="text-xl text-brand-dark font-bold mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h3>
                                         <p className="text-sm text-gray-500 leading-relaxed">{item.roles}</p>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@ export default function ManpowerProvision() {
                         fill
                         className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-linear-to-r from-[#002538]/90 via-[#002538]/50 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-r from-brand-dark/90 via-brand-dark/50 to-transparent" />
                     <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="max-w-lg">
                             <h3 className="text-3xl md:text-4xl text-white font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
@@ -146,7 +146,7 @@ export default function ManpowerProvision() {
                             <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
                                 Our deployment operations span 30+ countries with established logistics networks, ensuring your workforce arrives on time, every time.
                             </p>
-                            <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-white text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#002538] transition-colors">
+                            <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-white text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors">
                                 GET STARTED
                             </Link>
                         </div>
@@ -157,7 +157,7 @@ export default function ManpowerProvision() {
                 <section className="py-20 md:py-28">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-12" data-aos="fade-up">
-                            <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                 Our <span className="italic font-bold">Process</span>
                             </h2>
                         </div>
@@ -165,7 +165,7 @@ export default function ManpowerProvision() {
                             {processSteps.map((item, i) => (
                                 <div key={i} className="relative bg-[#f7f5f2] p-6 border border-gray-200 hover:border-[#006A80] hover:shadow-lg transition-all duration-300 group" data-aos="fade-up" data-aos-delay={i * 80}>
                                     <div className="text-4xl font-bold text-gray-200 group-hover:text-[#006A80]/20 transition-colors mb-3" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.step}</div>
-                                    <h4 className="text-[#002538] font-bold text-sm mb-2">{item.title}</h4>
+                                    <h4 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h4>
                                     <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                                 </div>
                             ))}
@@ -177,8 +177,8 @@ export default function ManpowerProvision() {
                 <section className="py-20 md:py-28 bg-[#f7f5f2]">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-12" data-aos="fade-up">
-                            <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">EXPLORE MORE</p>
-                            <h2 className="text-4xl md:text-5xl text-[#002538] font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">EXPLORE MORE</p>
+                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                                 Related <span className="italic font-bold">Services</span>
                             </h2>
                         </div>
@@ -190,7 +190,7 @@ export default function ManpowerProvision() {
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <h4 className="text-[#002538] font-bold text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h4>
+                                        <h4 className="text-brand-dark font-bold text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h4>
                                         <ArrowRightIcon className="w-5 h-5 text-[#006A80] stroke-2 group-hover:translate-x-1 transition-transform duration-300" />
                                     </div>
                                 </Link>

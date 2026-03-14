@@ -196,16 +196,16 @@ export default function WorldOfLucru() {
   );
 
   const headerAction = (
-    <div className="flex items-center gap-6 font-bold text-base tracking-widest text-[#002538]">
+    <div className="flex items-center gap-6 font-bold text-base tracking-widest text-brand-dark">
       <button 
         onClick={() => setActiveTab('URGENT')}
-        className={`transition-colors cursor-pointer ${activeTab === 'URGENT' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
+        className={`transition-colors cursor-pointer ${activeTab === 'URGENT' ? 'text-brand-dark' : 'text-gray-400 hover:text-brand-primary'}`}
       >
         URGENT
       </button>
       <button 
         onClick={() => setActiveTab('ACTIVE')}
-        className={`transition-colors cursor-pointer ${activeTab === 'ACTIVE' ? 'text-[#002538]' : 'text-gray-400 hover:text-[#5ec4d6]'}`}
+        className={`transition-colors cursor-pointer ${activeTab === 'ACTIVE' ? 'text-brand-dark' : 'text-gray-400 hover:text-brand-primary'}`}
       >
         ACTIVE
       </button>

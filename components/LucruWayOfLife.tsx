@@ -51,21 +51,21 @@ export default function LucruWayOfLife() {
   return (
     <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
       <div className="md:px-20 px-4 md:pl-20 mb-8 md:mb-8 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-425">
-        <h2 className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-[#002538] font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+        <h2 className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-brand-dark font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
           Your <span className="italic">Career</span> Journey
         </h2>
         {/* Navigation Arrows */}
         <div className="hidden md:flex items-center gap-4 mt-4 md:mt-0">
           <button 
             onClick={() => swiperRef.current?.slidePrev()}
-            className="text-gray-400 hover:text-[#5ec4d6] transition-colors cursor-pointer"
+            className="text-gray-400 hover:text-brand-primary transition-colors cursor-pointer"
           >
             <ChevronLeftIcon className="w-10 h-10 stroke-1" />
           </button>
           
           <button 
             onClick={() => swiperRef.current?.slideNext()}
-            className="text-gray-400 hover:text-[#5ec4d6] transition-colors cursor-pointer"
+            className="text-gray-400 hover:text-brand-primary transition-colors cursor-pointer"
           >
             <ChevronRightIcon className="w-10 h-10 stroke-1" />
           </button>
@@ -101,7 +101,7 @@ export default function LucruWayOfLife() {
                   ) : (
                     <>
                       <Image src={slide.main.image} alt={slide.main.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                      <div className="absolute inset-0 bg-linear-to-t from-[#002538]/80 via-[#002538]/20 to-transparent" />
+                      <div className="absolute inset-0 bg-linear-to-t from-brand-dark/80 via-brand-dark/20 to-transparent" />
                       <div className="absolute bottom-12 left-12 max-w-[70%] z-10">
                         <h3 className="text-white text-[28px] md:text-3xl font-extrabold font-sans tracking-wide leading-tight">
                           {slide.main.title}
@@ -121,7 +121,7 @@ export default function LucruWayOfLife() {
                   <div className="w-full h-1/2 relative bg-[#e2dbc8] overflow-hidden group cursor-pointer" onClick={(e) => handlePlayToggle(slide.topRight.id, e)}>
                     {/* Text Sliding Panel (Left) */}
                     <div className={`absolute top-0 w-1/2 h-full flex flex-col justify-end p-8 md:p-12 transition-all duration-700 ease-in-out z-10 ${activeVideo === slide.topRight.id ? 'left-[-50%] opacity-0' : 'left-0 opacity-100'}`}>
-                      <h3 className="text-[#002538] text-[20px] md:text-2xl font-bold font-sans pr-6">
+                      <h3 className="text-brand-dark text-[20px] md:text-2xl font-bold font-sans pr-6">
                         {slide.topRight.title}
                       </h3>
                     </div>
@@ -161,7 +161,7 @@ export default function LucruWayOfLife() {
 
                     {/* Text Sliding Panel (Right) */}
                     <div className={`absolute top-0 w-1/2 h-full flex flex-col justify-end p-8 md:p-12 transition-all duration-700 ease-in-out z-10 ${activeVideo === slide.bottomRight.id ? 'right-[-50%] opacity-0' : 'right-0 opacity-100'}`}>
-                      <h3 className="text-[#002538] text-[20px] md:text-2xl font-bold font-sans pr-6">
+                      <h3 className="text-brand-dark text-[20px] md:text-2xl font-bold font-sans pr-6">
                         {slide.bottomRight.title}
                       </h3>
                     </div>

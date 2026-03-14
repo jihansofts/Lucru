@@ -12,7 +12,7 @@ export default function StaffingCTA() {
                     fill
                     className="object-cover"
                 />
-                <div className="absolute inset-0 bg-[#002538]/85" />
+                <div className="absolute inset-0 bg-brand-dark/85" />
             </div>
 
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
@@ -33,13 +33,13 @@ export default function StaffingCTA() {
                 <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
                     <Link
                         href="/hire-talent/submit-staffing-request"
-                        className="inline-block bg-white text-[#002538] px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-gray-100 transition-colors"
+                        className="inline-block bg-white text-brand-dark px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-gray-100 transition-colors"
                     >
                         SUBMIT REQUEST
                     </Link>
                     <a
                         // href="tel:800LUCRU"
-                        className="inline-block border border-white text-white px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#002538] transition-colors"
+                        className="inline-block border border-white text-white px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors"
                     >
                         CALL US NOW
                     </a>

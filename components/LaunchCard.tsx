@@ -24,7 +24,7 @@ export default function LaunchCard({ title, subtitle, image, description, link }
       </div>
       
       <div className="flex flex-col grow px-2 pb-4">
-        <h3 className="text-xl md:text-2xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+        <h3 className="text-xl md:text-2xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
           {title} <span className="font-bold">{subtitle}</span>
         </h3>
         
@@ -34,7 +34,7 @@ export default function LaunchCard({ title, subtitle, image, description, link }
         
         <Link 
           href={link}
-          className="w-full inline-block text-center border border-[#002538] text-[#002538] px-6 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors mt-auto"
+          className="w-full inline-block text-center border border-brand-dark text-brand-dark px-6 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors mt-auto"
         >
           VIEW DETAILS
         </Link>

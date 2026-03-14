@@ -119,7 +119,7 @@ export default function SubmitStaffingRequest() {
         <HireTalentSubNav />
 
         {/* Highlights Strip */}
-        <section className="bg-[#002538] py-8">
+        <section className="bg-brand-dark py-8">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-6">
             {highlights.map((item, i) => (
               <div
@@ -128,7 +128,7 @@ export default function SubmitStaffingRequest() {
                 data-aos="fade-up"
                 data-aos-delay={i * 100}
               >
-                <item.icon className="w-8 h-8 text-[#5ec4d6] stroke-1 shrink-0" />
+                <item.icon className="w-8 h-8 text-brand-primary stroke-1 shrink-0" />
                 <div>
                   <div className="font-bold text-lg">{item.title}</div>
                   <div className="text-xs text-gray-400">{item.desc}</div>
@@ -145,7 +145,7 @@ export default function SubmitStaffingRequest() {
               {/* Form */}
               <div className="lg:w-7/12" data-aos="fade-up">
                 <h2
-                  className="text-3xl md:text-4xl text-[#002538] font-light mb-4"
+                  className="text-3xl md:text-4xl text-brand-dark font-light mb-4"
                   style={{ fontFamily: "var(--font-playfair-display), serif" }}
                 >
                   Your <span className="italic font-bold">Requirements</span>
@@ -158,7 +158,7 @@ export default function SubmitStaffingRequest() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Company Name
                       </label>
                       <div className="relative">
@@ -175,7 +175,7 @@ export default function SubmitStaffingRequest() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Contact Person
                       </label>
                       <div className="relative">
@@ -192,7 +192,7 @@ export default function SubmitStaffingRequest() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Email
                       </label>
                       <div className="relative">
@@ -209,7 +209,7 @@ export default function SubmitStaffingRequest() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Phone
                       </label>
                       <div className="relative">
@@ -229,7 +229,7 @@ export default function SubmitStaffingRequest() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Industry
                       </label>
                       <div className="relative">
@@ -251,7 +251,7 @@ export default function SubmitStaffingRequest() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Job Title / Role
                       </label>
                       <input
@@ -268,7 +268,7 @@ export default function SubmitStaffingRequest() {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Positions Needed
                       </label>
                       <input
@@ -283,7 +283,7 @@ export default function SubmitStaffingRequest() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Deployment Country
                       </label>
                       <input
@@ -297,7 +297,7 @@ export default function SubmitStaffingRequest() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                      <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                         Staffing Type
                       </label>
                       <div className="relative">
@@ -319,7 +319,7 @@ export default function SubmitStaffingRequest() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#002538] mb-2 tracking-wider uppercase">
+                    <label className="block text-xs font-bold text-brand-dark mb-2 tracking-wider uppercase">
                       Additional Details
                     </label>
                     <textarea
@@ -334,7 +334,7 @@ export default function SubmitStaffingRequest() {
 
                   <button
                     type="submit"
-                    className="w-full md:w-auto bg-[#002538] text-white px-12 py-4 text-xs font-bold tracking-widest uppercase hover:bg-[#006A80] transition-colors"
+                    className="w-full md:w-auto bg-brand-dark text-white px-12 py-4 text-xs font-bold tracking-widest uppercase hover:bg-[#006A80] transition-colors"
                   >
                     SUBMIT REQUEST
                   </button>
@@ -345,7 +345,7 @@ export default function SubmitStaffingRequest() {
               <div className="lg:w-5/12" data-aos="fade-up" data-aos-delay="200">
                 <div className="bg-[#f7f5f2] p-8 md:p-10 sticky top-48">
                   <h3
-                    className="text-2xl text-[#002538] font-light mb-2"
+                    className="text-2xl text-brand-dark font-light mb-2"
                     style={{
                       fontFamily: "var(--font-playfair-display), serif",
                     }}
@@ -386,7 +386,7 @@ export default function SubmitStaffingRequest() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-[#002538] font-bold text-sm mb-1">
+                          <h4 className="text-brand-dark font-bold text-sm mb-1">
                             {item.title}
                           </h4>
                           <p className="text-gray-500 text-xs leading-relaxed">

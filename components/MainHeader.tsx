@@ -26,7 +26,7 @@ function HeaderDropdown({ label, items, href }: { label: string; items: Dropdown
             <div className="absolute top-[calc(100%-8px)] left-0 z-50 w-72 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <div className="p-6 flex flex-col">
                     {/* Header inside the dropdown */}
-                    <h3 className="text-[#005c75] text-[18px] font-bold mb-6">{label}</h3>
+                    <h3 className="text-brand-secondary text-[18px] font-bold mb-6">{label}</h3>
 
                     {/* Items List with left border */}
                     <div className="flex flex-col border-l border-gray-200 ml-1">
@@ -34,7 +34,7 @@ function HeaderDropdown({ label, items, href }: { label: string; items: Dropdown
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className="block py-2.5 pl-5 text-[14px] font-medium text-gray-600 hover:text-[#005c75] transition-colors"
+                                className="block py-2.5 pl-5 text-[14px] font-medium text-gray-600 hover:text-brand-secondary transition-colors"
                             >
                                 {item.label}
                             </Link>
@@ -52,18 +52,18 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false, onClose }: { 
         <div className="w-full">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${isOpen ? 'bg-[#5ec4d6] text-white' : 'text-white border-b border-[#01344a]'
+                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${isOpen ? 'bg-brand-primary text-white' : 'text-white border-b border-brand-dark-border'
                     }`}
             >
                 {label}
                 <ChevronDownIcon className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-white' : ''}`} />
             </button>
             {isOpen && (
-                <div className="flex flex-col bg-[#002538]">
+                <div className="flex flex-col bg-brand-dark">
                     {items.map(item => (
-                        <Link key={item.label} href={item.href} onClick={onClose} className="flex items-center gap-3 px-8 py-4 border-b border-[#01344a] group">
-                            <ChevronRightIcon className="h-4 w-4 text-[#5ec4d6] group-hover:translate-x-1 transition-transform" />
-                            <span className="text-[#5ec4d6] text-xs font-bold">{item.label}</span>
+                        <Link key={item.label} href={item.href} onClick={onClose} className="flex items-center gap-3 px-8 py-4 border-b border-brand-dark-border group">
+                            <ChevronRightIcon className="h-4 w-4 text-brand-primary group-hover:translate-x-1 transition-transform" />
+                            <span className="text-brand-primary text-xs font-bold">{item.label}</span>
                         </Link>
                     ))}
                 </div>
@@ -73,6 +73,7 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false, onClose }: { 
 }
 
 export default function MainHeader() {
+    const SHOW_FULL_NAV = false;
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isTopHeaderVisible, setIsTopHeaderVisible] = useState(true);
 
@@ -99,7 +100,7 @@ export default function MainHeader() {
     }, []);
 
     return (
-        <header className={`fixed inset-x-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#002538]/80 to-[#002538]/0 transition-all duration-300 ${isTopHeaderVisible ? 'top-0 md:top-13' : 'top-0'}`}>
+        <header className={`fixed inset-x-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-brand-dark/80 to-brand-dark/0 transition-all duration-300 ${isTopHeaderVisible ? 'top-0 md:top-13' : 'top-0'}`}>
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
                 <Link href="/" className="flex items-center" aria-label="Lucru home">
@@ -140,21 +141,25 @@ export default function MainHeader() {
                     <Link href="/find-jobs" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
                         Find Jobs
                     </Link>
-                    <HeaderDropdown label="Hire Talent" href="/hire-talent" items={[
-                        { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
-                        { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
-                        { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
-                    ]} />
-                    <HeaderDropdown label="Our Services" href="/our-services" items={[
-                        { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
-                        { label: 'Executive Search', href: '/our-services/executive-search' },
-                        { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
-                        { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
-                        { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
-                    ]} />
-                    <Link href="/about-us" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
-                        About Us
-                    </Link>
+                    {SHOW_FULL_NAV && (
+                        <>
+                            <HeaderDropdown label="Hire Talent" href="/hire-talent" items={[
+                                { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
+                                { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
+                                { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
+                            ]} />
+                            <HeaderDropdown label="Our Services" href="/our-services" items={[
+                                { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
+                                { label: 'Executive Search', href: '/our-services/executive-search' },
+                                { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
+                                { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
+                                { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
+                            ]} />
+                            <Link href="/about-us" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                                About Us
+                            </Link>
+                        </>
+                    )}
                 </nav>
 
                 {/* Desktop Icons */}
@@ -178,9 +183,9 @@ export default function MainHeader() {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-                <div className="md:hidden fixed inset-0 z-50 bg-[#002538] overflow-y-auto w-full min-h-screen">
+                <div className="md:hidden fixed inset-0 z-50 bg-brand-dark overflow-y-auto w-full min-h-screen">
                     {/* Header inside drawer */}
-                    <div className="flex items-center justify-between px-6 py-6 border-b border-[#01344a]">
+                    <div className="flex items-center justify-between px-6 py-6 border-b border-brand-dark-border">
                         <Link href="/" aria-label="Lucru home" onClick={() => setIsMobileMenuOpen(false)}>
                             <Image
                                 src={logo}
@@ -190,16 +195,16 @@ export default function MainHeader() {
                             />
                         </Link>
                         <div className="flex items-center gap-4">
-                            <a href="tel:800LUCRU" className="text-white hover:text-[#5ec4d6] transition-colors">
+                            <a href="tel:800LUCRU" className="text-white hover:text-brand-primary transition-colors">
                                 <PhoneIcon className="h-6 w-6 stroke-1.5" />
                             </a>
-                            <button className="text-white hover:text-[#5ec4d6] transition-colors">
+                            <button className="text-white hover:text-brand-primary transition-colors">
                                 <MapPinIcon className="h-6 w-6 stroke-1.5" />
                             </button>
-                            <button className="text-white hover:text-[#5ec4d6] transition-colors">
+                            <button className="text-white hover:text-brand-primary transition-colors">
                                 <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
                             </button>
-                            <div className="h-6 w-px bg-[#01344a]/40"></div>
+                            <div className="h-6 w-px bg-brand-dark-border/40"></div>
                             <button
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-white hover:text-gray-200 focus:outline-none"
@@ -212,29 +217,33 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-white border-b border-brand-dark-border w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
                             Find Jobs
                         </Link>
-                        <MobileHeaderDropdown label="Hire Talent" onClose={() => setIsMobileMenuOpen(false)} items={[
-                            { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
-                            { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
-                            { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
-                        ]} />
-                        <MobileHeaderDropdown
-                            label="Our Services"
-                            defaultOpen={true}
-                            onClose={() => setIsMobileMenuOpen(false)}
-                            items={[
-                                { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
-                                { label: 'Executive Search', href: '/our-services/executive-search' },
-                                { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
-                                { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
-                                { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
-                            ]}
-                        />
-                        <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-white border-b border-[#01344a] w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
-                            About Us
-                        </Link>
+                        {SHOW_FULL_NAV && (
+                            <>
+                                <MobileHeaderDropdown label="Hire Talent" onClose={() => setIsMobileMenuOpen(false)} items={[
+                                    { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
+                                    { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
+                                    { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
+                                ]} />
+                                <MobileHeaderDropdown
+                                    label="Our Services"
+                                    defaultOpen={true}
+                                    onClose={() => setIsMobileMenuOpen(false)}
+                                    items={[
+                                        { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
+                                        { label: 'Executive Search', href: '/our-services/executive-search' },
+                                        { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
+                                        { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
+                                        { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
+                                    ]}
+                                />
+                                <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-white border-b border-brand-dark-border w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                                    About Us
+                                </Link>
+                            </>
+                        )}
                     </div>
                 </div>
             </Transition>

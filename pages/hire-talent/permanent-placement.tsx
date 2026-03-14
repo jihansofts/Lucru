@@ -112,7 +112,7 @@ export default function PermanentPlacement() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
               <div className="lg:w-5/12" data-aos="fade-up">
-                <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                   Build Lasting <span className="italic font-bold">Teams</span>
                 </h2>
                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">
@@ -126,7 +126,7 @@ export default function PermanentPlacement() {
                 </p>
                 <Link
                   href="/hire-talent/submit-staffing-request"
-                  className="inline-block border border-[#002538] text-[#002538] px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors"
+                  className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                 >
                   REQUEST TALENT
                 </Link>
@@ -146,7 +146,7 @@ export default function PermanentPlacement() {
                       data-aos-delay={index * 80}
                     >
                       <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                      <h5 className="text-[#002538] font-bold text-sm mb-2">{item.title}</h5>
+                      <h5 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h5>
                       <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                     </div>
                   ))}
@@ -160,7 +160,7 @@ export default function PermanentPlacement() {
         <section className="py-20 md:py-28 bg-[#f7f5f2]">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="mb-12" data-aos="fade-up">
-              <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 How It <span className="italic font-bold">Works</span>
               </h2>
               <p className="text-gray-600 text-sm md:text-base max-w-2xl leading-relaxed">
@@ -183,12 +183,12 @@ export default function PermanentPlacement() {
                       height={400}
                       className="object-cover w-full h-70 md:h-80"
                     />
-                    <div className="absolute top-4 left-4 bg-[#002538] text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <div className="absolute top-4 left-4 bg-brand-dark text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       {item.step}
                     </div>
                   </div>
                   <div className="md:w-1/2">
-                    <h3 className="text-2xl md:text-3xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <h3 className="text-2xl md:text-3xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       {item.title}
                     </h3>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -205,7 +205,7 @@ export default function PermanentPlacement() {
         <section className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="mb-12" data-aos="fade-up">
-              <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 Success <span className="italic font-bold">Stories</span>
               </h2>
               <p className="text-gray-600 text-sm md:text-base max-w-2xl leading-relaxed">
@@ -233,7 +233,7 @@ export default function PermanentPlacement() {
                     </div>
                   </div>
                   <div className="px-2 pb-4">
-                    <h3 className="text-xl text-[#002538] font-light mb-1" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <h3 className="text-xl text-brand-dark font-light mb-1" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       {card.title} <span className="font-bold">{card.location}</span>
                     </h3>
                     <p className="text-sm text-gray-500 leading-relaxed">{card.desc}</p>

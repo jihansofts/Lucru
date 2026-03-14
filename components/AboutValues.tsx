@@ -46,11 +46,11 @@ export default function AboutValues() {
         <section className="py-20 md:py-28 bg-white">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <div className="mb-14" data-aos="fade-up">
-                    <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">
+                    <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
                         OUR VALUES
                     </p>
                     <h2
-                        className="text-4xl md:text-5xl text-[#002538] font-light mb-6"
+                        className="text-4xl md:text-5xl text-brand-dark font-light mb-6"
                         style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                     >
                         What Drives <span className="italic font-bold">Us</span>
@@ -69,7 +69,7 @@ export default function AboutValues() {
                             data-aos-delay={index * 80}
                         >
                             <value.icon className="w-10 h-10 text-[#006A80] mb-5 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                            <h4 className="text-[#002538] font-bold text-lg mb-3">{value.title}</h4>
+                            <h4 className="text-brand-dark font-bold text-lg mb-3">{value.title}</h4>
                             <p className="text-gray-500 text-sm leading-relaxed">{value.description}</p>
                         </div>
                     ))}

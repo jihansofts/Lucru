@@ -110,11 +110,11 @@ export default function OurServices() {
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
                             <div className="lg:w-5/12" data-aos="fade-up">
-                                <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">
+                                <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
                                     WHAT WE OFFER
                                 </p>
                                 <h2
-                                    className="text-4xl md:text-5xl text-[#002538] font-light mb-6"
+                                    className="text-4xl md:text-5xl text-brand-dark font-light mb-6"
                                     style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                                 >
                                     End-to-End <span className="italic font-bold">Solutions</span>
@@ -170,12 +170,12 @@ export default function OurServices() {
                 </section>
 
                 {/* Stats Bar */}
-                <section className="py-16 bg-[#002538] mt-12" data-aos="fade-up">
+                <section className="py-16 bg-brand-dark mt-12" data-aos="fade-up">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
                             {stats.map((s, i) => (
                                 <div key={i} className="text-center">
-                                    <div className="text-4xl md:text-5xl font-light text-[#5ec4d6] mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{s.value}</div>
+                                    <div className="text-4xl md:text-5xl font-light text-brand-primary mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{s.value}</div>
                                     <div className="text-xs font-bold tracking-wider text-gray-400 uppercase">{s.label}</div>
                                 </div>
                             ))}
@@ -187,11 +187,11 @@ export default function OurServices() {
                 <section className="py-20 md:py-28">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="mb-14" data-aos="fade-up">
-                            <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">
+                            <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
                                 HOW IT WORKS
                             </p>
                             <h2
-                                className="text-4xl md:text-5xl text-[#002538] font-light"
+                                className="text-4xl md:text-5xl text-brand-dark font-light"
                                 style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                             >
                                 Our <span className="italic font-bold">Process</span>
@@ -206,7 +206,7 @@ export default function OurServices() {
                                     data-aos-delay={i * 100}
                                 >
                                     <div className="text-5xl font-bold text-gray-200 group-hover:text-[#006A80]/20 transition-colors mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{step.num}</div>
-                                    <h4 className="text-[#002538] font-bold text-base mb-3">{step.title}</h4>
+                                    <h4 className="text-brand-dark font-bold text-base mb-3">{step.title}</h4>
                                     <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
                                     {i < processSteps.length - 1 && (
                                         <div className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 z-10">
@@ -228,7 +228,7 @@ export default function OurServices() {
                             fill
                             className="object-cover"
                         />
-                        <div className="absolute inset-0 bg-[#002538]/90" />
+                        <div className="absolute inset-0 bg-brand-dark/90" />
                     </div>
                     <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -249,8 +249,8 @@ export default function OurServices() {
                             <div className="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
                                 {whyChoose.map((item, i) => (
                                     <div key={i} className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-full bg-[#5ec4d6]/20 flex items-center justify-center shrink-0">
-                                            <item.icon className="w-6 h-6 text-[#5ec4d6] stroke-1" />
+                                        <div className="w-12 h-12 rounded-full bg-brand-primary/20 flex items-center justify-center shrink-0">
+                                            <item.icon className="w-6 h-6 text-brand-primary stroke-1" />
                                         </div>
                                         <div>
                                             <h4 className="text-white font-bold text-sm mb-1">{item.title}</h4>

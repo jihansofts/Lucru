@@ -94,7 +94,7 @@ export default function Hero() {
                                     className={`relative flex flex-col justify-end px-4 md:px-10 pb-12 h-full cursor-pointer transition-all duration-700 ease-in-out border-r border-white/10 last:border-r-0 ${
                                         isActive ? 'w-full md:w-1/2 block' : 'w-0 md:w-1/4 hidden md:flex'
                                     } ${
-                                        !isActive ? 'bg-linear-to-t from-blue-900/80 via-blue-900/20 to-transparent hover:from-blue-800/80' : 'bg-linear-to-t from-black/40 to-transparent'
+                                        !isActive ? 'bg-linear-to-t from-brand-dark/80 via-brand-dark/20 to-transparent hover:from-brand-dark-border/80' : 'bg-linear-to-t from-black/40 to-transparent'
                                     }`}
                                     onClick={() => swiperInstance?.slideTo(i)}
                                 >
@@ -105,7 +105,7 @@ export default function Hero() {
                                             {data.link && (
                                                 <a 
                                                     href={data.link}
-                                                    className="mt-2 inline-flex items-center justify-center px-6 py-2.5 border border-white text-white text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-[#002538] transition-colors duration-300 pointer-events-auto"
+                                                    className="mt-2 inline-flex items-center justify-center px-6 py-2.5 border border-white text-white text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-brand-dark transition-colors duration-300 pointer-events-auto"
                                                     onClick={(e) => e.stopPropagation()}
                                                 >
                                                     Discover More

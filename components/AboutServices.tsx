@@ -66,7 +66,7 @@ export default function AboutServices() {
 
                             <div className="relative z-10 px-8 md:px-12 lg:px-16 py-12 md:py-16">
                                 <h3
-                                    className="text-2xl md:text-3xl text-[#002538] font-bold mb-6"
+                                    className="text-2xl md:text-3xl text-brand-dark font-bold mb-6"
                                     style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                                 >
                                     {service.title}
@@ -76,7 +76,7 @@ export default function AboutServices() {
                                 </p>
                                 <Link
                                     href={service.link}
-                                    className="inline-block bg-[#5ec4d6] text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#4db3c5] transition-colors"
+                                    className="inline-block bg-brand-primary text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-primary transition-colors"
                                 >
                                     DISCOVER MORE
                                 </Link>

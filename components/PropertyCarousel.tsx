@@ -42,7 +42,7 @@ export default function PropertyCarousel({
       <div className="md:pl-10 overflow-hidden">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-12 pr-14 ps-6 md:ps-0">
-          <div className="text-2xl md:text-3xl text-[#002538] font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+          <div className="text-2xl md:text-3xl text-brand-dark font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
             {titleNode}
           </div>
 
@@ -51,13 +51,13 @@ export default function PropertyCarousel({
               <div className="flex items-center gap-2">
                  <button 
                   onClick={() => swiperRef.current?.slidePrev()}
-                  className="text-gray-400 hover:text-[#5ec4d6] transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-brand-primary transition-colors cursor-pointer"
                 >
                   <ChevronLeftIcon className="w-8 h-8 stroke-1" />
                 </button>
                 <button 
                   onClick={() => swiperRef.current?.slideNext()}
-                  className="text-gray-400 hover:text-[#5ec4d6] transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-brand-primary transition-colors cursor-pointer"
                 >
                   <ChevronRightIcon className="w-8 h-8 stroke-1" />
                 </button>

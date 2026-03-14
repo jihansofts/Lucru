@@ -13,11 +13,11 @@ export default function AboutIntro() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-20 md:py-28">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-24" data-aos="fade-up">
                     <div className="lg:w-5/12">
-                        <p className="text-xs font-bold tracking-[0.25em] text-[#5ec4d6] uppercase mb-4">
+                        <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
                             WHO WE ARE
                         </p>
                         <h2
-                            className="text-4xl md:text-[3.2rem] leading-tight text-[#5ec4d6] font-light"
+                            className="text-4xl md:text-[3.2rem] leading-tight text-brand-primary font-light"
                             style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                         >
                             A promise of <span className="italic">better careers</span>
@@ -41,7 +41,7 @@ export default function AboutIntro() {
                         {stats.map((stat, i) => (
                             <div key={i} className="flex flex-col md:flex-row items-start md:items-baseline gap-1 md:gap-3">
                                 <span
-                                    className="text-5xl md:text-6xl font-light text-[#5ec4d6]"
+                                    className="text-5xl md:text-6xl font-light text-brand-primary"
                                     style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                                 >
                                     {stat.value}

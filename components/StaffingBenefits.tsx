@@ -17,7 +17,7 @@ export default function StaffingBenefits() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
                     <div className="lg:w-5/12" data-aos="fade-up">
-                        <h2 className="text-4xl md:text-5xl text-[#002538] font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                        <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                             Why Choose <span className="italic font-bold">Lucru</span>
                         </h2>
                         <h3 className="text-lg md:text-xl text-[#006A80] font-semibold mb-6">
@@ -31,7 +31,7 @@ export default function StaffingBenefits() {
                         </p>
                         <Link
                             href="/hire-talent/submit-staffing-request"
-                            className="inline-block border border-[#002538] text-[#002538] px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-[#002538] hover:text-white transition-colors"
+                            className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                         >
                             SUBMIT REQUEST
                         </Link>
@@ -50,7 +50,7 @@ export default function StaffingBenefits() {
                                     data-aos-delay={index * 80}
                                 >
                                     <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                                    <h5 className="text-[#002538] font-bold text-sm mb-2">{item.label}</h5>
+                                    <h5 className="text-brand-dark font-bold text-sm mb-2">{item.label}</h5>
                                     <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                                 </div>
                             ))}
