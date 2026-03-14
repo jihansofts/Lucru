@@ -9,9 +9,10 @@
   --color-brand-primary: #44A9A8;
   --color-brand-secondary: #2B6968;
   --color-brand-accent: #FBB03B;
-  --color-brand-orange: #F15A24;
+  --color-brand-orange: #FE871C;
+  --color-brand-orange-secondary: #FE871C;
   --color-brand-dark: #120D0A;
-  --color-brand-dark-border: #231C17;
+  --color-brand-dark-border: #2F9BA0;
 }
 
 :root {

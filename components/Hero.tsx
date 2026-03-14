@@ -63,7 +63,7 @@ export default function Hero() {
                                 className="object-cover w-full h-full"
                             />
                             {/* Overlay Gradient */}
-                            <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/30 to-black/80" />
+                            <div className="absolute inset-0 bg-linear-to-r from-[#FE871C]/10 via-[#FE871C]/20 to-[#FE871C]/10" />
                         </div>
                     </SwiperSlide>
                 ))}

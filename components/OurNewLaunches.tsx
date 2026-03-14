@@ -59,7 +59,7 @@ export default function OurNewLaunches() {
       titleNode={titleNode}
       headerActionNode={headerAction}
       cards={newLaunchesData}
-      hoverBgColorClassName="bg-[#173a3a]/95" // A different color for the new component as requested
+      hoverBgColorClassName="bg-[#2F9BA0]/95" // A different color for the new component as requested
       navigationPosition="header"
       heightClassName="h-[470px] md:h-[618px]"
     />

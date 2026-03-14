@@ -217,7 +217,7 @@ export default function WorldOfLucru() {
       titleNode={titleNode}
       headerActionNode={headerAction}
       cards={filteredCards}
-      hoverBgColorClassName="bg-[#001c29]/95"
+      hoverBgColorClassName="bg-[#2F9BA0]/95"
       navigationPosition="sides"
     />
   );
