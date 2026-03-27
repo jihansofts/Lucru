@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import TopHeader from "@/components/TopHeader";
 import MainHeader from "@/components/MainHeader";
 import { Montserrat } from "next/font/google";
 import { useEffect } from "react";
@@ -25,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className={`${montserrat.variable} font-sans`}>
-      <TopHeader />
+      {/* <TopHeader /> */}
       <MainHeader />
       <Component {...pageProps} />
       <FooterBottomBar />

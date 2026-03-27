@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
-import { ChevronDownIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon, PhoneIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon, XMarkIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { CgMenuGridR } from 'react-icons/cg';
 import logo from '@/public/logo.png';
 
@@ -14,7 +14,7 @@ interface DropdownItem {
 function HeaderDropdown({ label, items, href }: { label: string; items: DropdownItem[]; href?: string }) {
     return (
         <div className="relative group flex items-center h-full cursor-pointer">
-            <Link href={href || '#'} className="inline-flex items-center justify-center gap-x-1 text-sm font-bold tracking-tight text-white group-hover:text-gray-200 h-full py-4">
+            <Link href={href || '#'} className="inline-flex items-center justify-center gap-x-1 text-sm font-bold tracking-tight text-[#5A4125] group-hover:text-brand-dark-border h-full py-4">
                 {label}
                 <ChevronDownIcon className="h-4 w-4 stroke-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
             </Link>
@@ -52,18 +52,18 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false, onClose }: { 
         <div className="w-full">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${isOpen ? 'bg-brand-primary text-white' : 'text-white border-b border-brand-dark-border'
+                className={`w-full flex items-center justify-between px-6 py-4 text-sm font-bold transition-colors ${isOpen ? 'bg-[#5A4125] text-[#F2EDE7]' : 'text-[#5A4125] border-b border-[#5A4125]/20 hover:bg-[#5A4125]/5'
                     }`}
             >
                 {label}
-                <ChevronDownIcon className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-white' : ''}`} />
+                <ChevronDownIcon className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-[#F2EDE7]' : ''}`} />
             </button>
             {isOpen && (
-                <div className="flex flex-col bg-brand-dark">
+                <div className="flex flex-col bg-[#F8F5F1]">
                     {items.map(item => (
-                        <Link key={item.label} href={item.href} onClick={onClose} className="flex items-center gap-3 px-8 py-4 border-b border-brand-dark-border group">
-                            <ChevronRightIcon className="h-4 w-4 text-brand-primary group-hover:translate-x-1 transition-transform" />
-                            <span className="text-brand-primary text-xs font-bold">{item.label}</span>
+                        <Link key={item.label} href={item.href} onClick={onClose} className="flex items-center gap-3 px-8 py-4 border-b border-[#5A4125]/15 group">
+                            <ChevronRightIcon className="h-4 w-4 text-brand-dark-border group-hover:translate-x-1 transition-transform" />
+                            <span className="text-[#5A4125] text-xs font-bold group-hover:text-brand-dark-border transition-colors">{item.label}</span>
                         </Link>
                     ))}
                 </div>
@@ -73,34 +73,11 @@ function MobileHeaderDropdown({ label, items, defaultOpen = false, onClose }: { 
 }
 
 export default function MainHeader() {
-    const SHOW_FULL_NAV = false;
+    const SHOW_FULL_NAV = true;
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isTopHeaderVisible, setIsTopHeaderVisible] = useState(true);
-
-    useEffect(() => {
-        const TOP_HEADER_HEIGHT = 52;
-
-        const updateHeaderOffset = () => {
-            if (window.innerWidth < 768) {
-                setIsTopHeaderVisible(false);
-                return;
-            }
-
-            setIsTopHeaderVisible(window.scrollY < TOP_HEADER_HEIGHT);
-        };
-
-        updateHeaderOffset();
-        window.addEventListener('scroll', updateHeaderOffset, { passive: true });
-        window.addEventListener('resize', updateHeaderOffset);
-
-        return () => {
-            window.removeEventListener('scroll', updateHeaderOffset);
-            window.removeEventListener('resize', updateHeaderOffset);
-        };
-    }, []);
 
     return (
-        <header className={`fixed inset-x-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-white bg-linear-to-b from-[#FE871C]/30 to-[#FE871C]/0 transition-all duration-300 ${isTopHeaderVisible ? 'top-0 md:top-13' : 'top-0'}`}>
+        <header className="fixed inset-x-0 top-0 z-40 flex h-16 md:h-18 items-center justify-between px-4 md:px-10 text-[#5A4125] bg-[#F2EDE7] transition-all duration-300">
             {/* Logo */}
             <div className="shrink-0 pt-2 z-50">
                 <Link href="/" className="flex items-center" aria-label="Lucru home">
@@ -108,26 +85,16 @@ export default function MainHeader() {
                         src={logo}
                         alt="Lucru"
                         priority
-                        className="h-10 md:h-16 w-auto"
+                        className="h-10 md:h-12 w-auto"
                     />
                 </Link>
             </div>
 
             {/* Mobile Menu Button - Shown only on Mobile */}
-            <div className="md:hidden flex items-center gap-4 pt-2 z-50">
-                <button className="text-white hover:text-gray-200" aria-label="Call us">
-                    <PhoneIcon className="h-6 w-6 stroke-1.5" />
-                </button>
-                <button className="text-white hover:text-gray-200" aria-label="Location">
-                    <MapPinIcon className="h-6 w-6 stroke-1.5" />
-                </button>
-                <button className="text-white hover:text-gray-200" aria-label="Search">
-                    <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
-                </button>
-                <div className="h-6 w-px bg-white/40"></div>
+            <div className="md:hidden flex items-center pt-2 z-50">
                 <button
                     onClick={() => setIsMobileMenuOpen(true)}
-                    className="text-white hover:text-gray-200 focus:outline-none"
+                    className="text-[#5A4125] hover:text-brand-dark-border focus:outline-none"
                     aria-label="Open menu"
                 >
                     <CgMenuGridR className="h-7 w-7" />
@@ -137,10 +104,15 @@ export default function MainHeader() {
             {/* Desktop Navigation & Icons Container (Right Aligned) */}
             <div className="hidden md:flex items-center space-x-6 h-full">
                 {/* Main Navigation (Desktop) */}
-                <nav className="flex items-center space-x-8">
-                    <Link href="/find-jobs" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                <nav className="flex items-center space-x-6">
+                    <Link href="/find-jobs" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                         Find Jobs
                     </Link>
+                    <HeaderDropdown label="For Companies" href="#" items={[
+                        { label: 'Agency Services', href: '#' },
+                        { label: 'HR Consulting', href: '#' },
+                        { label: 'Event & Logistics Support', href: '#' }
+                    ]} />
                     {SHOW_FULL_NAV && (
                         <>
                             <HeaderDropdown label="Hire Talent" href="/hire-talent" items={[
@@ -155,22 +127,29 @@ export default function MainHeader() {
                                 { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
                                 { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
                             ]} />
-                            <Link href="/about-us" className="font-bold text-sm tracking-tight text-white hover:text-gray-200">
+                        </>
+                    )}
+                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Careers
+                    </Link>
+                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Journeys of Success
+                    </Link>
+                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Submit Inquiry
+                    </Link>
+                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Contact Us
+                    </Link>
+                    {SHOW_FULL_NAV && (
+                        <>
+                            <Link href="/about-us" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                                 About Us
                             </Link>
                         </>
                     )}
                 </nav>
 
-                {/* Desktop Icons */}
-                <div className="flex items-center gap-6 pl-6 border-l border-white/40">
-                    <button className="text-white hover:text-gray-200 flex items-center justify-center">
-                        <MapPinIcon className="h-6 w-6 stroke-2" />
-                    </button>
-                    <button className="text-white hover:text-gray-200 flex items-center justify-center">
-                        <MagnifyingGlassIcon className="h-6 w-6 stroke-2" />
-                    </button>
-                </div>
             </div>
 
             {/* Mobile Full Screen Menu Drawer */}
@@ -183,9 +162,9 @@ export default function MainHeader() {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-                <div className="md:hidden fixed inset-0 z-50 bg-brand-dark overflow-y-auto w-full min-h-screen">
+                <div className="md:hidden fixed inset-0 z-50 bg-[#F2EDE7] overflow-y-auto w-full min-h-screen text-[#5A4125]">
                     {/* Header inside drawer */}
-                    <div className="flex items-center justify-between px-6 py-6 border-b border-brand-dark-border">
+                    <div className="flex items-center justify-between px-6 py-6 border-b border-[#5A4125]/20">
                         <Link href="/" aria-label="Lucru home" onClick={() => setIsMobileMenuOpen(false)}>
                             <Image
                                 src={logo}
@@ -195,19 +174,9 @@ export default function MainHeader() {
                             />
                         </Link>
                         <div className="flex items-center gap-4">
-                            <a href="tel:800LUCRU" className="text-white hover:text-brand-primary transition-colors">
-                                <PhoneIcon className="h-6 w-6 stroke-1.5" />
-                            </a>
-                            <button className="text-white hover:text-brand-primary transition-colors">
-                                <MapPinIcon className="h-6 w-6 stroke-1.5" />
-                            </button>
-                            <button className="text-white hover:text-brand-primary transition-colors">
-                                <MagnifyingGlassIcon className="h-6 w-6 stroke-1.5" />
-                            </button>
-                            <div className="h-6 w-px bg-brand-dark-border/40"></div>
                             <button
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-white hover:text-gray-200 focus:outline-none"
+                                className="text-[#5A4125] hover:text-brand-dark-border focus:outline-none"
                                 aria-label="Close menu"
                             >
                                 <XMarkIcon className="h-8 w-8 stroke-1" />
@@ -217,9 +186,18 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-white border-b border-brand-dark-border w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                             Find Jobs
                         </Link>
+                        <MobileHeaderDropdown
+                            label="For Companies"
+                            onClose={() => setIsMobileMenuOpen(false)}
+                            items={[
+                                { label: 'Agency Services', href: '#' },
+                                { label: 'HR Consulting', href: '#' },
+                                { label: 'Event & Logistics Support', href: '#' }
+                            ]}
+                        />
                         {SHOW_FULL_NAV && (
                             <>
                                 <MobileHeaderDropdown label="Hire Talent" onClose={() => setIsMobileMenuOpen(false)} items={[
@@ -239,10 +217,24 @@ export default function MainHeader() {
                                         { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
                                     ]}
                                 />
-                                <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-white border-b border-brand-dark-border w-full text-left" onClick={() => setIsMobileMenuOpen(false)}>
-                                    About Us
-                                </Link>
                             </>
+                        )}
+                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Careers
+                        </Link>
+                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Journeys of Success
+                        </Link>
+                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Submit Inquiry
+                        </Link>
+                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Contact Us
+                        </Link>
+                        {SHOW_FULL_NAV && (
+                            <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                                About Us
+                            </Link>
                         )}
                     </div>
                 </div>
