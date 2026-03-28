@@ -134,7 +134,7 @@ export default function ManpowerProvision() {
                     <Image
                         src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
                         alt="Workforce deployment"
-                        fill
+                        fill sizes="100vw"
                         className="object-cover"
                     />
                     <div className="absolute inset-0 bg-linear-to-r from-brand-dark/90 via-brand-dark/50 to-transparent" />
@@ -186,7 +186,7 @@ export default function ManpowerProvision() {
                             {relatedServices.map((item, i) => (
                                 <Link key={i} href={item.href} className="group block" data-aos="fade-up" data-aos-delay={i * 100}>
                                     <div className="relative w-full aspect-video overflow-hidden mb-4">
-                                        <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                                        <Image src={item.image} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                                     </div>
                                     <div className="flex items-center justify-between">
