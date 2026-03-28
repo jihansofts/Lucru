@@ -15,15 +15,15 @@ const MobileAppSection = () => {
           </h2>
 
           <p className="hidden md:block text-brand-navy text-sm md:text-base lg:text-lg mb-4 md:mb-6 font-medium leading-relaxed">
-            Designed for ease and elegance, the Lucru Jobs App puts international career opportunities at your fingertips, anytime, anywhere. From discovering new openings to direct employer interactions, it&apos;s your passport to global success.
+            Designed for ease and transparency, the Lucru Jobs App puts your overseas career processing at your fingertips. From submitting documents securely to tracking your visa status, it&apos;s your personalized portal to global success.
           </p>
 
           <ul className="md:block hidden mb-5 md:mb-6 space-y-2 text-left">
             {[
-              "Browse daily updated job listings",
-              "Apply with a single tap",
-              "Track your application status",
-              "Schedule interviews with employers"
+              "Submit your profile and documents securely",
+              "Track your visa and documentation status",
+              "Communicate directly with our placement officers",
+              "Get real-time updates on latest vacancies"
             ].map((item, index) => (
               <li key={index} className="flex items-center text-brand-navy font-medium text-xs sm:text-sm md:text-base">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-navy mr-2 md:mr-3 shrink-0"></span>

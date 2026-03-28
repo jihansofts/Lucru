@@ -19,7 +19,7 @@ const slidesData = [
         subtitle: "Professionals",
         description: "Opportunities across leading GCC healthcare groups...",
         image: "https://images.pexels.com/photos/4006979/pexels-photo-4006979.jpeg",
-        link: "/jobs/medical"
+        link: "/vacancies/medical"
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const slidesData = [
         subtitle: "& Construction",
         description: "Be part of the world's most ambitious mega-projects.",
         image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg",
-        link: "/jobs/engineering"
+        link: "/vacancies/engineering"
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ const slidesData = [
         subtitle: "& Catering",
         description: "Experience luxury roles in top 5-star hotels globally.",
         image: "https://images.pexels.com/photos/3770091/pexels-photo-3770091.jpeg",
-        link: "/jobs/hospitality"
+        link: "/vacancies/hospitality"
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ const slidesData = [
         subtitle: "Technology",
         description: "Lead digital transformation initiatives worldwide.",
         image: "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg",
-        link: "/jobs/technology"
+        link: "/vacancies/technology"
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const slidesData = [
         subtitle: "Sector",
         description: "High-yield onshore and offshore technical roles.",
         image: "https://images.pexels.com/photos/5884386/pexels-photo-5884386.jpeg",
-        link: "/jobs/oil-gas"
+        link: "/vacancies/oil-gas"
     }
 ];
 

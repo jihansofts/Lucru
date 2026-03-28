@@ -14,7 +14,7 @@ const jobsData = [
     subtitle: "Saudi Arabia",
     description: "Top-tier hospitals in Riyadh are urgently seeking experienced registered nurses with multiple specialties. Unmatched benefits and tax-free salaries.",
     image: "https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg",
-    link: "/jobs/nurses-ksa",
+    link: "/vacancies/nurses-ksa",
     slug: "nurses-ksa",
     category: "Healthcare",
     salary: "Tax-Free + Allowances",
@@ -26,7 +26,7 @@ const jobsData = [
     subtitle: "UAE",
     description: "Leading construction firms in Dubai and Abu Dhabi are hiring qualified site engineers, project managers, and QA/QC specialists for mega-projects.",
     image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
-    link: "/jobs/civil-uae",
+    link: "/vacancies/civil-uae",
     slug: "civil-uae",
     category: "Construction & Engineering",
     salary: "Competitive per Market Standard",
@@ -38,7 +38,7 @@ const jobsData = [
     subtitle: "Qatar",
     description: "Excellent opportunities for senior IT professionals to lead digital transformation projects across government and private sectors in Doha.",
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-    link: "/jobs/it-qatar",
+    link: "/vacancies/it-qatar",
     slug: "it-qatar",
     category: "Technology",
     salary: "High Basic + Housing",
@@ -50,7 +50,7 @@ const jobsData = [
     subtitle: "Oman",
     description: "Immediate openings for certified 6G welders and fabricators for major oil and gas infrastructure developments spanning the Sultanate.",
     image: "https://images.pexels.com/photos/3186949/pexels-photo-3186949.jpeg",
-    link: "/jobs/welders-oman",
+    link: "/vacancies/welders-oman",
     slug: "welders-oman",
     category: "Oil & Energy",
     salary: "Base + Overtime + Camp",
@@ -62,7 +62,7 @@ const jobsData = [
     subtitle: "Bahrain",
     description: "5-star luxury resorts are hiring experienced hotel managers, executive chefs, and front-of-house directors to elevate guest experiences.",
     image: "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
-    link: "/jobs/hospitality-bahrain",
+    link: "/vacancies/hospitality-bahrain",
     slug: "hospitality-bahrain",
     category: "Hospitality & Tourism",
     salary: "Base + Benefits Package",
@@ -74,7 +74,7 @@ const jobsData = [
     subtitle: "Kuwait",
     description: "Leading logistics and transport companies require licensed heavy vehicle drivers for cross-border and regional distribution networks.",
     image: "https://images.pexels.com/photos/5961982/pexels-photo-5961982.jpeg",
-    link: "/jobs/drivers-kuwait",
+    link: "/vacancies/drivers-kuwait",
     slug: "drivers-kuwait",
     category: "Transport & Logistics",
     salary: "Standard + Performance Bonus",
@@ -86,7 +86,7 @@ const jobsData = [
     subtitle: "UK",
     description: "Tier-2 sponsorship available for qualified financial analysts, auditors, and accountants joining top global firms in London.",
     image: "https://images.pexels.com/photos/7567556/pexels-photo-7567556.jpeg",
-    link: "/jobs/finance-uk",
+    link: "/vacancies/finance-uk",
     slug: "finance-uk",
     category: "Finance",
     salary: "Competitive + Visa Sponsorship",
@@ -98,7 +98,7 @@ const jobsData = [
     subtitle: "UAE",
     description: "Facility management companies are extensively hiring certified HVAC technicians and maintenance supervisors for commercial properties.",
     image: "https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg",
-    link: "/jobs/hvac-uae",
+    link: "/vacancies/hvac-uae",
     slug: "hvac-uae",
     category: "Facilities Management",
     salary: "Market Standard",
@@ -119,8 +119,8 @@ export default function JobDetails() {
         <div className="text-center">
           <h1 className="text-4xl text-brand-dark font-bold mb-4">Job Not Found</h1>
           <p className="text-gray-500 mb-6">The position you are looking for does not exist or has been filled.</p>
-          <Link href="/find-jobs" className="bg-brand-primary text-white px-6 py-3 font-bold uppercase tracking-widest text-xs hover:bg-brand-secondary transition-colors">
-            Back to Jobs
+          <Link href="/vacancies" className="bg-brand-primary text-white px-6 py-3 font-bold uppercase tracking-widest text-xs hover:bg-brand-secondary transition-colors">
+            Back to Vacancies
           </Link>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function JobDetails() {
           image={job.image}
           breadcrumbs={[
             { label: 'Home', href: '/' },
-            { label: 'Find Jobs', href: '/find-jobs' },
+            { label: 'Vacancies', href: '/vacancies' },
             { label: job.title },
           ]}
         />

@@ -12,23 +12,23 @@ import 'swiper/css/effect-fade';
 const slidesData = [
     {
         id: 1,
-        surtitle: "Connecting Global Talent",
-        title: "Your Premier Recruitment Partner",
+        surtitle: "Your Trusted Pathway to Work Abroad",
+        title: "Expert Guidance for Overseas Careers",
         position: "left",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4",
-        link: "/find-jobs"
+        link: "/vacancies"
     },
     {
         id: 2,
-        surtitle: "Unlock Global Opportunities...",
-        title: "Overseas Careers Await",
+        surtitle: "Secure Placements & Visa Support",
+        title: "We Handle Every Detail for You",
         position: "left",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     },
     {
         id: 3,
-        surtitle: "Expert Manpower Solutions",
-        title: "We Supply The Best Workforces",
+        surtitle: "Empowering South Asian Professionals",
+        title: "Connecting You to Global Employers",
         position: "right",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4",
         link: "/hire-talent"
@@ -108,7 +108,7 @@ export default function Hero() {
                                                     className="mt-2 inline-flex items-center justify-center px-6 py-2.5 border border-white text-white text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-brand-dark transition-colors duration-300 pointer-events-auto"
                                                     onClick={(e) => e.stopPropagation()}
                                                 >
-                                                    Discover More
+                                                    Explore Opportunities
                                                 </a>
                                             )}
                                         </div>

@@ -13,19 +13,19 @@ const slidesData = [
     id: 1,
     main: {
       id: 'main-1',
-      title: "Inspiring the best of living",
+      title: "Thorough Assessment & Matching",
       image: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
       videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     },
     topRight: {
       id: 'tr-1',
-      title: "Celebrate life's special moments",
+      title: "Hassle-free Visa & Documentation",
       image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
       videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     },
     bottomRight: {
       id: 'br-1',
-      title: "Curated experiences just for you",
+      title: "Pre-Departure & Deployment",
       image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
       videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     }
@@ -52,7 +52,7 @@ export default function LucruWayOfLife() {
     <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
       <div className="md:px-20 px-4 md:pl-20 mb-8 md:mb-8 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-425">
         <h2 className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-brand-dark font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-          Your <span className="italic">Career</span> Journey
+          The <span className="italic">Lucru</span> Process
         </h2>
         {/* Navigation Arrows */}
         <div className="hidden md:flex items-center gap-4 mt-4 md:mt-0">

@@ -7,7 +7,7 @@ const cardsData: CardData[] = [
     title: "SAUDI",
     subtitle: "ARABIA",
     image: "https://images.pexels.com/photos/12404055/pexels-photo-12404055.jpeg",
-    description: "Mega projects and healthcare facilities hiring thousands of skilled professionals.",
+    description: "Mega projects hiring professionals from South Asia. Full documentation handled.",
     link: "/destinations/ksa",
     status: "URGENT"
   },
@@ -16,7 +16,7 @@ const cardsData: CardData[] = [
     title: "UNITED ARAB",
     subtitle: "EMIRATES",
     image: "https://images.pexels.com/photos/8986048/pexels-photo-8986048.jpeg",
-    description: "Leading destination for hospitality, engineering, and service sector jobs.",
+    description: "We streamline work permits and placements for hospitality and engineering roles.",
     link: "/destinations/uae",
     status: "ACTIVE"
   },
@@ -25,7 +25,7 @@ const cardsData: CardData[] = [
     title: "STATE OF",
     subtitle: "QATAR",
     image: "https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg",
-    description: "Lucrative opportunities in oil & gas, construction, and infrastructure development.",
+    description: "Pre-approved visas for lucrative opportunities in oil & gas and construction.",
     link: "/destinations/qatar",
     status: "URGENT"
   },
@@ -61,7 +61,7 @@ const cardsData: CardData[] = [
     title: "UNITED",
     subtitle: "KINGDOM",
     image: "https://images.pexels.com/photos/7345465/pexels-photo-7345465.jpeg",
-    description: "Tier-2 sponsorship roles available for registered nurses and senior carers.",
+    description: "Tier-2 sponsorship placements seamlessly managed by our expert agents.",
     link: "/destinations/uk",
     status: "URGENT"
   },

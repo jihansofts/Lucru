@@ -8,8 +8,8 @@ const newLaunchesData: CardData[] = [
     title: "Registered Nurses",
     subtitle: "Saudi Arabia",
     image: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg",
-    description: "Urgently needed experienced nurses for top-tier hospitals in Riyadh.",
-    link: "/jobs/nursing",
+    description: "Approved employer placements ready. Full visa assistance provided.",
+    link: "/vacancies/nursing",
     status: "URGENT"
   },
   {
@@ -17,8 +17,8 @@ const newLaunchesData: CardData[] = [
     title: "Civil Engineers",
     subtitle: "UAE",
     image: "https://images.pexels.com/photos/5584052/pexels-photo-5584052.jpeg",
-    description: "Leading construction firms seeking qualified site engineers and project managers.",
-    link: "/jobs/engineering",
+    description: "Ready visa for qualified site engineers. We handle your documentation securely.",
+    link: "/vacancies/engineering",
     status: "URGENT"
   },
   {
@@ -26,8 +26,8 @@ const newLaunchesData: CardData[] = [
     title: "Skilled Welders",
     subtitle: "Qatar",
     image: "https://images.pexels.com/photos/35136696/pexels-photo-35136696.jpeg",
-    description: "Immediate openings for certified 6G welders and fabricators for oil & gas projects.",
-    link: "/jobs/welding",
+    description: "Direct interviews with top employers. Comprehensive flight & ticketing support.",
+    link: "/vacancies/welding",
     status: "URGENT"
   },
   {
@@ -35,22 +35,22 @@ const newLaunchesData: CardData[] = [
     title: "Hospitality Staff",
     subtitle: "Kuwait",
     image: "https://images.pexels.com/photos/19814054/pexels-photo-19814054.jpeg",
-    description: "5-star hotels hiring front desk executives, chefs, and housekeeping supervisors.",
-    link: "/jobs/hospitality",
+    description: "5-star hotels hiring and pre-approved visas available for immediate processing.",
+    link: "/vacancies/hospitality",
     status: "URGENT"
   }
 ];
 
 export default function OurNewLaunches() {
   const headerAction = (
-    <Link href="/find-jobs" className="border border-brand-dark text-brand-dark px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
-      VIEW ALL JOBS
+    <Link href="/vacancies" className="border border-brand-dark text-brand-dark px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
+      VIEW ALL VACANCIES
     </Link>
   );
 
   const titleNode = (
     <>
-      <span className="italic">Urgent</span> Openings
+      <span className="italic">Latest</span> Vacancies
     </>
   );
 

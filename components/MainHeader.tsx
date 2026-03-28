@@ -105,8 +105,8 @@ export default function MainHeader() {
             <div className="hidden md:flex items-center space-x-6 h-full">
                 {/* Main Navigation (Desktop) */}
                 <nav className="flex items-center space-x-6">
-                    <Link href="/find-jobs" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Find Jobs
+                    <Link href="/vacancies" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Vacancies
                     </Link>
                     <HeaderDropdown label="For Companies" href="#" items={[
                         { label: 'Agency Services', href: '#' },
@@ -186,8 +186,8 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="/find-jobs" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Find Jobs
+                        <Link href="/vacancies" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Vacancies
                         </Link>
                         <MobileHeaderDropdown
                             label="For Companies"
