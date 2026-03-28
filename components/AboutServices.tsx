@@ -41,7 +41,7 @@ export default function AboutServices() {
                 return (
                     <div
                         key={index}
-                        className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} min-h-[400px] md:min-h-[500px]`}
+                        className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} min-h-100 md:min-h-125`}
                         data-aos="fade-up"
                     >
                         {/* Image Half */}
@@ -49,7 +49,7 @@ export default function AboutServices() {
                             <Image
                                 src={service.image}
                                 alt={service.title}
-                                fill
+                                fill sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
                             />
                         </div>

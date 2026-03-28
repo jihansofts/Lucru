@@ -89,7 +89,7 @@ export default function PermanentPlacement() {
             <Image
               src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
               alt="Permanent placement"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent" />
@@ -225,7 +225,7 @@ export default function PermanentPlacement() {
                     <Image
                       src={card.image}
                       alt={card.title}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute bottom-3 left-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">

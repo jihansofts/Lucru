@@ -9,7 +9,7 @@ export default function StaffingCTA() {
                 <Image
                     src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg"
                     alt="Team collaboration"
-                    fill
+                    fill sizes="100vw"
                     className="object-cover"
                 />
                 <div className="absolute inset-0 bg-brand-dark/85" />

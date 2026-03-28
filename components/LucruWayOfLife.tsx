@@ -100,7 +100,7 @@ export default function LucruWayOfLife() {
                     <video src={slide.main.videoUrl} autoPlay muted loop playsInline className="w-full h-full object-cover" />
                   ) : (
                     <>
-                      <Image src={slide.main.image} alt={slide.main.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <Image src={slide.main.image} alt={slide.main.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                       <div className="absolute inset-0 bg-linear-to-t from-brand-dark/80 via-brand-dark/20 to-transparent" />
                       <div className="absolute bottom-12 left-12 max-w-[70%] z-10">
                         <h3 className="text-white text-[28px] md:text-3xl font-extrabold font-sans tracking-wide leading-tight">
@@ -132,7 +132,7 @@ export default function LucruWayOfLife() {
                         <video src={slide.topRight.videoUrl} autoPlay muted loop playsInline className="w-full h-full object-cover" />
                       ) : (
                         <div className="w-full h-full relative">
-                          <Image src={slide.topRight.image} alt="Thumbnail" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                          <Image src={slide.topRight.image} alt="Thumbnail" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                           <div className="absolute inset-0 bg-black/10 transition-colors group-hover:bg-black/0" />
                           <div className="absolute bottom-6 right-6 z-20">
                             <PlayButtonIcon />
@@ -150,7 +150,7 @@ export default function LucruWayOfLife() {
                         <video src={slide.bottomRight.videoUrl} autoPlay muted loop playsInline className="w-full h-full object-cover" />
                       ) : (
                         <div className="w-full h-full relative">
-                          <Image src={slide.bottomRight.image} alt="Thumbnail" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                          <Image src={slide.bottomRight.image} alt="Thumbnail" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                           <div className="absolute inset-0 bg-black/10 transition-colors group-hover:bg-black/0" />
                           <div className="absolute bottom-6 right-6 z-20">
                             <PlayButtonIcon />

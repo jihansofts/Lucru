@@ -116,7 +116,7 @@ export default function ManpowerProvision() {
                             {industries.map((item, i) => (
                                 <div key={i} className="bg-white group border border-transparent hover:border-gray-200 transition-all duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay={i * 100}>
                                     <div className="relative w-full aspect-4/3 overflow-hidden">
-                                        <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                                        <Image src={item.image} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                                         <div className="absolute bottom-3 right-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">{item.positions} placed</div>
                                     </div>
                                     <div className="p-6">

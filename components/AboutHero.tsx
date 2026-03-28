@@ -9,7 +9,7 @@ export default function AboutHero() {
                 <Image
                     src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg"
                     alt="About Lucru"
-                    fill
+                    fill sizes="100vw"
                     className="object-cover"
                     priority
                 />

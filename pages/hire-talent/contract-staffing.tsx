@@ -77,7 +77,7 @@ export default function ContractStaffing() {
             <Image
               src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
               alt="Contract staffing"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent" />
@@ -169,6 +169,7 @@ export default function ContractStaffing() {
                       src={item.image}
                       alt={item.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute bottom-3 right-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">

@@ -31,6 +31,7 @@ export default function ServicesHero({ title, titleAccent, subtitle, image, brea
                     src={image}
                     alt={title}
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />

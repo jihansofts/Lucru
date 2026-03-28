@@ -97,7 +97,7 @@ export default function SubmitStaffingRequest() {
             <Image
               src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg"
               alt="Submit staffing request"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent" />
