@@ -8,28 +8,28 @@ const services = [
         title: 'Manpower Recruitment',
         description: 'Lucru\'s core manpower recruitment service spans across healthcare, engineering, construction, hospitality, IT, logistics, and more. We source, screen, and deploy qualified professionals from our global talent pool of 50,000+ pre-vetted candidates, ensuring every placement meets the highest standards of quality and compliance.',
         image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
-        link: '/hire-talent',
+        link: '/hire-manpower',
     },
     {
         watermark: 'Leaders for a changing world',
         title: 'Executive Search',
         description: 'For senior and C-suite roles, our executive search division employs a targeted, confidential approach. We identify and engage top-tier leaders through our extensive professional networks, rigorous assessment methodologies, and deep industry expertise — delivering candidates who drive transformational growth.',
         image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
-        link: '/hire-talent/permanent-placement',
+        link: '/hire-manpower/direct-recruitment',
     },
     {
         watermark: 'Flexibility meets excellence',
         title: 'Contract Staffing',
         description: 'When projects demand rapid workforce scaling, our contract staffing solutions deliver. From short-term assignments to multi-year engagements, we provide fully managed contract professionals — handling payroll, compliance, performance monitoring, and contract extensions so you can focus on your objectives.',
         image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg',
-        link: '/hire-talent/contract-staffing',
+        link: '/hire-manpower/bulk-deployments',
     },
     {
         watermark: 'Prepared from day one',
         title: 'Pre-Departure Training',
         description: 'Every candidate deployed through Lucru undergoes comprehensive pre-departure orientation covering cultural acclimatisation, workplace safety, rights and responsibilities, language skills, and destination-specific protocols. This ensures a smooth transition and immediate productivity from the very first day on the job.',
         image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg',
-        link: '/hire-talent/submit-staffing-request',
+        link: '/hire-manpower/submit-manpower-request',
     },
 ];
 

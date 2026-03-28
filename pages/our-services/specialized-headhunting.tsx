@@ -60,9 +60,9 @@ const metrics = [
 ];
 
 const relatedServices = [
-    { title: 'Manpower Provision', href: '/our-services/manpower-provision', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
-    { title: 'Payroll & Compliance', href: '/our-services/payroll-compliance', image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg' },
-    { title: 'Pre-Departure Training', href: '/our-services/pre-departure-training', image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg' },
+    { title: 'Manpower Provision', href: '/our-services/overseas-recruitment', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
+    { title: 'Payroll & Compliance', href: '/our-services/document-attestation', image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg' },
+    { title: 'Pre-Departure Training', href: '/our-services/pre-departure-orientation', image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg' },
 ];
 
 export default function ExecutiveSearch() {
@@ -101,7 +101,7 @@ export default function ExecutiveSearch() {
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
                                     Through a research-driven methodology and deep industry networks, we identify, assess, and engage exceptional leaders who align with your vision, culture, and strategic objectives.
                                 </p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
+                                <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
                                     START A SEARCH
                                 </Link>
                             </div>

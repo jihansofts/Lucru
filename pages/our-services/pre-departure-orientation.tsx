@@ -39,9 +39,9 @@ const curriculum = [
 ];
 
 const relatedServices = [
-    { title: 'Manpower Provision', href: '/our-services/manpower-provision', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
-    { title: 'Visa & Immigration', href: '/our-services/visa-immigration', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
-    { title: 'Executive Search', href: '/our-services/executive-search', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
+    { title: 'Manpower Provision', href: '/our-services/overseas-recruitment', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
+    { title: 'Visa & Immigration', href: '/our-services/visa-processing', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
+    { title: 'Executive Search', href: '/our-services/specialized-headhunting', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
 ];
 
 export default function PreDepartureTraining() {
@@ -72,7 +72,7 @@ export default function PreDepartureTraining() {
                                 <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>Prepared From <span className="italic font-bold">Day One</span></h2>
                                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">Train. Certify. Deploy.</h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">Our pre-departure training programme equips workers with cultural awareness, safety knowledge, and practical skills they need to succeed abroad. Conducted at certified training centres and tailored to destination, industry, and role.</p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">LEARN MORE</Link>
+                                <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">LEARN MORE</Link>
                             </div>
                             <div className="lg:w-7/12">
                                 <h4 className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-8" data-aos="fade-up">TRAINING MODULES</h4>

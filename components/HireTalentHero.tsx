@@ -17,7 +17,7 @@ const slidesData = [
         subtitle: "Talent",
         description: "Connect with pre-vetted professionals across healthcare, engineering, IT, and more — sourced globally, deployed swiftly.",
         image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
-        link: "/hire-talent/submit-staffing-request"
+        link: "/hire-manpower/submit-manpower-request"
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ const slidesData = [
         subtitle: "Placement",
         description: "Build lasting teams with our rigorous candidate matching — from executive search to specialist technical roles.",
         image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
-        link: "/hire-talent/permanent-placement"
+        link: "/hire-manpower/direct-recruitment"
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const slidesData = [
         subtitle: "Staffing",
         description: "Scale your workforce on demand with flexible contract professionals, fully compliant and project-ready.",
         image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
-        link: "/hire-talent/contract-staffing"
+        link: "/hire-manpower/bulk-deployments"
     }
 ];
 

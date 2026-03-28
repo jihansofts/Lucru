@@ -43,9 +43,9 @@ const processSteps = [
 ];
 
 const relatedServices = [
-    { title: 'Executive Search', href: '/our-services/executive-search', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
-    { title: 'Visa & Immigration', href: '/our-services/visa-immigration', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
-    { title: 'Pre-Departure Training', href: '/our-services/pre-departure-training', image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg' },
+    { title: 'Executive Search', href: '/our-services/specialized-headhunting', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
+    { title: 'Visa & Immigration', href: '/our-services/visa-processing', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
+    { title: 'Pre-Departure Training', href: '/our-services/pre-departure-orientation', image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg' },
 ];
 
 export default function ManpowerProvision() {
@@ -84,7 +84,7 @@ export default function ManpowerProvision() {
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
                                     Whether you need 10 electricians or 1,000 construction workers, Lucru&apos;s end-to-end recruitment process ensures quality, speed, and full regulatory compliance at every step.
                                 </p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
+                                <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
                                     REQUEST WORKERS
                                 </Link>
                             </div>
@@ -146,7 +146,7 @@ export default function ManpowerProvision() {
                             <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
                                 Our deployment operations span 30+ countries with established logistics networks, ensuring your workforce arrives on time, every time.
                             </p>
-                            <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-white text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors">
+                            <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-white text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors">
                                 GET STARTED
                             </Link>
                         </div>

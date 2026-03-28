@@ -11,7 +11,7 @@ export default function HireTalent() {
   return (
     <>
       <Head>
-        <title>Hire Talent - Lucru</title>
+        <title>Hire Manpower - Lucru</title>
         <meta name="description" content="Partner with Lucru for premium manpower solutions. Access pre-vetted global talent for permanent and contract staffing needs." />
       </Head>
       <main className="min-h-screen bg-white">

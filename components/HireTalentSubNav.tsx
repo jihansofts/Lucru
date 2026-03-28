@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const subNavItems = [
-    { label: 'Overview', href: '/hire-talent' },
-    { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
-    { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
-    { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' },
+    { label: 'Overview', href: '/hire-manpower' },
+    { label: 'Submit Staffing Request', href: '/hire-manpower/submit-manpower-request' },
+    { label: 'Permanent Placement', href: '/hire-manpower/direct-recruitment' },
+    { label: 'Contract Staffing', href: '/hire-manpower/bulk-deployments' },
 ];
 
 export default function HireTalentSubNav() {

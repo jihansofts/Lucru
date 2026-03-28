@@ -125,7 +125,7 @@ export default function PermanentPlacement() {
                   From individual executive searches to large-scale recruitment campaigns, Lucru delivers candidates who don&apos;t just fill positions — they elevate your business.
                 </p>
                 <Link
-                  href="/hire-talent/submit-staffing-request"
+                  href="/hire-manpower/submit-manpower-request"
                   className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                 >
                   REQUEST TALENT

@@ -108,32 +108,27 @@ export default function MainHeader() {
                     <Link href="/vacancies" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                         Vacancies
                     </Link>
-                    <HeaderDropdown label="For Companies" href="#" items={[
-                        { label: 'Agency Services', href: '#' },
-                        { label: 'HR Consulting', href: '#' },
-                        { label: 'Event & Logistics Support', href: '#' }
-                    ]} />
                     {SHOW_FULL_NAV && (
                         <>
-                            <HeaderDropdown label="Hire Talent" href="/hire-talent" items={[
-                                { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
-                                { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
-                                { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
+                            <HeaderDropdown label="Hire Manpower" href="/hire-manpower" items={[
+                                { label: 'Submit Manpower Request', href: '/hire-manpower/submit-manpower-request' },
+                                { label: 'Direct Recruitment', href: '/hire-manpower/direct-recruitment' },
+                                { label: 'Bulk Deployments', href: '/hire-manpower/bulk-deployments' }
                             ]} />
                             <HeaderDropdown label="Our Services" href="/our-services" items={[
-                                { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
-                                { label: 'Executive Search', href: '/our-services/executive-search' },
-                                { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
-                                { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
-                                { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
+                                { label: 'Overseas Recruitment', href: '/our-services/overseas-recruitment' },
+                                { label: 'Specialized Headhunting', href: '/our-services/specialized-headhunting' },
+                                { label: 'Visa Processing', href: '/our-services/visa-processing' },
+                                { label: 'Pre-Departure Orientation', href: '/our-services/pre-departure-orientation' },
+                                { label: 'Document Attestation', href: '/our-services/document-attestation' }
                             ]} />
                         </>
                     )}
                     <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Careers
+                        Internal Careers
                     </Link>
                     <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Journeys of Success
+                        Success Stories
                     </Link>
                     <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                         Submit Inquiry
@@ -189,41 +184,32 @@ export default function MainHeader() {
                         <Link href="/vacancies" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                             Vacancies
                         </Link>
-                        <MobileHeaderDropdown
-                            label="For Companies"
-                            onClose={() => setIsMobileMenuOpen(false)}
-                            items={[
-                                { label: 'Agency Services', href: '#' },
-                                { label: 'HR Consulting', href: '#' },
-                                { label: 'Event & Logistics Support', href: '#' }
-                            ]}
-                        />
                         {SHOW_FULL_NAV && (
                             <>
-                                <MobileHeaderDropdown label="Hire Talent" onClose={() => setIsMobileMenuOpen(false)} items={[
-                                    { label: 'Submit Staffing Request', href: '/hire-talent/submit-staffing-request' },
-                                    { label: 'Permanent Placement', href: '/hire-talent/permanent-placement' },
-                                    { label: 'Contract Staffing', href: '/hire-talent/contract-staffing' }
+                                <MobileHeaderDropdown label="Hire Manpower" onClose={() => setIsMobileMenuOpen(false)} items={[
+                                    { label: 'Submit Manpower Request', href: '/hire-manpower/submit-manpower-request' },
+                                    { label: 'Direct Recruitment', href: '/hire-manpower/direct-recruitment' },
+                                    { label: 'Bulk Deployments', href: '/hire-manpower/bulk-deployments' }
                                 ]} />
                                 <MobileHeaderDropdown
                                     label="Our Services"
                                     defaultOpen={true}
                                     onClose={() => setIsMobileMenuOpen(false)}
                                     items={[
-                                        { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
-                                        { label: 'Executive Search', href: '/our-services/executive-search' },
-                                        { label: 'Visa & Immigration Assistance', href: '/our-services/visa-immigration' },
-                                        { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
-                                        { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' }
+                                        { label: 'Overseas Recruitment', href: '/our-services/overseas-recruitment' },
+                                        { label: 'Specialized Headhunting', href: '/our-services/specialized-headhunting' },
+                                        { label: 'Visa Processing', href: '/our-services/visa-processing' },
+                                        { label: 'Pre-Departure Orientation', href: '/our-services/pre-departure-orientation' },
+                                        { label: 'Document Attestation', href: '/our-services/document-attestation' }
                                     ]}
                                 />
                             </>
                         )}
                         <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Careers
+                            Internal Careers
                         </Link>
                         <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Journeys of Success
+                            Success Stories
                         </Link>
                         <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                             Submit Inquiry

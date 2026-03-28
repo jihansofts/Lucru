@@ -41,9 +41,9 @@ const tiers = [
 ];
 
 const relatedServices = [
-    { title: 'Manpower Provision', href: '/our-services/manpower-provision', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
-    { title: 'Visa & Immigration', href: '/our-services/visa-immigration', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
-    { title: 'Executive Search', href: '/our-services/executive-search', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
+    { title: 'Manpower Provision', href: '/our-services/overseas-recruitment', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg' },
+    { title: 'Visa & Immigration', href: '/our-services/visa-processing', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
+    { title: 'Executive Search', href: '/our-services/specialized-headhunting', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
 ];
 
 export default function PayrollCompliance() {
@@ -75,7 +75,7 @@ export default function PayrollCompliance() {
                                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">Accurate. Automated. Auditable.</h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">Managing payroll and compliance across multiple countries is complex and risky. Lucru takes the burden off your shoulders — handling everything from salary processing and tax filings to labour law monitoring and audit preparation.</p>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">Our team of HR and compliance specialists stays ahead of regulatory changes, ensuring your workforce operations are always lawful, efficient, and transparent.</p>
-                                <Link href="/hire-talent/submit-staffing-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">GET A QUOTE</Link>
+                                <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">GET A QUOTE</Link>
                             </div>
                             <div className="lg:w-7/12">
                                 <h4 className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-8" data-aos="fade-up">SERVICE FEATURES</h4>
@@ -155,7 +155,7 @@ export default function PayrollCompliance() {
                                         ))}
                                     </ul>
                                     <div className="px-8 pb-8">
-                                        <Link href="/hire-talent/submit-staffing-request" className={`block text-center py-3.5 text-xs font-bold tracking-widest uppercase transition-colors ${tier.highlight ? 'bg-[#006A80] text-white hover:bg-[#005a6d]' : 'border border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white'}`}>CONTACT US</Link>
+                                        <Link href="/hire-manpower/submit-manpower-request" className={`block text-center py-3.5 text-xs font-bold tracking-widest uppercase transition-colors ${tier.highlight ? 'bg-[#006A80] text-white hover:bg-[#005a6d]' : 'border border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white'}`}>CONTACT US</Link>
                                     </div>
                                 </div>
                             ))}

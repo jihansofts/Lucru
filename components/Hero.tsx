@@ -31,7 +31,7 @@ const slidesData = [
         title: "Connecting You to Global Employers",
         position: "right",
         videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4",
-        link: "/hire-talent"
+        link: "/hire-manpower"
     }
 ];
 

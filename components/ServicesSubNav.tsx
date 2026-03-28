@@ -4,11 +4,11 @@ import { useRouter } from 'next/router';
 
 const subNavItems = [
     { label: 'Overview', href: '/our-services' },
-    { label: 'Manpower Provision', href: '/our-services/manpower-provision' },
-    { label: 'Executive Search', href: '/our-services/executive-search' },
-    { label: 'Visa & Immigration', href: '/our-services/visa-immigration' },
-    { label: 'Pre-Departure Training', href: '/our-services/pre-departure-training' },
-    { label: 'Payroll & Compliance', href: '/our-services/payroll-compliance' },
+    { label: 'Manpower Provision', href: '/our-services/overseas-recruitment' },
+    { label: 'Executive Search', href: '/our-services/specialized-headhunting' },
+    { label: 'Visa & Immigration', href: '/our-services/visa-processing' },
+    { label: 'Pre-Departure Training', href: '/our-services/pre-departure-orientation' },
+    { label: 'Payroll & Compliance', href: '/our-services/document-attestation' },
 ];
 
 export default function ServicesSubNav() {

@@ -43,8 +43,8 @@ const sitemapData = [
   {
     title: "Employer Services",
     links: [
-      { text: "Permanent Staffing", href: "/hire-talent/permanent-placement" },
-      { text: "Contract & Temporary Staffing", href: "/hire-talent/contract-staffing" },
+      { text: "Permanent Staffing", href: "/hire-manpower/direct-recruitment" },
+      { text: "Contract & Temporary Staffing", href: "/hire-manpower/bulk-deployments" },
       { text: "Executive Search", href: "#" },
       { text: "Mass Recruitment", href: "#" },
       { text: "Overseas Deployment", href: "#" },

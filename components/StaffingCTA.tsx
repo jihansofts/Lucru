@@ -32,7 +32,7 @@ export default function StaffingCTA() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
                     <Link
-                        href="/hire-talent/submit-staffing-request"
+                        href="/hire-manpower/submit-manpower-request"
                         className="inline-block bg-white text-brand-dark px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-gray-100 transition-colors"
                     >
                         SUBMIT REQUEST

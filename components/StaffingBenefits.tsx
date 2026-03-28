@@ -30,7 +30,7 @@ export default function StaffingBenefits() {
                             From single-role executive searches to large-scale workforce mobilisation, our network spans 30+ countries with a proven track record of delivering quality placements that last.
                         </p>
                         <Link
-                            href="/hire-talent/submit-staffing-request"
+                            href="/hire-manpower/submit-manpower-request"
                             className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                         >
                             SUBMIT REQUEST
