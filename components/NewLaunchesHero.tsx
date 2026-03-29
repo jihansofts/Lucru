@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import type { Swiper as SwiperClass } from 'swiper';
 import LPattern from './LPattern';
-import Link from 'next/link';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -120,12 +119,12 @@ export default function NewLaunchesHero() {
                                 {data.description}
                             </p>
                             
-                            <Link 
+                            {/* <Link 
                                 href={data.link}
                                 className="inline-block border border-white text-white px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors"
                             >
                                 VIEW JOBS
-                            </Link>
+                            </Link> */}
                         </div>
                     );
                 })}
