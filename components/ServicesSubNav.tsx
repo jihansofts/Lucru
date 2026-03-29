@@ -1,41 +1,49 @@
-import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
-const subNavItems = [
-    { label: 'Overview', href: '/our-services' },
-    { label: 'Manpower Provision', href: '/our-services/overseas-recruitment' },
-    { label: 'Executive Search', href: '/our-services/specialized-headhunting' },
-    { label: 'Visa & Immigration', href: '/our-services/visa-processing' },
-    { label: 'Pre-Departure Training', href: '/our-services/pre-departure-orientation' },
-    { label: 'Payroll & Compliance', href: '/our-services/document-attestation' },
-];
 
 export default function ServicesSubNav() {
-    const router = useRouter();
-
     return (
-        <nav className="w-full bg-white border-b border-gray-200">
-            <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-24">
-                <div className="flex items-center overflow-x-auto scrollbar-hide -mb-px">
-                    {subNavItems.map((item) => {
-                        const isActive = router.pathname === item.href;
-                        return (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                className={`whitespace-nowrap px-5 py-4 text-sm font-semibold transition-colors border-b-2 ${
-                                    isActive
-                                        ? 'text-[#006A80] border-[#006A80]'
-                                        : 'text-gray-500 border-transparent hover:text-[#006A80]'
-                                }`}
-                            >
-                                {item.label}
+        <section className="bg-[#005a6e] py-6 md:py-8 border-b-4 border-[#006A80] sticky top-0 md:static z-20 shadow-md">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+                <nav className="flex flex-col md:flex-row md:items-center">
+                    <span className="text-white/60 text-xs font-bold uppercase tracking-widest mr-8 mb-4 md:mb-0 hidden md:block">
+                        Area<br />Of Ops
+                    </span>
+
+                    <ul className="flex overflow-x-auto pb-2 md:pb-0 gap-8 md:gap-10 text-white text-sm font-semibold tracking-wide whitespace-nowrap scrollbar-hide">
+                        <li>
+                            <Link href="/our-services" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all flex items-center gap-2">
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#006A80]"></div>
+                                Overview
                             </Link>
-                        );
-                    })}
-                </div>
+                        </li>
+                        <li>
+                            <Link href="/our-services/overseas-recruitment" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all">
+                                Recruitment
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/our-services/specialized-headhunting" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all">
+                                Headhunting
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/our-services/visa-processing" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all">
+                                Visas & Emigration
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/our-services/pre-departure-orientation" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all">
+                                Pre-Departure
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/our-services/document-attestation" className="hover:text-[#b4e7ed] hover:-translate-y-1 transition-all">
+                                Attestation
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </section>
     );
 }

@@ -1,101 +1,153 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import ServicesHero from '@/components/ServicesHero';
-import ServicesSubNav from '@/components/ServicesSubNav';
-import StaffingCTA from '@/components/StaffingCTA';
-import MobileAppSection from '@/components/MobileAppSection';
-import SubscribeSection from '@/components/SubscribeSection';
 import {
-    UserGroupIcon,
-    ClipboardDocumentCheckIcon,
     GlobeAltIcon,
     ShieldCheckIcon,
-    ChartBarIcon,
-    HeartIcon,
-    ArrowRightIcon,
+    MagnifyingGlassIcon,
+    UserGroupIcon,
+    BriefcaseIcon,
+    DocumentTextIcon,
+    CheckCircleIcon,
 } from '@heroicons/react/24/outline';
+import ServicesHero from '@/components/ServicesHero';
+import ServicesSubNav from '@/components/ServicesSubNav';
+// Make sure to remove old import, like ContactSection
 
-const benefits = [
-    { icon: UserGroupIcon, title: 'Bulk Recruitment', desc: 'Deploy 10 to 1,000+ workers for large-scale projects in record time' },
-    { icon: ClipboardDocumentCheckIcon, title: 'Trade Testing', desc: 'In-house skill assessment and certification for technical roles' },
-    { icon: GlobeAltIcon, title: 'Multi-Country Sourcing', desc: 'Access talent from 30+ countries across Asia, Africa & the Middle East' },
-    { icon: ShieldCheckIcon, title: 'Full Compliance', desc: 'Visa, medical, insurance, and labour law compliance fully managed' },
-    { icon: ChartBarIcon, title: 'Performance Tracking', desc: 'Post-deployment monitoring and performance reporting for every placement' },
-    { icon: HeartIcon, title: 'Welfare Guarantee', desc: 'Worker welfare programmes ensuring ethical treatment and fair conditions' },
+const features = [
+    {
+        icon: GlobeAltIcon,
+        title: 'Middle East Expertise',
+        desc: 'Specialized pipelines for Saudi Arabia, UAE, Qatar, Oman, Kuwait, and Bahrain labor markets.',
+    },
+    {
+        icon: ShieldCheckIcon,
+        title: 'Rigorous Trade Testing',
+        desc: 'In-house technical assessments ensuring candidates meet host country trade standards.',
+    },
+    {
+        icon: MagnifyingGlassIcon,
+        title: 'Extensive Database',
+        desc: 'Thousands of pre-screened resumes across construction, healthcare, hospitality, and IT.',
+    },
+    {
+        icon: DocumentTextIcon,
+        title: 'Compliance & Legal',
+        desc: 'Strict adherence to Emigration Clearance (BMET) and foreign embassy visa regulations.',
+    },
 ];
 
 const industries = [
-    { title: 'Healthcare & Medical', positions: '800+', image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg', roles: 'Nurses, Lab Techs, Pharmacists, Physiotherapists, Care Workers' },
-    { title: 'Construction & Engineering', positions: '1,200+', image: 'https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg', roles: 'Site Engineers, Welders, Steel Fixers, Crane Operators, QS' },
-    { title: 'Oil & Gas', positions: '500+', image: 'https://images.pexels.com/photos/5961982/pexels-photo-5961982.jpeg', roles: 'Process Engineers, Riggers, Pipe Fitters, HSE Officers' },
-    { title: 'Hospitality & Catering', positions: '650+', image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg', roles: 'Chefs, F&B Staff, Housekeeping, Concierge, Event Coordinators' },
-    { title: 'IT & Technology', positions: '300+', image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg', roles: 'Developers, System Admins, Data Analysts, Network Engineers' },
-    { title: 'Facility Management', positions: '400+', image: 'https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg', roles: 'HVAC Techs, Electricians, Plumbers, Cleaning Supervisors' },
+    'Oil & Gas / Energy',
+    'Heavy Construction & Engineering',
+    'Healthcare & Nursing',
+    'Hospitality & Catering',
+    'Facility Management',
+    'Manufacturing & Industrial',
 ];
 
-const processSteps = [
-    { step: '01', title: 'Requirement Analysis', desc: 'We conduct an in-depth consultation to understand your workforce needs, job specifications, timelines, and deployment locations.' },
-    { step: '02', title: 'Candidate Sourcing', desc: 'Our recruiters activate multi-channel sourcing — job portals, databases, partner agencies, and social media — to build a qualified candidate pool.' },
-    { step: '03', title: 'Screening & Assessment', desc: 'Candidates undergo document verification, skill testing, behavioural interviews, and reference checks before shortlisting.' },
-    { step: '04', title: 'Client Selection', desc: 'You review curated profiles and conduct final interviews. We coordinate logistics, schedules, and candidate communications.' },
-    { step: '05', title: 'Processing & Deployment', desc: 'We handle visa processing, medical clearance, ticketing, pre-departure orientation, and airport-to-site logistics.' },
-];
-
-const relatedServices = [
-    { title: 'Executive Search', href: '/our-services/specialized-headhunting', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg' },
-    { title: 'Visa & Immigration', href: '/our-services/visa-processing', image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg' },
-    { title: 'Pre-Departure Training', href: '/our-services/pre-departure-orientation', image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg' },
-];
-
-export default function ManpowerProvision() {
+export default function OverseasRecruitment() {
     return (
         <>
             <Head>
-                <title>Manpower Provision - Lucru</title>
-                <meta name="description" content="Lucru's manpower provision service delivers skilled and semi-skilled workers across all industries, from sourcing to deployment." />
+                <title>Overseas Recruitment - Lucru Manpower</title>
+                <meta name="description" content="End-to-end overseas recruitment from South Asia to the world. We specialize in deploying top talent to Middle Eastern and global markets." />
             </Head>
-            <main className="min-h-screen bg-white">
+
+            <main className="min-h-screen bg-[#f7f5f2]">
                 <ServicesHero
-                    title="Manpower"
-                    titleAccent="Provision"
-                    subtitle="Skilled workforce solutions from sourcing to deployment, across every industry."
+                    title="Overseas"
+                    titleAccent="Recruitment"
+                    subtitle="Bridging the gap between global employers and South Asia's vast pool of hard-working, skilled professionals."
                     image="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
-                    breadcrumbs={[
-                        { label: 'Home', href: '/' },
-                        { label: 'Our Services', href: '/our-services' },
-                        { label: 'Manpower Provision' },
-                    ]}
                 />
+
                 <ServicesSubNav />
 
-                {/* Overview + Benefits */}
+                {/* Main Content Section */}
                 <section className="py-20 md:py-28">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                            <div className="lg:w-5/12" data-aos="fade-up">
-                                <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                                    Your Workforce, <span className="italic font-bold">Delivered</span>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                            <div data-aos="fade-right">
+                                <h2 className="text-3xl md:text-5xl font-light text-brand-dark mb-8" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                    Your Trusted Pipeline for <span className="font-bold italic text-[#006A80]">Global Talent</span>
                                 </h2>
-                                <h3 className="text-lg text-[#006A80] font-semibold mb-6">Reliable. Compliant. Scalable.</h3>
-                                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-                                    Our core manpower provision service connects employers with pre-vetted skilled and semi-skilled professionals from across the globe, deployed to your worksites fully processed, trained, and ready to contribute from day one.
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    For decades, South Asia has been the engine room of global development. However, harnessing this talent requires navigating complex regulatory frameworks, local customs, and rigorous verification processes.
                                 </p>
-                                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
-                                    Whether you need 10 electricians or 1,000 construction workers, Lucru&apos;s end-to-end recruitment process ensures quality, speed, and full regulatory compliance at every step.
+                                <p className="text-gray-600 mb-8 leading-relaxed">
+                                    Lucru manages the entire recruitment lifecycle—from executing your initial Demand Letter and orchestrating nationwide advertising, to coordinating trade tests, GAMCA Wafid medical checks, and final deployment. We ensure that you receive competent workers who are legally cleared and culturally prepared for the demands of working abroad.
                                 </p>
-                                <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors">
-                                    REQUEST WORKERS
+
+                                <Link
+                                    href="/hire-manpower/direct-recruitment"
+                                    className="inline-flex items-center justify-center bg-brand-dark hover:bg-[#006A80] text-white px-8 py-4 font-bold tracking-widest uppercase transition-all shadow-lg hover:shadow-xl"
+                                >
+                                    Initiate Demand
                                 </Link>
                             </div>
-                            <div className="lg:w-7/12">
-                                <h4 className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-8" data-aos="fade-up">OUR CAPABILITIES</h4>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {benefits.map((item, i) => (
-                                        <div key={i} className="border border-gray-200 rounded-sm p-6 flex flex-col items-center text-center hover:border-[#006A80] hover:shadow-md transition-all duration-300 group" data-aos="fade-up" data-aos-delay={i * 80}>
-                                            <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
-                                            <h5 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h5>
-                                            <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                            <div className="relative h-[600px] w-full" data-aos="fade-left">
+                                <Image
+                                    src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg"
+                                    alt="Recruitment operations"
+                                    fill
+                                    className="object-cover rounded-sm shadow-2xl"
+                                />
+                                {/* Overlay stat box */}
+                                <div className="absolute -bottom-8 -left-8 bg-white p-8 border-l-4 border-[#006A80] shadow-xl max-w-xs hidden md:block">
+                                    <div className="text-4xl font-bold text-brand-dark mb-2">15k+</div>
+                                    <div className="text-sm text-gray-600 font-semibold uppercase tracking-wider">Successful Deployments</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Features Grid */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+                        <div className="text-center mb-16">
+                            <h3 className="text-3xl font-light text-brand-dark mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                Why Choose Our Recruitment Model
+                            </h3>
+                            <div className="w-24 h-1 bg-[#006A80] mx-auto"></div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            {features.map((feature, idx) => (
+                                <div key={idx} className="flex gap-6" data-aos="fade-up" data-aos-delay={idx * 100}>
+                                    <div className="shrink-0 mt-1">
+                                        <div className="w-14 h-14 bg-[#f7f5f2] rounded flex items-center justify-center">
+                                            <feature.icon className="w-7 h-7 text-[#006A80]" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-bold text-brand-dark mb-3">{feature.title}</h4>
+                                        <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Industries Section */}
+                <section className="py-20 bg-brand-dark text-white">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                            <div className="lg:col-span-4" data-aos="fade-right">
+                                <h3 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                    Sectors We <span className="font-bold italic text-[#006A80]">Serve</span>
+                                </h3>
+                                <p className="text-gray-400 leading-relaxed mb-8">
+                                    We maintain active talent pools across essential industries, ensuring rapid response times to your deployment schedules.
+                                </p>
+                            </div>
+                            <div className="lg:col-span-8" data-aos="fade-left">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {industries.map((industry, i) => (
+                                        <div key={i} className="flex items-center space-x-3 bg-white/5 p-4 rounded hover:bg-white/10 transition-colors">
+                                            <CheckCircleIcon className="w-6 h-6 text-[#006A80]" />
+                                            <span className="font-medium">{industry}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -104,104 +156,24 @@ export default function ManpowerProvision() {
                     </div>
                 </section>
 
-                {/* Industries */}
-                <section className="py-20 md:py-28 bg-[#f7f5f2]">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="mb-12" data-aos="fade-up">
-                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                                Industries <span className="italic font-bold">We Serve</span>
-                            </h2>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {industries.map((item, i) => (
-                                <div key={i} className="bg-white group border border-transparent hover:border-gray-200 transition-all duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay={i * 100}>
-                                    <div className="relative w-full aspect-4/3 overflow-hidden">
-                                        <Image src={item.image} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                                        <div className="absolute bottom-3 right-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">{item.positions} placed</div>
-                                    </div>
-                                    <div className="p-6">
-                                        <h3 className="text-xl text-brand-dark font-bold mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h3>
-                                        <p className="text-sm text-gray-500 leading-relaxed">{item.roles}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                {/* Simple Contact / CTA Section */}
+                <section className="py-24 bg-[#006A80] text-center">
+                    <div className="max-w-4xl mx-auto px-6">
+                        <h2 className="text-3xl md:text-5xl font-light text-white mb-8" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                            Ready to Mobilize Your Next Project?
+                        </h2>
+                        <p className="text-[#b4e7ed] mb-10 text-lg">
+                            Get in touch to discuss your specific manpower needs and request a deployment timeline.
+                        </p>
+                        <Link
+                            href="#"
+                            className="inline-block bg-white text-[#006A80] font-bold uppercase tracking-widest py-4 px-10 hover:bg-brand-dark hover:text-white transition-colors"
+                        >
+                            Get In Touch
+                        </Link>
                     </div>
                 </section>
 
-                {/* Full-Width Image Showcase */}
-                <section className="relative w-full h-80 md:h-112 overflow-hidden" data-aos="fade-up">
-                    <Image
-                        src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
-                        alt="Workforce deployment"
-                        fill sizes="100vw"
-                        className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-r from-brand-dark/90 via-brand-dark/50 to-transparent" />
-                    <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="max-w-lg">
-                            <h3 className="text-3xl md:text-4xl text-white font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                                Deploying <span className="italic font-bold">Excellence</span>
-                            </h3>
-                            <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                                Our deployment operations span 30+ countries with established logistics networks, ensuring your workforce arrives on time, every time.
-                            </p>
-                            <Link href="/hire-manpower/submit-manpower-request" className="inline-block border border-white text-white px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors">
-                                GET STARTED
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Process Steps */}
-                <section className="py-20 md:py-28">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="mb-12" data-aos="fade-up">
-                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                                Our <span className="italic font-bold">Process</span>
-                            </h2>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-                            {processSteps.map((item, i) => (
-                                <div key={i} className="relative bg-[#f7f5f2] p-6 border border-gray-200 hover:border-[#006A80] hover:shadow-lg transition-all duration-300 group" data-aos="fade-up" data-aos-delay={i * 80}>
-                                    <div className="text-4xl font-bold text-gray-200 group-hover:text-[#006A80]/20 transition-colors mb-3" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.step}</div>
-                                    <h4 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h4>
-                                    <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Related Services */}
-                <section className="py-20 md:py-28 bg-[#f7f5f2]">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="mb-12" data-aos="fade-up">
-                            <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">EXPLORE MORE</p>
-                            <h2 className="text-4xl md:text-5xl text-brand-dark font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                                Related <span className="italic font-bold">Services</span>
-                            </h2>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {relatedServices.map((item, i) => (
-                                <Link key={i} href={item.href} className="group block" data-aos="fade-up" data-aos-delay={i * 100}>
-                                    <div className="relative w-full aspect-video overflow-hidden mb-4">
-                                        <Image src={item.image} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                                        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <h4 className="text-brand-dark font-bold text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{item.title}</h4>
-                                        <ArrowRightIcon className="w-5 h-5 text-[#006A80] stroke-2 group-hover:translate-x-1 transition-transform duration-300" />
-                                    </div>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                <div data-aos="fade-up"><StaffingCTA /></div>
-                <div data-aos="fade-up"><MobileAppSection /></div>
-                <div data-aos="fade-up"><SubscribeSection /></div>
             </main>
         </>
     );

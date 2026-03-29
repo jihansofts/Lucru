@@ -11,78 +11,65 @@ import {
     MagnifyingGlassIcon,
     DocumentCheckIcon,
     AcademicCapIcon,
-    CurrencyDollarIcon,
     GlobeAltIcon,
+    BriefcaseIcon,
     CheckBadgeIcon,
-    ClockIcon,
     ShieldCheckIcon,
     ArrowRightIcon,
+    DocumentTextIcon,
 } from '@heroicons/react/24/outline';
 
 const services = [
     {
         icon: UserGroupIcon,
-        title: 'Manpower Provision',
-        desc: 'End-to-end recruitment and deployment of skilled and semi-skilled workers across all industries.',
+        title: 'Overseas Recruitment',
+        desc: 'End-to-end recruitment of skilled, semi-skilled, and unskilled workers from South Asia.',
         href: '/our-services/overseas-recruitment',
         image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
     },
     {
         icon: MagnifyingGlassIcon,
-        title: 'Executive Search',
-        desc: 'Targeted headhunting for senior management and C-suite leadership roles.',
+        title: 'Specialized Headhunting',
+        desc: 'Targeted executive search for engineers, medical professionals, and managers.',
         href: '/our-services/specialized-headhunting',
         image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
     },
     {
         icon: DocumentCheckIcon,
-        title: 'Visa & Immigration',
-        desc: 'Complete visa processing, work permits, and immigration compliance management.',
+        title: 'Visa Processing & Emigration',
+        desc: 'Handling consulate approvals, stamping, and local emigration clearance (e.g. BMET).',
         href: '/our-services/visa-processing',
         image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg',
     },
     {
         icon: AcademicCapIcon,
         title: 'Pre-Departure Training',
-        desc: 'Cultural orientation, safety training, and skills certification before deployment.',
+        desc: 'Mandatory cultural orientation, safety briefings, and job-specific prep before flights.',
         href: '/our-services/pre-departure-orientation',
         image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg',
     },
     {
-        icon: CurrencyDollarIcon,
-        title: 'Payroll & Compliance',
-        desc: 'Managed payroll, tax compliance, and employment law adherence across jurisdictions.',
+        icon: DocumentTextIcon,
+        title: 'Document Attestation',
+        desc: 'Legalizing educational and trade certificates across various embassies and ministries.',
         href: '/our-services/document-attestation',
         image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg',
     },
     {
-        icon: GlobeAltIcon,
-        title: 'Global Deployment',
-        desc: 'Logistics coordination for international workforce mobilisation to 30+ countries.',
-        href: '/our-services/overseas-recruitment',
+        icon: BriefcaseIcon,
+        title: 'Bulk Deployments',
+        desc: 'Orchestrating large-scale testing and mobilization for mega-projects globally.',
+        href: '/hire-manpower/bulk-deployments',
         image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg',
     },
 ];
 
 const processSteps = [
-    { num: '01', title: 'Share Your Requirements', desc: 'Tell us the roles, skills, and headcount you need. We assign a dedicated account manager.' },
-    { num: '02', title: 'We Source & Screen', desc: 'Our recruiters activate global talent pipelines, shortlisting only pre-vetted candidates.' },
-    { num: '03', title: 'You Select Your Team', desc: 'Review curated profiles, conduct interviews, and make your selections with full support.' },
-    { num: '04', title: 'We Process & Deploy', desc: 'Visa, medical, training, and logistics — all handled. Your team arrives job-ready.' },
-];
-
-const whyChoose = [
-    { icon: CheckBadgeIcon, title: 'Licensed & Accredited', desc: 'Fully licensed by government authorities with ISO-certified processes.' },
-    { icon: ClockIcon, title: 'Fast Turnaround', desc: 'From requirement to deployment in as little as 2-4 weeks.' },
-    { icon: ShieldCheckIcon, title: 'Zero-Risk Guarantee', desc: 'Free replacement within 90 days if a placement doesn\'t meet expectations.' },
-    { icon: GlobeAltIcon, title: '30+ Country Network', desc: 'Access talent from across Asia, Africa, the Middle East, and Europe.' },
-];
-
-const stats = [
-    { value: '15K+', label: 'Workers Deployed' },
-    { value: '30+', label: 'Countries Served' },
-    { value: '500+', label: 'Partner Companies' },
-    { value: '98%', label: 'Client Retention' },
+    { num: '01', title: 'Share Your Requirements', desc: 'Provide us your job descriptions and Demand Letters. We will initiate local embassy approvals.' },
+    { num: '02', title: 'We Source & Trade-Test', desc: 'Our experienced team mobilizes our network, pre-screens applicants, and conducts rigorous testing.' },
+    { num: '03', title: 'You Select Candidates', desc: 'Review CVs and conduct interviews either virtually or at our dedicated facilities.' },
+    { num: '04', title: 'We Process Visas & Medicals', desc: 'We take over the entire labyrinth of Wafid/GAMCA medicals, visa stamping, and clearance.' },
+    { num: '05', title: 'Deployment & Follow-up', desc: 'Workers fly out after comprehensive training; we ensure safe arrival and swift onboarding.' },
 ];
 
 export default function OurServices() {
@@ -90,78 +77,69 @@ export default function OurServices() {
         <>
             <Head>
                 <title>Our Services - Lucru</title>
-                <meta name="description" content="Explore Lucru's comprehensive recruitment services: manpower provision, executive search, visa processing, pre-departure training, and payroll compliance." />
+                <meta name="description" content="Comprehensive overseas manpower solutions. From recruitment and trade testing to visa processing and document attestation." />
             </Head>
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#f7f5f2]">
                 <ServicesHero
                     title="Our"
                     titleAccent="Services"
-                    subtitle="Comprehensive workforce solutions from sourcing to deployment and beyond."
-                    image="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg"
-                    breadcrumbs={[
-                        { label: 'Home', href: '/' },
-                        { label: 'Our Services' },
-                    ]}
+                    subtitle="Comprehensive manpower solutions tailored for international employers seeking reliable South Asian talent."
+                    image="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
                 />
+                
                 <ServicesSubNav />
 
                 {/* Intro Section */}
-                <section className="py-20 md:py-28">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
-                            <div className="lg:w-5/12" data-aos="fade-up">
-                                <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
-                                    WHAT WE OFFER
-                                </p>
-                                <h2
-                                    className="text-4xl md:text-5xl text-brand-dark font-light mb-6"
-                                    style={{ fontFamily: 'var(--font-playfair-display), serif' }}
-                                >
-                                    End-to-End <span className="italic font-bold">Solutions</span>
-                                </h2>
-                            </div>
-                            <div className="lg:w-7/12" data-aos="fade-up" data-aos-delay="100">
-                                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-                                    From the moment you share your requirements to the day your new team member starts, Lucru manages every step with precision, compliance, and care.
-                                </p>
-                                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Our integrated service model means you get one point of contact for recruitment, visa processing, training, deployment, and ongoing workforce management — eliminating complexity and reducing time-to-hire by up to 60%.
-                                </p>
-                            </div>
-                        </div>
+                <section className="py-20 md:py-28 bg-white">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 text-center">
+                        <h2
+                            className="text-3xl md:text-5xl text-brand-dark font-light mb-8 max-w-4xl mx-auto leading-tight"
+                            style={{ fontFamily: 'var(--font-playfair-display), serif' }}
+                            data-aos="fade-up"
+                        >
+                            We manage the complexities of international recruitment so you can focus on building your business.
+                        </h2>
+                        <p className="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                            Hiring overseas can be an administrative nightmare. At Lucru, we act as your trusted bridge to South Asia&apos;s vast workforce. With end-to-end services encompassing precise talent sourcing, rigorous trade testing, bulletproof compliance, and seamless logistics, we ensure your workforce arrives on site, on time, and fully prepared.
+                        </p>
                     </div>
                 </section>
 
-                {/* Services Grid — Image Cards */}
-                <section className="py-8 md:py-16">
+                {/* Service Cards Grid */}
+                <section className="py-20 md:py-28">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {services.map((service, index) => (
                                 <Link
                                     key={index}
                                     href={service.href}
-                                    className="group block border border-gray-200 hover:border-transparent hover:shadow-xl transition-all duration-500"
+                                    className="group bg-white flex flex-col border border-gray-200 hover:border-[#006A80] hover:shadow-xl transition-all duration-500 overflow-hidden"
                                     data-aos="fade-up"
-                                    data-aos-delay={index * 80}
+                                    data-aos-delay={index * 100}
                                 >
-                                    <div className="relative w-full aspect-4/3 overflow-hidden">
+                                    <div className="relative w-full h-56 overflow-hidden">
                                         <Image
                                             src={service.image}
                                             alt={service.title}
-                                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            fill
                                             className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
-                                        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
-                                        <div className="absolute bottom-4 left-5 flex items-center gap-3">
-                                            <service.icon className="w-8 h-8 text-white stroke-1" />
-                                            <h3 className="text-white font-bold text-lg">{service.title}</h3>
+                                        <div className="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500" />
+                                        <div className="absolute top-4 left-4 bg-white/90 p-3 rounded-sm">
+                                            <service.icon className="w-6 h-6 text-[#006A80]" />
                                         </div>
                                     </div>
-                                    <div className="p-6">
-                                        <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.desc}</p>
-                                        <span className="flex items-center gap-2 text-[#006A80] text-xs font-bold tracking-widest uppercase group-hover:gap-3 transition-all duration-300">
-                                            DISCOVER MORE <ArrowRightIcon className="w-4 h-4 stroke-2" />
-                                        </span>
+                                    <div className="p-8 flex flex-col grow">
+                                        <h3 className="text-xl font-bold text-brand-dark mb-4 group-hover:text-[#006A80] transition-colors">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm leading-relaxed mb-6 grow">
+                                            {service.desc}
+                                        </p>
+                                        <div className="flex items-center text-[#006A80] font-bold text-xs tracking-widest uppercase mt-auto">
+                                            Learn More
+                                            <ArrowRightIcon className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
+                                        </div>
                                     </div>
                                 </Link>
                             ))}
@@ -169,103 +147,61 @@ export default function OurServices() {
                     </div>
                 </section>
 
-                {/* Stats Bar */}
-                <section className="py-16 bg-brand-dark mt-12" data-aos="fade-up">
+                {/* Our Process Timeline */}
+                <section className="py-20 md:py-32 bg-brand-dark text-white">
                     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-                            {stats.map((s, i) => (
-                                <div key={i} className="text-center">
-                                    <div className="text-4xl md:text-5xl font-light text-brand-primary mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{s.value}</div>
-                                    <div className="text-xs font-bold tracking-wider text-gray-400 uppercase">{s.label}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Our Process */}
-                <section className="py-20 md:py-28">
-                    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="mb-14" data-aos="fade-up">
-                            <p className="text-xs font-bold tracking-[0.25em] text-brand-primary uppercase mb-4">
-                                HOW IT WORKS
-                            </p>
+                        <div className="mb-16 md:mb-24 text-center" data-aos="fade-up">
                             <h2
-                                className="text-4xl md:text-5xl text-brand-dark font-light"
+                                className="text-4xl md:text-5xl font-light mb-6"
                                 style={{ fontFamily: 'var(--font-playfair-display), serif' }}
                             >
-                                Our <span className="italic font-bold">Process</span>
+                                How We <span className="italic font-bold">Deliver</span>
                             </h2>
+                            <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+                                A battle-tested methodology designed to move candidates through complex governmental funnels and onto your worksite.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
-                            {processSteps.map((step, i) => (
-                                <div
-                                    key={i}
-                                    className="relative p-8 border border-gray-200 hover:border-[#006A80] hover:shadow-lg transition-all duration-300 group"
-                                    data-aos="fade-up"
-                                    data-aos-delay={i * 100}
-                                >
-                                    <div className="text-5xl font-bold text-gray-200 group-hover:text-[#006A80]/20 transition-colors mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{step.num}</div>
-                                    <h4 className="text-brand-dark font-bold text-base mb-3">{step.title}</h4>
-                                    <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
-                                    {i < processSteps.length - 1 && (
-                                        <div className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 z-10">
-                                            <ArrowRightIcon className="w-5 h-5 text-[#006A80] stroke-2" />
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
 
-                {/* Why Choose Lucru */}
-                <section className="relative py-20 md:py-28 overflow-hidden">
-                    <div className="absolute inset-0">
-                        <Image
-                            src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg"
-                            alt="Team collaboration"
-                            fill sizes="100vw"
-                            className="object-cover"
-                        />
-                        <div className="absolute inset-0 bg-brand-dark/90" />
-                    </div>
-                    <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                            <div className="lg:w-5/12" data-aos="fade-up">
-                                <h2
-                                    className="text-4xl md:text-5xl text-white font-light mb-6"
-                                    style={{ fontFamily: 'var(--font-playfair-display), serif' }}
-                                >
-                                    Why Choose <span className="italic font-bold">Lucru</span>
-                                </h2>
-                                <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                                    With decades of combined experience in international recruitment, Lucru bridges the gap between exceptional talent and visionary employers. Our reputation is built on results, integrity, and an unwavering commitment to quality.
-                                </p>
-                                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                                    Every placement is backed by our quality guarantee and supported by a dedicated account management team available around the clock.
-                                </p>
-                            </div>
-                            <div className="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
-                                {whyChoose.map((item, i) => (
-                                    <div key={i} className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-full bg-brand-primary/20 flex items-center justify-center shrink-0">
-                                            <item.icon className="w-6 h-6 text-brand-primary stroke-1" />
+                        <div className="relative">
+                            <div className="absolute top-0 bottom-0 left-4 md:left-1/2 w-0.5 bg-gray-800 -translate-x-1/2 hidden md:block"></div>
+
+                            <div className="space-y-12 md:space-y-0 relative">
+                                {processSteps.map((step, index) => {
+                                    const isEven = index % 2 === 0;
+                                    return (
+                                        <div key={index} className="relative flex items-center md:justify-between w-full pb-8 md:pb-24 last:pb-0" data-aos="fade-up">
+                                            {/* Center Line Marker */}
+                                            <div className="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-brand-dark border-2 border-[#006A80] -translate-x-1/2 z-10 flex items-center justify-center">
+                                                <div className="w-2 h-2 rounded-full bg-[#006A80]"></div>
+                                            </div>
+
+                                            {/* Content Box */}
+                                            <div className={`ml-12 md:ml-0 md:w-5/12 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto'}`}>
+                                                <div className="text-6xl font-black text-white/5 mb-2 pointer-events-none" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                                                    {step.num}
+                                                </div>
+                                                <h4 className="text-xl font-bold mb-3">{step.title}</h4>
+                                                <p className="text-gray-400 text-sm leading-relaxed">
+                                                    {step.desc}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-sm mb-1">{item.title}</h4>
-                                            <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <div data-aos="fade-up"><StaffingCTA /></div>
-                <div data-aos="fade-up"><MobileAppSection /></div>
-                <div data-aos="fade-up"><SubscribeSection /></div>
+                <div data-aos="fade-up">
+                    <StaffingCTA />
+                </div>
+                <div data-aos="fade-up">
+                    <MobileAppSection />
+                </div>
+                <div data-aos="fade-up">
+                    <SubscribeSection />
+                </div>
             </main>
         </>
     );
