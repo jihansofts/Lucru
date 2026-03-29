@@ -111,7 +111,6 @@ export default function MainHeader() {
                     {SHOW_FULL_NAV && (
                         <>
                             <HeaderDropdown label="Hire Manpower" href="/hire-manpower" items={[
-                                { label: 'Submit Manpower Request', href: '/hire-manpower/submit-manpower-request' },
                                 { label: 'Direct Recruitment', href: '/hire-manpower/direct-recruitment' },
                                 { label: 'Bulk Deployments', href: '/hire-manpower/bulk-deployments' }
                             ]} />
@@ -187,7 +186,6 @@ export default function MainHeader() {
                         {SHOW_FULL_NAV && (
                             <>
                                 <MobileHeaderDropdown label="Hire Manpower" onClose={() => setIsMobileMenuOpen(false)} items={[
-                                    { label: 'Submit Manpower Request', href: '/hire-manpower/submit-manpower-request' },
                                     { label: 'Direct Recruitment', href: '/hire-manpower/direct-recruitment' },
                                     { label: 'Bulk Deployments', href: '/hire-manpower/bulk-deployments' }
                                 ]} />

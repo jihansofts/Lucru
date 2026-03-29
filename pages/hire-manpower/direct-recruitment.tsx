@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import HireTalentSubNav from "@/components/HireTalentSubNav";
 import StaffingCTA from "@/components/StaffingCTA";
 import MobileAppSection from "@/components/MobileAppSection";
@@ -16,37 +15,37 @@ import {
 } from "@heroicons/react/24/outline";
 
 const benefits = [
-  { icon: CheckBadgeIcon, title: "Multi-Stage Vetting", desc: "Rigorous background checks, credential verification, and skill assessment" },
-  { icon: ShieldCheckIcon, title: "Quality Guarantee", desc: "Free replacement within 90 days if a placement doesn't meet expectations" },
-  { icon: AcademicCapIcon, title: "Specialist Recruiters", desc: "Industry-specific talent acquisition experts who understand your needs" },
-  { icon: GlobeAltIcon, title: "Global Talent Pool", desc: "Access pre-screened candidates from 30+ countries worldwide" },
-  { icon: UserGroupIcon, title: "Cultural Fit", desc: "We assess personality, work ethic, and cultural alignment beyond just skills" },
-  { icon: ClipboardDocumentCheckIcon, title: "Full Compliance", desc: "End-to-end visa, immigration, and employment law compliance management" },
+  { icon: CheckBadgeIcon, title: "Rigorous Trade Testing", desc: "Advanced technical and hands-on skill evaluations before any candidate is shortlisted." },
+  { icon: ShieldCheckIcon, title: "Medical & Background", desc: "Comprehensive GAMCA/Wafid medical checks paired with police clearances." },
+  { icon: AcademicCapIcon, title: "Specialist Sourcing", desc: "Recruiters dedicated specifically to locating white-collar and specialized blue-collar trades." },
+  { icon: GlobeAltIcon, title: "South Asian Focus", desc: "Exclusive deep-market access to professionals from Bangladesh, India, Nepal and Sri Lanka." },
+  { icon: UserGroupIcon, title: "Interview Facilitation", desc: "We provide high-tech venues for your delegates to interview and select candidates comfortably." },
+  { icon: ClipboardDocumentCheckIcon, title: "Visa & Emigration", desc: "Complete handling of embassy stamping, BMET/Protector regulations, and air ticketing." },
 ];
 
 const processSteps = [
   {
     step: "01",
-    title: "Requirements Analysis",
-    desc: "Our specialist recruiters conduct an in-depth consultation to understand your role specifications, company culture, growth plans, and candidate success criteria.",
+    title: "Demand & Documentation",
+    desc: "You provide a Power of Attorney and Demand Letter. We authenticate them with the relevant embassy to legally initiate the recruitment quota.",
     image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
   },
   {
     step: "02",
-    title: "Global Talent Search",
-    desc: "Leveraging our database of 50,000+ pre-screened professionals and active sourcing across 30+ countries, we identify your ideal candidates through multi-channel recruitment.",
+    title: "Sourcing & Pre-screening",
+    desc: "We advertise the roles and mobilize our local networks. High-volume applicants are aggressively filtered down to those actually matching your stringent criteria.",
     image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg",
   },
   {
     step: "03",
-    title: "Assessment & Shortlisting",
-    desc: "Candidates undergo technical evaluations, trade tests, reference checks, and behavioural interviews. You receive a curated shortlist of top-tier matches with full profiles.",
+    title: "Client Interviews & Selection",
+    desc: "We host your HR team at our facilities, or arrange virtual interviews. You have the final say on every single selection made from the pre-screened pool.",
     image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
   },
   {
     step: "04",
-    title: "Placement & Onboarding",
-    desc: "We manage the entire deployment lifecycle — offer negotiation, visa processing, medical clearance, travel logistics, and pre-departure orientation for a seamless start.",
+    title: "Deployment & Onboarding",
+    desc: "We shepherd selected candidates through their medical exams, visa stamping, and local government emigration approvals prior to flying them right to your site.",
     image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg",
   },
 ];
@@ -56,7 +55,7 @@ const successCards = [
     title: "Healthcare Provider",
     location: "Saudi Arabia",
     stat: "120+ Nurses",
-    desc: "Deployed 120+ registered nurses across 8 hospitals in Riyadh within 6 weeks, with 97% first-year retention.",
+    desc: "Deployed 120+ registered nurses across 8 hospitals in Riyadh within 6 weeks, successfully handling Prometric and Dataflow requirements.",
     image: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
   },
   {
@@ -70,17 +69,17 @@ const successCards = [
     title: "Luxury Hotel Group",
     location: "Qatar",
     stat: "200+ Staff",
-    desc: "Mass recruitment of hospitality professionals for 3 five-star properties opening in Doha, from chefs to front-of-house.",
+    desc: "Precise candidate sourcing of hospitality professionals for 3 five-star properties opening in Doha, from chefs to front-of-house.",
     image: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
   },
 ];
 
-export default function PermanentPlacement() {
+export default function DirectRecruitment() {
   return (
     <>
       <Head>
-        <title>Permanent Placement - Lucru</title>
-        <meta name="description" content="Build lasting teams with Lucru's permanent placement services. Rigorous vetting, global sourcing, and guaranteed quality for every hire." />
+        <title>Direct Recruitment - Lucru</title>
+        <meta name="description" content="Secure reliable South Asian manpower. We source, screen, process, and deploy top-tier professionals seamlessly for your international operations." />
       </Head>
       <main className="min-h-screen bg-white">
         {/* Hero */}
@@ -88,7 +87,7 @@ export default function PermanentPlacement() {
           <div className="absolute inset-0">
             <Image
               src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
-              alt="Permanent placement"
+              alt="Direct Recruitment"
               fill sizes="100vw"
               className="object-cover"
             />
@@ -97,10 +96,10 @@ export default function PermanentPlacement() {
           <LPattern />
           <div className="absolute bottom-16 md:bottom-22 left-6 md:left-24 z-20 text-white max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-light mb-3 drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-              Permanent <span className="font-bold italic">Placement</span>
+              Direct <span className="font-bold italic">Recruitment</span>
             </h1>
             <p className="text-sm md:text-lg drop-shadow-md text-gray-200">
-              The right hire transforms your business. We find them.
+              Your gateway to dedicated, hardworking talent from South Asia.
             </p>
           </div>
         </div>
@@ -113,39 +112,33 @@ export default function PermanentPlacement() {
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
               <div className="lg:w-5/12" data-aos="fade-up">
                 <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                  Build Lasting <span className="italic font-bold">Teams</span>
+                  Source Reliable <span className="italic font-bold">Talent</span>
                 </h2>
                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">
                   Hire With Confidence
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-                  Our permanent placement service connects you with exceptional professionals who become integral members of your organisation. Every candidate undergoes rigorous multi-stage vetting — technical assessments, background verification, reference checks, and cultural fit evaluation — so you can hire with absolute confidence.
+                  Our direct recruitment service is fully tailored towards connecting overseas employers with competent workers from South Asia. Every candidate undergoes rigorous multi-stage vetting — trade assessments, background verification, medical checks, and visa processing compliance — saving you enormous administrative efforts.
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
-                  From individual executive searches to large-scale recruitment campaigns, Lucru delivers candidates who don&apos;t just fill positions — they elevate your business.
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
+                  Whether you need highly certified engineers or seasoned heavy-duty mechanics, we make sure they land at your site ready to immediately contribute.
                 </p>
-                <Link
-                  href="/hire-manpower/submit-manpower-request"
-                  className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
-                >
-                  REQUEST TALENT
-                </Link>
               </div>
 
               {/* Benefits Grid */}
               <div className="lg:w-7/12">
                 <h4 className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-8" data-aos="fade-up">
-                  OUR GUARANTEES
+                  THE LUCRU STANDARD
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {benefits.map((item, index) => (
                     <div
                       key={index}
-                      className="border border-gray-200 rounded-sm p-6 flex flex-col items-center text-center hover:border-[#006A80] hover:shadow-md transition-all duration-300 group"
+                      className="border border-gray-200 p-6 flex flex-col hover:border-[#006A80] hover:shadow-md transition-all duration-300 group"
                       data-aos="fade-up"
-                      data-aos-delay={index * 80}
+                      data-aos-delay={index * 100}
                     >
-                      <item.icon className="w-10 h-10 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
+                      <item.icon className="w-8 h-8 text-[#006A80] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-300" />
                       <h5 className="text-brand-dark font-bold text-sm mb-2">{item.title}</h5>
                       <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                     </div>
@@ -156,43 +149,39 @@ export default function PermanentPlacement() {
           </div>
         </section>
 
-        {/* Process Steps */}
+        {/* Process Section with Images */}
         <section className="py-20 md:py-28 bg-[#f7f5f2]">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-            <div className="mb-12" data-aos="fade-up">
-              <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                How It <span className="italic font-bold">Works</span>
+            <div className="mb-16 md:mb-20 text-center max-w-3xl mx-auto" data-aos="fade-up">
+              <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                End-to-End <span className="italic font-bold">Execution</span>
               </h2>
-              <p className="text-gray-600 text-sm md:text-base max-w-2xl leading-relaxed">
-                Our proven 4-step process ensures you get the right permanent hire — every time.
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                From identifying raw talent to handing them their plane tickets, we manage the entire overseas employment lifecycle so you don&apos;t have to.
               </p>
             </div>
 
-            <div className="space-y-12">
-              {processSteps.map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}
-                  data-aos="fade-up"
-                >
-                  <div className="md:w-1/2 relative overflow-hidden">
+            <div className="space-y-20 md:space-y-32">
+              {processSteps.map((step, index) => (
+                <div key={index} className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-10 md:gap-20`}>
+                  <div className="w-full md:w-1/2 relative aspect-4/3 md:aspect-square" data-aos={index % 2 !== 0 ? 'fade-left' : 'fade-right'}>
                     <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-70 md:h-80"
+                      src={step.image}
+                      alt={step.title}
+                      fill
+                      className="object-cover rounded-sm shadow-xl"
                     />
-                    <div className="absolute top-4 left-4 bg-brand-dark text-white text-2xl font-bold px-4 py-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                      {item.step}
+                    <div className="absolute -bottom-8 -right-8 text-8xl font-bold text-white drop-shadow-xl" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                      {step.step}
                     </div>
                   </div>
-                  <div className="md:w-1/2">
-                    <h3 className="text-2xl md:text-3xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                      {item.title}
+                  <div className="w-full md:w-1/2" data-aos="fade-up">
+                    <div className="text-[#006A80] font-bold text-xl mb-4">{step.step}</div>
+                    <h3 className="text-3xl text-brand-dark font-light mb-6" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                      {step.title}
                     </h3>
-                    <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                      {item.desc}
+                    <p className="text-gray-600 leading-relaxed text-base">
+                      {step.desc}
                     </p>
                   </div>
                 </div>
@@ -204,39 +193,41 @@ export default function PermanentPlacement() {
         {/* Success Stories */}
         <section className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-            <div className="mb-12" data-aos="fade-up">
-              <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                Success <span className="italic font-bold">Stories</span>
-              </h2>
-              <p className="text-gray-600 text-sm md:text-base max-w-2xl leading-relaxed">
-                Real results from real partnerships. See how Lucru has transformed the workforce of leading organisations.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12" data-aos="fade-up">
+              <div className="max-w-2xl">
+                <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                  Proven <span className="italic font-bold">Success</span>
+                </h2>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  We have proudly constructed international workforces for world-class organizations.
+                </p>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {successCards.map((card, index) => (
-                <div
-                  key={index}
-                  className="group cursor-pointer border border-transparent hover:border-gray-200 transition-colors duration-300"
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100}
-                >
-                  <div className="relative w-full aspect-4/3 overflow-hidden mb-6">
+                <div key={index} className="bg-[#f7f5f2] group" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div className="relative w-full aspect-16/9 overflow-hidden">
                     <Image
                       src={card.image}
                       alt={card.title}
-                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                      fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute bottom-3 left-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">
-                      {card.stat}
-                    </div>
                   </div>
-                  <div className="px-2 pb-4">
-                    <h3 className="text-xl text-brand-dark font-light mb-1" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                      {card.title} <span className="font-bold">{card.location}</span>
-                    </h3>
-                    <p className="text-sm text-gray-500 leading-relaxed">{card.desc}</p>
+                  <div className="p-8">
+                    <div className="flex justify-between items-start mb-4">
+                      <div>
+                        <h4 className="text-brand-dark font-bold text-lg">{card.title}</h4>
+                        <p className="text-[#006A80] text-sm font-medium">{card.location}</p>
+                      </div>
+                      <span className="bg-white border border-gray-200 text-xs font-bold px-3 py-1 text-gray-600">
+                        {card.stat}
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {card.desc}
+                    </p>
                   </div>
                 </div>
               ))}

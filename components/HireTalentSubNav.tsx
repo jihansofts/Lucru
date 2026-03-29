@@ -4,9 +4,8 @@ import { useRouter } from 'next/router';
 
 const subNavItems = [
     { label: 'Overview', href: '/hire-manpower' },
-    { label: 'Submit Staffing Request', href: '/hire-manpower/submit-manpower-request' },
-    { label: 'Permanent Placement', href: '/hire-manpower/direct-recruitment' },
-    { label: 'Contract Staffing', href: '/hire-manpower/bulk-deployments' },
+    { label: 'Direct Recruitment', href: '/hire-manpower/direct-recruitment' },
+    { label: 'Bulk Deployments', href: '/hire-manpower/bulk-deployments' },
 ];
 
 export default function HireTalentSubNav() {

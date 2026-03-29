@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+
 import Image from 'next/image';
 
 export default function StaffingCTA() {
@@ -30,16 +30,10 @@ export default function StaffingCTA() {
                 >
                     Whether you need one specialist or an entire workforce, our recruitment experts are ready to deliver. Get in touch today.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
-                    <Link
-                        href="/hire-manpower/submit-manpower-request"
-                        className="inline-block bg-white text-brand-dark px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-gray-100 transition-colors"
-                    >
-                        SUBMIT REQUEST
-                    </Link>
+                <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                     <a
                         // href="tel:800LUCRU"
-                        className="inline-block border border-white text-white px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-brand-dark transition-colors"
+                        className="inline-block bg-white text-brand-dark px-10 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-gray-100 transition-colors"
                     >
                         CALL US NOW
                     </a>

@@ -13,25 +13,25 @@ import Image from 'next/image';
 const slidesData = [
     {
         id: 1,
-        title: "Access Elite",
-        subtitle: "Talent",
-        description: "Connect with pre-vetted professionals across healthcare, engineering, IT, and more — sourced globally, deployed swiftly.",
+        title: "Reliable South Asian",
+        subtitle: "Workforce",
+        description: "Source dedicated, trade-tested professionals and skilled labor from South Asia for your global projects.",
         image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
-        link: "/hire-manpower/submit-manpower-request"
+        link: "/hire-manpower/direct-recruitment"
     },
     {
         id: 2,
-        title: "Permanent",
-        subtitle: "Placement",
-        description: "Build lasting teams with our rigorous candidate matching — from executive search to specialist technical roles.",
+        title: "End-to-End",
+        subtitle: "Processing",
+        description: "We handle the complexities. From rigorous candidate screening to visa processing, medicals, and flight deployments.",
         image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
         link: "/hire-manpower/direct-recruitment"
     },
     {
         id: 3,
-        title: "Contract",
-        subtitle: "Staffing",
-        description: "Scale your workforce on demand with flexible contract professionals, fully compliant and project-ready.",
+        title: "Scalable",
+        subtitle: "Deployments",
+        description: "Fulfill bulk manpower requirements efficiently. Partner with us for rapid, compliant, and hassle-free mass recruitment.",
         image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
         link: "/hire-manpower/bulk-deployments"
     }

@@ -29,7 +29,7 @@ const services = [
         title: 'Pre-Departure Training',
         description: 'Every candidate deployed through Lucru undergoes comprehensive pre-departure orientation covering cultural acclimatisation, workplace safety, rights and responsibilities, language skills, and destination-specific protocols. This ensures a smooth transition and immediate productivity from the very first day on the job.',
         image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg',
-        link: '/hire-manpower/submit-manpower-request',
+        link: '/our-services/pre-departure-orientation',
     },
 ];
 

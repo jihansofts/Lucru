@@ -106,10 +106,10 @@ export default function JobCard({
 
       <div className="mt-auto pt-4 border-t border-gray-100">
         <Link 
-          href={`/vacancies/#`} 
+          href={`/vacancies/${id}`} 
           className="w-full inline-block text-center border border-brand-dark text-brand-dark px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors rounded"
         >
-          Apply
+          View Details
         </Link>
       </div>
     </div>

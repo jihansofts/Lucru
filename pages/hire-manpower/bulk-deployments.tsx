@@ -16,59 +16,53 @@ import {
 } from "@heroicons/react/24/outline";
 
 const benefits = [
-  { icon: BoltIcon, title: "Rapid Scaling", desc: "Scale your workforce up or down within weeks, not months" },
-  { icon: ArrowPathIcon, title: "Flexible Contracts", desc: "3 months to 3 years — fully customisable engagement terms" },
-  { icon: CurrencyDollarIcon, title: "Cost Effective", desc: "No long-term commitments; pay only for the duration you need" },
-  { icon: ScaleIcon, title: "Risk Mitigation", desc: "We handle all employment liabilities, insurance, and compliance" },
-  { icon: WrenchScrewdriverIcon, title: "Project-Ready", desc: "Pre-screened professionals ready to start immediately on arrival" },
-  { icon: ShieldCheckIcon, title: "Full Support", desc: "Ongoing HR management, payroll, and performance monitoring" },
+  { icon: BoltIcon, title: "Rapid Scaling", desc: "Deploy hundreds of skilled workers to your sites in a matter of weeks." },
+  { icon: ArrowPathIcon, title: "End-to-End Logistics", desc: "We manage medicals, bulk visa stamping, protective clearances, and flights." },
+  { icon: CurrencyDollarIcon, title: "Cost Effective", desc: "Economies of scale applied to mass recruitment campaigns reduce overall hiring costs." },
+  { icon: ScaleIcon, title: "Risk Mitigation", desc: "Stringent background checks and comprehensive trade tests minimize deployment failure." },
+  { icon: WrenchScrewdriverIcon, title: "Project-Ready", desc: "Workers arrive fully briefed, compliant, and ready to mobilize on site." },
+  { icon: ShieldCheckIcon, title: "Dedicated Coordinators", desc: "Account managers assigned specifically to handle your large-scale workforce volumes." },
 ];
 
 const industries = [
   {
-    title: "Oil & Gas",
-    desc: "Certified welders, pipe fitters, riggers, HSE officers, and process engineers for onshore and offshore operations.",
-    image: "https://images.pexels.com/photos/5961982/pexels-photo-5961982.jpeg",
-    positions: "500+",
-  },
-  {
     title: "Construction & Infrastructure",
-    desc: "Site engineers, quantity surveyors, crane operators, steel fixers, and project coordinators for mega developments.",
+    desc: "Masons, steel fixers, carpenters, scaffolders, electricians, and heavy equipment operators.",
     image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
     positions: "1,200+",
   },
   {
-    title: "Healthcare",
-    desc: "Nurses, lab technicians, physiotherapists, pharmacists, and healthcare assistants for hospitals and clinics.",
+    title: "Oil & Gas",
+    desc: "Certified 6G welders, pipe fabricators, riggers, and mechanical fitters for massive turnaround projects.",
+    image: "https://images.pexels.com/photos/5961982/pexels-photo-5961982.jpeg",
+    positions: "500+",
+  },
+  {
+    title: "Facility Management",
+    desc: "Cleaners, HVAC technicians, plumbers, and security personnel for mega-structures and communities.",
     image: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
     positions: "800+",
   },
   {
-    title: "Hospitality",
-    desc: "Chefs, F&B managers, housekeeping staff, concierge, and event coordinators for luxury hotels and resorts.",
+    title: "Hospitality & Catering",
+    desc: "Kitchen stewards, waitstaff, bellboys, and housekeeping teams for newly launched luxury hotels.",
     image: "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
     positions: "650+",
   },
   {
-    title: "Facility Management",
-    desc: "HVAC technicians, electricians, plumbers, cleaning supervisors, and maintenance managers for commercial properties.",
-    image: "https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg",
-    positions: "400+",
-  },
-  {
-    title: "Logistics & Transport",
-    desc: "Heavy vehicle drivers, warehouse staff, fleet managers, and supply chain coordinators for distribution networks.",
+    title: "Manufacturing & Warehousing",
+    desc: "Assembly line workers, forklift operators, packers, and logisticians for massive supply chains.",
     image: "https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg",
     positions: "350+",
   },
 ];
 
-export default function ContractStaffing() {
+export default function BulkDeployments() {
   return (
     <>
       <Head>
-        <title>Contract Staffing - Lucru</title>
-        <meta name="description" content="Scale your workforce on demand with Lucru's contract staffing solutions. Fully compliant, project-ready professionals deployed in 2-4 weeks." />
+        <title>Bulk Deployments - Lucru</title>
+        <meta name="description" content="Scale your workforce efficiently with our bulk deployment solutions from South Asia. Fully compliant, mass-recruited professionals." />
       </Head>
       <main className="min-h-screen bg-white">
         {/* Hero */}
@@ -76,7 +70,7 @@ export default function ContractStaffing() {
           <div className="absolute inset-0">
             <Image
               src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
-              alt="Contract staffing"
+              alt="Bulk Deployments"
               fill sizes="100vw"
               className="object-cover"
             />
@@ -85,10 +79,10 @@ export default function ContractStaffing() {
           <LPattern />
           <div className="absolute bottom-16 md:bottom-22 left-6 md:left-24 z-20 text-white max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-light mb-3 drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-              Contract <span className="font-bold italic">Staffing</span>
+              Bulk <span className="font-bold italic">Deployments</span>
             </h1>
             <p className="text-sm md:text-lg drop-shadow-md text-gray-200">
-              Flexible workforce solutions that scale with your projects.
+              Executing mass recruitment campaigns with precision and speed.
             </p>
           </div>
         </div>
@@ -104,26 +98,26 @@ export default function ContractStaffing() {
                   Scale On <span className="italic font-bold">Demand</span>
                 </h2>
                 <h3 className="text-lg text-[#006A80] font-semibold mb-6">
-                  Workforce Flexibility, Zero Hassle
+                  Mass Mobilization, Zero Hassle
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-                  Whether you&apos;re ramping up for a new project, covering seasonal peaks, or managing a long-term contract, our contract staffing service delivers pre-vetted professionals who are ready to start on day one.
+                  Whether you&apos;re breaking ground on a massive infrastructure project or launching a chain of retail stores, finding hundreds of capable workers simultaneously is a massive logistical challenge. We solve this by structuring dedicated mass recruitment campaigns directly at the source.
                 </p>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
-                  We manage the full employment lifecycle — from sourcing and visa processing to payroll and performance management — so you can focus on what matters most: your project success.
+                  We handle the full employment lifecycle — organizing mega interview drives, arranging vast trade-testing facilities, managing bulk medical applications, and coordinating chartered flights. You just provide the demand; we supply the workforce.
                 </p>
-                <Link
-                  href="/hire-manpower/submit-manpower-request"
+                <a
+                  href="#"
                   className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                 >
-                  GET STARTED
-                </Link>
+                  START A CAMPAIGN
+                </a>
               </div>
 
               {/* Benefits Grid */}
               <div className="lg:w-7/12">
                 <h4 className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-8" data-aos="fade-up">
-                  KEY BENEFITS
+                  KEY ADVANTAGES
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {benefits.map((item, index) => (
@@ -149,10 +143,10 @@ export default function ContractStaffing() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="mb-12" data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                Industries <span className="italic font-bold">We Serve</span>
+                Trades <span className="italic font-bold">We Supply</span>
               </h2>
               <p className="text-gray-600 text-sm md:text-base max-w-2xl leading-relaxed">
-                Our contract staffing solutions span across all major sectors, with specialized recruitment teams for each industry.
+                We draw from deep candidate pools across South Asia to fulfill bulk quotas for trade and labor-intensive sectors.
               </p>
             </div>
 
@@ -173,7 +167,7 @@ export default function ContractStaffing() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute bottom-3 right-3 bg-[#006A80] text-white text-xs font-bold px-3 py-1.5 tracking-wider">
-                      {item.positions} placed
+                      {item.positions} Placed Annually
                     </div>
                   </div>
                   <div className="p-6">
@@ -193,16 +187,16 @@ export default function ContractStaffing() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="mb-12" data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl text-brand-dark font-light mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                How Contract <span className="italic font-bold">Staffing Works</span>
+                Campaign <span className="italic font-bold">Roadmap</span>
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
-                { step: "01", title: "Define Scope", desc: "Share your project scope, workforce numbers, skill requirements, and deployment timeline." },
-                { step: "02", title: "Talent Matching", desc: "We match professionals from our ready-to-deploy pool using AI-powered filtering and expert review." },
-                { step: "03", title: "Rapid Deployment", desc: "Complete mobilisation in 2-4 weeks including documentation, compliance, and travel logistics." },
-                { step: "04", title: "Managed Service", desc: "Ongoing payroll, HR management, performance monitoring, and contract renewals handled by us." },
+                { step: "01", title: "Demand Allocation", desc: "Share your worker categories, quotas, salaries, and employment terms. We file demand letters for attestation." },
+                { step: "02", title: "Trade Test Drives", desc: "We rent out massive testing grounds where hundreds of hopefuls are evaluated simultaneously by your delegates." },
+                { step: "03", title: "Bulk Processing", desc: "Our massive operations team concurrently handles passports, medical centers, visas, and BMET clearances." },
+                { step: "04", title: "Mass Mobilization", desc: "Pre-departure briefings followed by coordinated group travel, often utilizing chartered passenger aircrafts." },
               ].map((item, index) => (
                 <div
                   key={index}

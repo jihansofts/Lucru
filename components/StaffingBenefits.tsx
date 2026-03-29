@@ -1,14 +1,14 @@
 import React from 'react';
-import Link from 'next/link';
+
 import { GlobeAltIcon, ShieldCheckIcon, ClockIcon, AcademicCapIcon, DocumentCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 const benefits = [
-    { icon: GlobeAltIcon, label: 'Global Reach', desc: 'Access talent from 30+ countries across Asia, Africa & the Middle East' },
-    { icon: ShieldCheckIcon, label: 'Vetted Candidates', desc: 'Multi-stage screening with verified credentials & references' },
-    { icon: ClockIcon, label: 'Fast Turnaround', desc: 'Rapid deployment within 2-4 weeks from request to onboarding' },
-    { icon: AcademicCapIcon, label: 'Industry Expertise', desc: 'Specialized recruiters for healthcare, engineering, IT & more' },
-    { icon: DocumentCheckIcon, label: 'Compliance Assured', desc: 'Full visa, immigration & labor law compliance management' },
-    { icon: UserGroupIcon, label: 'Dedicated Support', desc: 'Personal account managers from first contact to placement' },
+    { icon: GlobeAltIcon, label: 'South Asian Pool', desc: 'Direct access to millions of hardworking candidates from Bangladesh, India, Nepal, and beyond' },
+    { icon: ShieldCheckIcon, label: 'Trade-Tested Candidates', desc: 'Rigorous screening, skills verification, and medical clearings before shortlisting' },
+    { icon: ClockIcon, label: 'Fast Deployment', desc: 'Streamlined logistics ensuring rapid mobilization from source country to your worksite' },
+    { icon: AcademicCapIcon, label: 'Industry Specialized', desc: 'Expertise in construction, hospitality, healthcare, facility management, and manufacturing' },
+    { icon: DocumentCheckIcon, label: 'Full Documentation', desc: 'Attestation, visa processing, emigration clearance, and legal compliance handled in-house' },
+    { icon: UserGroupIcon, label: 'Dedicated Account Managers', desc: 'Single point of contact for employers coordinating large-scale interviews and hiring events' },
 ];
 
 export default function StaffingBenefits() {
@@ -21,20 +21,20 @@ export default function StaffingBenefits() {
                             Why Choose <span className="italic font-bold">Lucru</span>
                         </h2>
                         <h3 className="text-lg md:text-xl text-[#006A80] font-semibold mb-6">
-                            Your Strategic Manpower Partner
+                            Your Overseas Manpower Partner
                         </h3>
                         <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
-                            With decades of combined experience in international recruitment, Lucru bridges the gap between exceptional talent and visionary employers. Our end-to-end staffing solutions ensure you get the right people, with the right skills, at the right time — fully compliant and ready to contribute from day one.
+                            We specialize in connecting ambitious employers across the Middle East, Europe, and Asia with dedicated, hardworking talent from South Asia. We understand the complexities of international recruitment and take the burden off your shoulders.
                         </p>
                         <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-10">
-                            From single-role executive searches to large-scale workforce mobilisation, our network spans 30+ countries with a proven track record of delivering quality placements that last.
+                            Our agency provides a 360-degree service—from initial trade-testing and interviews in the home country, through the labyrinth of governmental approvals, visa processing, and document attestation, right up to booking flights and ensuring smooth deployment. Focus on your business while we build your workforce.
                         </p>
-                        <Link
-                            href="/hire-manpower/submit-manpower-request"
+                        <a
+                            href="#"
                             className="inline-block border border-brand-dark text-brand-dark px-8 py-3.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors"
                         >
-                            SUBMIT REQUEST
-                        </Link>
+                            GET IN TOUCH
+                        </a>
                     </div>
 
                     <div className="lg:w-7/12">

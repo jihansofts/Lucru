@@ -4,53 +4,53 @@ import { ClipboardDocumentListIcon, MagnifyingGlassIcon, UsersIcon, CheckBadgeIc
 const tabs = [
     {
         id: 'permanent',
-        label: 'PERMANENT PLACEMENT',
+        label: 'OVERSEAS RECRUITMENT',
         steps: [
             {
                 icon: ClipboardDocumentListIcon,
-                title: 'Define Requirements',
-                description: 'Share your job specifications, required qualifications, experience levels, and company culture fit criteria with our specialist recruiters.'
+                title: 'Client Requirements',
+                description: 'Provide your desired job specifications, salary structures, and required numbers. We handle the necessary Demand Letter and embassy attestations.'
             },
             {
                 icon: MagnifyingGlassIcon,
-                title: 'Candidate Sourcing',
-                description: 'Our team activates global talent networks, screens candidates through multi-level assessments, and shortlists the best matches for your review.'
+                title: 'Sourcing & Shortlisting',
+                description: 'We activate our local networks to source candidates. Our technical teams conduct initial pre-screenings and comprehensive trade tests.'
             },
             {
                 icon: UsersIcon,
                 title: 'Interview & Selection',
-                description: 'We coordinate interviews, manage candidate communications, administer trade tests, and facilitate your final selection process seamlessly.'
+                description: 'We organize seamless interview drives—either virtual or in-person at our local testing centers—giving you total control over final selections.'
             },
             {
                 icon: CheckBadgeIcon,
-                title: 'Onboarding & Deployment',
-                description: 'We handle visa processing, medical clearances, travel arrangements, and pre-departure orientation to ensure a smooth start for your new hire.'
+                title: 'Processing & Deployment',
+                description: 'Our team completely manages medicals, background checks, visa stamping, emigration clearance, and flights. Your candidate simply arrives ready to work.'
             }
         ]
     },
     {
         id: 'contract',
-        label: 'CONTRACT STAFFING',
+        label: 'BULK DEPLOYMENTS',
         steps: [
             {
                 icon: DocumentTextIcon,
-                title: 'Submit Staffing Request',
-                description: 'Specify the number of professionals needed, skill requirements, project duration, and deployment location through our streamlined request form.'
+                title: 'Mass Campaign Planning',
+                description: 'Tell us how many workers you need and when. We plan a massive recruitment drive designed to source hundreds of tradesmen efficiently.'
             },
             {
                 icon: BuildingOffice2Icon,
-                title: 'Talent Matching',
-                description: 'Our AI-powered matching engine combined with expert recruiters identifies contract professionals from our ready-to-deploy talent pool.'
+                title: 'Large-Scale Trade Tests',
+                description: 'We host intensive, multi-day testing events where your delegates can personally observe candidates executing simulated tasks matching the job.'
             },
             {
                 icon: ArrowPathIcon,
-                title: 'Rapid Deployment',
-                description: 'Contract staff are mobilised within 2-4 weeks — including documentation, compliance checks, and logistics — so your project stays on track.'
+                title: 'Compliance & Visas',
+                description: 'We batch-process group visas, handle bulk emigration clearance (BMET/Protector), and mass medical filings to keep the pipeline moving swiftly.'
             },
             {
                 icon: CogIcon,
-                title: 'Ongoing Management',
-                description: 'We handle payroll, performance monitoring, contract extensions, and replacements throughout the engagement — you focus on your project.'
+                title: 'Chartered Flights & Onboarding',
+                description: 'We organize group itineraries, including possible chartered flights, and provide stringent pre-departure orientation to prepare workers for your destination.'
             }
         ]
     }
@@ -68,7 +68,7 @@ export default function HiringProcess() {
                         Our Hiring <span className="italic font-bold">Process</span>
                     </h2>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl">
-                        A streamlined, transparent approach that takes you from requirement to deployment — whether you need a permanent hire or a contract team.
+                        A streamlined, transparent approach that takes you from requirement to deployment — whether you are hiring a single specialist or deploying hundreds of workers.
                     </p>
                 </div>
 
