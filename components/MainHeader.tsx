@@ -120,7 +120,7 @@ export default function MainHeader() {
                             ]} />
                         </>
                     )}
-                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                    <Link href="/success-stories" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                         Success Stories
                     </Link>
                     <Link href="/vacancies" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
@@ -192,7 +192,7 @@ export default function MainHeader() {
                                 />
                             </>
                         )}
-                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link href="/success-stories" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                             Success Stories
                         </Link>
                         <Link href="/vacancies" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>

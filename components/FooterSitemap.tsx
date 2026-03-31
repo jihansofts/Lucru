@@ -31,7 +31,7 @@ const sitemapData: SitemapColumn[] = [
       { text: "Home", href: "/" },
       { text: "About Us", href: "/about-us" },
       { text: "Vacancies", href: "/vacancies" },
-      { text: "Success Stories", href: "#" },
+      { text: "Success Stories", href: "/success-stories" },
       { text: "Contact Us", href: "/contact-us" }
     ],
     subsections: []
