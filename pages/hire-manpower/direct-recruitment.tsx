@@ -3,7 +3,6 @@ import Image from "next/image";
 import HireTalentSubNav from "@/components/HireTalentSubNav";
 import StaffingCTA from "@/components/StaffingCTA";
 import MobileAppSection from "@/components/MobileAppSection";
-import SubscribeSection from "@/components/SubscribeSection";
 import LPattern from "@/components/LPattern";
 import {
   CheckBadgeIcon,
@@ -242,7 +241,6 @@ export default function DirectRecruitment() {
           <MobileAppSection />
         </div>
         <div data-aos="fade-up">
-          <SubscribeSection />
         </div>
       </main>
     </>

@@ -12,12 +12,6 @@ const FooterBottomBar = () => {
       <div className="w-full bg-[#2F9BA0] text-white py-5 px-6 md:px-12 border-t border-white/5 order-1 z-10 relative">
         <div className="max-w-350 mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 mt-1">
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
-            <div className="flex items-center h-8">
-              <span className="text-[26px] font-black tracking-widest uppercase leading-none transform scale-y-110">
-                LUCRU
-              </span>
-            </div>
-            <div className="hidden sm:block h-5 w-px bg-white/30 mt-1"></div>
             <span className="text-[11px] font-semibold tracking-wide mt-1">
               © Copyright 2026 Lucru. All rights reserved.
             </span>

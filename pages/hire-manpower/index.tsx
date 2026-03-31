@@ -5,7 +5,6 @@ import StaffingBenefits from "@/components/StaffingBenefits";
 import HiringProcess from "@/components/HiringProcess";
 import StaffingCTA from "@/components/StaffingCTA";
 import MobileAppSection from "@/components/MobileAppSection";
-import SubscribeSection from "@/components/SubscribeSection";
 
 export default function HireTalent() {
   return (
@@ -35,7 +34,6 @@ export default function HireTalent() {
         </div>
 
         <div data-aos="fade-up">
-          <SubscribeSection />
         </div>
       </main>
     </>

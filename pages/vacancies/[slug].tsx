@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import ServicesHero from '@/components/ServicesHero';
 import MobileAppSection from '@/components/MobileAppSection';
-import SubscribeSection from '@/components/SubscribeSection';
 import { BriefcaseIcon, MapPinIcon, CurrencyDollarIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 const jobsData = [
@@ -227,7 +226,6 @@ export default function JobDetails() {
             <MobileAppSection />
         </div>
         <div data-aos="fade-up">
-            <SubscribeSection />
         </div>
       </main>
     </>

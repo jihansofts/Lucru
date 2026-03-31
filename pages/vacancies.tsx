@@ -1,7 +1,6 @@
 import Head from "next/head";
 import NewLaunchesHero from "@/components/NewLaunchesHero";
 import MobileAppSection from "@/components/MobileAppSection";
-import SubscribeSection from "@/components/SubscribeSection";
 import JobCard, { JobData } from "@/components/JobCard";
 import React, { useEffect, useState } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -251,7 +250,6 @@ export default function FindJobs() {
 
         {/* Subscribe Section */}
         <div data-aos="fade-up">
-            <SubscribeSection />
         </div>
       </main>
     </>

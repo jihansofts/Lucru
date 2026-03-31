@@ -5,7 +5,6 @@ import ServicesHero from '@/components/ServicesHero';
 import ServicesSubNav from '@/components/ServicesSubNav';
 import StaffingCTA from '@/components/StaffingCTA';
 import MobileAppSection from '@/components/MobileAppSection';
-import SubscribeSection from '@/components/SubscribeSection';
 import {
     UserGroupIcon,
     MagnifyingGlassIcon,
@@ -200,7 +199,6 @@ export default function OurServices() {
                     <MobileAppSection />
                 </div>
                 <div data-aos="fade-up">
-                    <SubscribeSection />
                 </div>
             </main>
         </>

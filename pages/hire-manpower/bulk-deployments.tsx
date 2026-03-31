@@ -4,7 +4,6 @@ import Link from "next/link";
 import HireTalentSubNav from "@/components/HireTalentSubNav";
 import StaffingCTA from "@/components/StaffingCTA";
 import MobileAppSection from "@/components/MobileAppSection";
-import SubscribeSection from "@/components/SubscribeSection";
 import LPattern from "@/components/LPattern";
 import {
   BoltIcon,
@@ -222,7 +221,6 @@ export default function BulkDeployments() {
           <MobileAppSection />
         </div>
         <div data-aos="fade-up">
-          <SubscribeSection />
         </div>
       </main>
     </>

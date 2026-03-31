@@ -4,7 +4,6 @@ import WorldOfLucru from "@/components/WorldOfLucru";
 import OurNewLaunches from "@/components/OurNewLaunches";
 import LucruWayOfLife from "@/components/LucruWayOfLife";
 import MobileAppSection from "@/components/MobileAppSection";
-import SubscribeSection from "@/components/SubscribeSection";
 
 
 export default function Home() {
@@ -30,7 +29,6 @@ export default function Home() {
           <MobileAppSection />
         </div>
         <div data-aos="fade-up">
-          <SubscribeSection />
         </div>
       </main>
     </>

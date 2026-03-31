@@ -4,7 +4,6 @@ import AboutIntro from '@/components/AboutIntro';
 import AboutServices from '@/components/AboutServices';
 import AboutValues from '@/components/AboutValues';
 import MobileAppSection from '@/components/MobileAppSection';
-import SubscribeSection from '@/components/SubscribeSection';
 
 export default function AboutUs() {
     return (
@@ -33,7 +32,6 @@ export default function AboutUs() {
                 </div>
 
                 <div data-aos="fade-up">
-                    <SubscribeSection />
                 </div>
             </main>
         </>
