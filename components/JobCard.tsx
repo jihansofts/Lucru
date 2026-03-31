@@ -24,6 +24,7 @@ export interface JobData {
   gender: string;
   category: string;
   requirements: string;
+  onApply?: () => void;
 }
 
 export default function JobCard({
@@ -41,7 +42,8 @@ export default function JobCard({
   shift,
   gender,
   category,
-  requirements
+  requirements,
+  onApply
 }: JobData) {
   return (
     <div className="bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col h-full border-gray-100">
@@ -105,12 +107,22 @@ export default function JobCard({
       </div>
 
       <div className="mt-auto pt-4 border-t border-gray-100">
-        <Link 
-          href={`/vacancies/${id}`} 
-          className="w-full inline-block text-center border border-brand-dark text-brand-dark px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors rounded"
-        >
-          View Details
-        </Link>
+        {onApply ? (
+          <button 
+            type="button"
+            onClick={onApply}
+            className="w-full inline-block text-center border border-brand-dark text-brand-dark px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors rounded"
+          >
+            Apply Now
+          </button>
+        ) : (
+          <Link 
+            href={`/vacancies/${id}`} 
+            className="w-full inline-block text-center border border-brand-dark text-brand-dark px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition-colors rounded"
+          >
+            View Details
+          </Link>
+        )}
       </div>
     </div>
   );

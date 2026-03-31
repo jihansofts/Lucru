@@ -105,9 +105,6 @@ export default function MainHeader() {
             <div className="hidden md:flex items-center space-x-6 h-full">
                 {/* Main Navigation (Desktop) */}
                 <nav className="flex items-center space-x-6">
-                    <Link href="/vacancies" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Vacancies
-                    </Link>
                     {SHOW_FULL_NAV && (
                         <>
                             <HeaderDropdown label="Hire Manpower" href="/hire-manpower" items={[
@@ -124,24 +121,19 @@ export default function MainHeader() {
                         </>
                     )}
                     <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Internal Careers
-                    </Link>
-                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
                         Success Stories
                     </Link>
-                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Submit Inquiry
-                    </Link>
-                    <Link href="#" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                        Contact Us
+                    <Link href="/vacancies" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Vacancies
                     </Link>
                     {SHOW_FULL_NAV && (
-                        <>
-                            <Link href="/about-us" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
-                                About Us
-                            </Link>
-                        </>
+                        <Link href="/about-us" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                            About Us
+                        </Link>
                     )}
+                    <Link href="/contact-us" className="font-bold text-sm tracking-tight text-[#5A4125] hover:text-brand-dark-border">
+                        Contact Us
+                    </Link>
                 </nav>
 
             </div>
@@ -180,9 +172,6 @@ export default function MainHeader() {
 
                     {/* Menu Items */}
                     <div className="flex flex-col w-full pb-10">
-                        <Link href="/vacancies" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Vacancies
-                        </Link>
                         {SHOW_FULL_NAV && (
                             <>
                                 <MobileHeaderDropdown label="Hire Manpower" onClose={() => setIsMobileMenuOpen(false)} items={[
@@ -204,22 +193,19 @@ export default function MainHeader() {
                             </>
                         )}
                         <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Internal Careers
-                        </Link>
-                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                             Success Stories
                         </Link>
-                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Submit Inquiry
-                        </Link>
-                        <Link href="#" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            Contact Us
+                        <Link href="/vacancies" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Vacancies
                         </Link>
                         {SHOW_FULL_NAV && (
                             <Link href="/about-us" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                                 About Us
                             </Link>
                         )}
+                        <Link href="/contact-us" className="px-6 py-4 text-[16px] font-bold text-[#5A4125] border-b border-[#5A4125]/20 w-full text-left hover:bg-[#5A4125]/5 hover:text-brand-dark-border transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Contact Us
+                        </Link>
                     </div>
                 </div>
             </Transition>

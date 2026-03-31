@@ -3,6 +3,7 @@ import NewLaunchesHero from "@/components/NewLaunchesHero";
 import MobileAppSection from "@/components/MobileAppSection";
 import JobCard, { JobData } from "@/components/JobCard";
 import React, { useEffect, useState } from 'react';
+import ApplyModal from "@/components/ApplyModal";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import axios from 'axios';
 
@@ -183,6 +184,18 @@ const dummyJobs: JobData[] = [
 export default function FindJobs() {
   const [jobs, setJobs] = useState<JobData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedJob, setSelectedJob] = useState<JobData | null>(null);
+
+  const handleApplyClick = (job: JobData) => {
+    setSelectedJob(job);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedJob(null);
+  };
 
   useEffect(() => {
     // Axios API call fetching data
@@ -236,12 +249,15 @@ export default function FindJobs() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {jobs.map((job, index) => (
                 <div key={job.id} data-aos="fade-up" data-aos-delay={(index % 3) * 100}>
-                  <JobCard {...job} />
+                  <JobCard {...job} onApply={() => handleApplyClick(job)} />
                 </div>
               ))}
             </div>
           )}
         </section>
+
+        {/* Modal */}
+        <ApplyModal isOpen={isModalOpen} closeModal={closeModal} job={selectedJob} />
 
         {/* App Section */}
         <div data-aos="fade-up">

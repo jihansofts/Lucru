@@ -1,123 +1,40 @@
 import React from 'react';
 import Link from 'next/link';
 
-const sitemapData = [
+type LinkItem = { text: string; href: string };
+type SubSection = { title: string; links: LinkItem[] };
+type SitemapColumn = { title: string; links: LinkItem[]; subsections?: SubSection[] };
+
+const sitemapData: SitemapColumn[] = [
   {
-    title: "Job Categories",
+    title: "Hire Manpower",
     links: [
-      { text: "Healthcare & Medical", href: "#" },
-      { text: "Engineering & Construction", href: "#" },
-      { text: "Oil & Gas", href: "#" },
-      { text: "Hospitality & Catering", href: "#" },
-      { text: "IT & Technology", href: "#" },
-      { text: "Logistics & Transport", href: "#" }
-    ],
-    subsections: [
-      {
-        title: "Latest Openings",
-        links: [
-          { text: "Registered Nurses - KSA", href: "#" },
-          { text: "Civil Engineers - UAE", href: "#" },
-          { text: "Skilled Welders - Qatar", href: "#" },
-          { text: "Hotel Managers - Kuwait", href: "#" },
-          { text: "Software Devs - UK", href: "#" },
-          { text: "HVAC Techs - Oman", href: "#" },
-          { text: "Heavy Drivers - UAE", href: "#" },
-          { text: "Safety Officers - Qatar", href: "#" }
-        ]
-      }
-    ]
-  },
-  {
-    title: "Top Destinations",
-    links: [
-      { text: "Saudi Arabia (KSA)", href: "#" },
-      { text: "United Arab Emirates (UAE)", href: "#" },
-      { text: "Qatar", href: "#" },
-      { text: "Kuwait", href: "#" },
-      { text: "Oman", href: "#" },
-      { text: "Bahrain", href: "#" }
+      { text: "Direct Recruitment", href: "/hire-manpower/direct-recruitment" },
+      { text: "Bulk Deployments", href: "/hire-manpower/bulk-deployments" }
     ],
     subsections: []
   },
   {
-    title: "Employer Services",
+    title: "Our Services",
     links: [
-      { text: "Permanent Staffing", href: "/hire-manpower/direct-recruitment" },
-      { text: "Contract & Temporary Staffing", href: "/hire-manpower/bulk-deployments" },
-      { text: "Executive Search", href: "#" },
-      { text: "Mass Recruitment", href: "#" },
-      { text: "Overseas Deployment", href: "#" },
-      { text: "Visa & Immigration Processing", href: "#" },
-      { text: "Pre-Departure Orientation", href: "#" },
-      { text: "Payroll Management", href: "#" },
-      { text: "Trade Testing & Certification", href: "#" },
-      { text: "Medical Assessment Coordination", href: "#" },
-      { text: "Background Verification", href: "#" }
+      { text: "Overseas Recruitment", href: "/our-services/overseas-recruitment" },
+      { text: "Specialized Headhunting", href: "/our-services/specialized-headhunting" },
+      { text: "Visa Processing", href: "/our-services/visa-processing" },
+      { text: "Pre-Departure Orientation", href: "/our-services/pre-departure-orientation" },
+      { text: "Document Attestation", href: "/our-services/document-attestation" }
     ],
     subsections: []
   },
   {
-    title: "Candidate Services",
+    title: "Quick Links",
     links: [
-      { text: "Submit Resume", href: "#" },
-      { text: "Interview Preparation", href: "#" }
-    ],
-    subsections: [
-      {
-        title: "Resources",
-        links: [
-          { text: "Career Counseling", href: "#" },
-          { text: "Skill Development", href: "#" },
-          { text: "Relocation Guide", href: "#" }
-        ]
-      }
-    ]
-  },
-  {
-    title: "About Lucru",
-    links: [
-      { text: "Who We Are", href: "#" },
-      { text: "Our Team", href: "#" },
-      { text: "Client Testimonials", href: "#" },
-      { text: "Corporate Social Responsibility", href: "#" },
-      { text: "Accreditations", href: "#" }
+      { text: "Home", href: "/" },
+      { text: "About Us", href: "/about-us" },
+      { text: "Vacancies", href: "/vacancies" },
+      { text: "Success Stories", href: "#" },
+      { text: "Contact Us", href: "/contact-us" }
     ],
     subsections: []
-  },
-  {
-    title: "Other",
-    links: [],
-    subsections: [
-      {
-        title: "Media Centre",
-        links: [
-          { text: "Blogs", href: "#" },
-          { text: "Press Releases", href: "#" },
-          { text: "Company News", href: "#" }
-        ]
-      },
-      {
-        title: "E-Services",
-        links: [
-          { text: "Employer Portal", href: "#" },
-          { text: "Candidate Portal", href: "#" },
-          { text: "Application Tracking", href: "#" }
-        ]
-      },
-      {
-        title: "",
-        links: [
-          { text: "Submit Inquiry", href: "#" },
-          { text: "Contact Us", href: "#" },
-          { text: "Whistleblowing", href: "#" },
-          { text: "Terms & Conditions", href: "#" },
-          { text: "Privacy Policy", href: "#" },
-          { text: "Quality Policy", href: "#" },
-          { text: "Cookies Notice", href: "#" }
-        ]
-      }
-    ]
   }
 ];
 
@@ -138,7 +55,7 @@ const renderLinks = (links: {text: string, href: string}[]) => {
 const FooterSitemap = () => {
   return (
     <div className="w-full max-w-350 mx-auto px-6 md:px-12 py-10 lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12">
         {sitemapData.map((column, index) => (
           <div key={index} className="flex flex-col border-[#e8e8e8] sm:border-l sm:pl-6 first:border-l-0 first:pl-0">
             {column.title && (
