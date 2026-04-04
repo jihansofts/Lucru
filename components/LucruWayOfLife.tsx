@@ -20,13 +20,13 @@ const slidesData = [
     topRight: {
       id: 'tr-1',
       title: "Hassle-free Visa & Documentation",
-      image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+      image: "https://images.pexels.com/photos/29402986/pexels-photo-29402986.jpeg",
       videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     },
     bottomRight: {
       id: 'br-1',
       title: "Pre-Departure & Deployment",
-      image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+      image: "https://images.pexels.com/photos/30773901/pexels-photo-30773901.jpeg",
       videoUrl: "https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
     }
   },

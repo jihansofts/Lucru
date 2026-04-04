@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import FooterSitemap from './FooterSitemap';
+import SocialLinks from './SocialLinks';
 
 const FooterBottomBar = () => {
   const [isSitemapOpen, setIsSitemapOpen] = useState(false);
@@ -15,6 +16,8 @@ const FooterBottomBar = () => {
             <span className="text-[11px] font-semibold tracking-wide mt-1">
               © Copyright 2026 Lucru. All rights reserved.
             </span>
+            <span className="hidden sm:inline text-white/30">|</span>
+            <SocialLinks className="text-[#8fa0a8]" iconClassName="w-3.5 h-3.5 hover:text-white transition-colors" />
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-8 lg:gap-10 mt-2 lg:mt-0">
