@@ -1,101 +1,50 @@
-import Image from 'next/image';
 import React from 'react';
-import { FaApple, FaGooglePlay } from 'react-icons/fa';
-import { SiHuawei } from 'react-icons/si';
+import Link from 'next/link';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
-const MobileAppSection = () => {
+const GlobalCTA = () => {
   return (
-    <section className="relative w-full bg-[#f4efe8] bg-[url('/mobile-app-new.png')] bg-size-[1000px] bg-position-[right_-270px_bottom_0px] md:bg-contain md:bg-bottom-right bg-no-repeat overflow-hidden pt-12 pb-9 md:py-8 md:pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between">
+    <section className="relative w-full bg-brand-dark py-16 md:py-24 overflow-hidden">
+      {/* Background accent */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-primary rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-light rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2" />
+      </div>
 
-        {/* Left Content */}
-        <div className="w-full md:w-1/2 md:pr-10 lg:pr-20 z-20 flex flex-col items-start md:items-start text-left md:text-left">
-          <h2 className="text-[44px] leading-tight md:text-5xl lg:text-6xl text-brand-navy font-serif mb-4 md:mb-4">
-            <span className="italic">Lucru</span> Jobs App
-          </h2>
-
-          <p className="hidden md:block text-brand-navy text-sm md:text-base lg:text-lg mb-4 md:mb-6 font-medium leading-relaxed">
-            Designed for ease and transparency, the Lucru Jobs App puts your overseas career processing at your fingertips. From submitting documents securely to tracking your visa status, it&apos;s your personalized portal to global success.
-          </p>
-
-          <ul className="md:block hidden mb-5 md:mb-6 space-y-2 text-left">
-            {[
-              "Submit your profile and documents securely",
-              "Track your visa and documentation status",
-              "Communicate directly with our placement officers",
-              "Get real-time updates on latest vacancies"
-            ].map((item, index) => (
-              <li key={index} className="flex items-center text-brand-navy font-medium text-xs sm:text-sm md:text-base">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-navy mr-2 md:mr-3 shrink-0"></span>
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          <div className="mb-4 md:mb-4">
-            <h3 className="text-[#006A80] md:text-brand-navy font-semibold text-xl md:text-lg">Download Lucru Jobs App</h3>
-          </div>
-
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-3 md:gap-3 w-50 sm:w-auto">
-            {/* App Store Button */}
-            <a href="#" className="flex items-center gap-3 bg-white border border-gray-300 rounded-xl px-3 py-2 hover:bg-gray-50 transition-colors shadow-sm w-full sm:w-auto overflow-hidden">
-              <FaApple className="text-4xl md:text-3xl text-black shrink-0" />
-              <div className="flex flex-col text-left">
-                <span className="text-[11px] md:text-[10px] text-gray-500 leading-none mb-1 md:mb-1">Download on the</span>
-                <span className="text-lg md:text-sm font-semibold text-black leading-none">App Store</span>
-              </div>
-            </a>
-
-            {/* Google Play Button */}
-            <a href="#" className="flex items-center gap-3 bg-white border border-gray-300 rounded-xl px-3 py-2 hover:bg-gray-50 transition-colors shadow-sm w-full sm:w-auto overflow-hidden">
-              <FaGooglePlay className="text-[28px] md:text-2xl text-black shrink-0" />
-              <div className="flex flex-col text-left">
-                <span className="text-[11px] md:text-[10px] text-gray-500 leading-none mb-1 md:mb-1">GET IT ON</span>
-                <span className="text-lg md:text-sm font-semibold text-black leading-none">Google Play</span>
-              </div>
-            </a>
-
-            {/* AppGallery Button */}
-            <a href="#" className="flex items-center gap-3 bg-white border border-gray-300 rounded-xl px-3 py-2 hover:bg-gray-50 transition-colors shadow-sm w-full sm:w-auto overflow-hidden">
-              <SiHuawei className="text-[32px] md:text-2xl text-[#cf0a2c] shrink-0" />
-              <div className="flex flex-col text-left">
-                <span className="text-[11px] md:text-[10px] text-gray-500 leading-none mb-1 md:mb-1">EXPLORE IT ON</span>
-                <span className="text-lg md:text-sm font-semibold text-black leading-none">AppGallery</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        {/* Right Content / Image Area */}
-        <div className="hidden md:flex w-full md:w-1/2 relative justify-end items-center md:min-h-75 lg:min-h-87">
-          <div className="relative w-full flex items-center justify-end">
-            {/* The image is now set as the section background */}
-          </div>
-
-          {/* QR Code Block */}
-          <div className="hidden lg:flex absolute right-0 xl:right-10 top-1/2 -translate-y-1/2 bg-white p-3 flex-col items-center shadow-lg border border-gray-100 z-30 w-35">
-            <div className="bg-brand-navy text-white text-[10px] font-bold py-2 px-3 w-full text-center mb-3 tracking-wider">
-              DOWNLOAD APP
-            </div>
-            <p className="text-[9px] text-[#00cbd6] font-semibold mb-2 text-center uppercase tracking-wider">
-              SCAN THE QR CODE
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+          
+          {/* Text Content */}
+          <div className="w-full md:w-2/3 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-serif mb-4 md:mb-6">
+              Ready to take the <span className="italic text-brand-primary">Next Step?</span>
+            </h2>
+            <p className="text-gray-300 text-sm md:text-base lg:text-lg max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              Whether you are looking for top-tier talent to drive your business forward or seeking your next great career opportunity, our team of experts is here to guide you every step of the way. Let's make it happen.
             </p>
-            <div className="w-25 h-25 relative">
-              {/* Dummy QR code image */}
-              <Image
-                height={300}
-                width={300}
-                src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://example.com"
-                alt="Download App QR Code"
-                className="w-full h-full object-contain"
-              />
-            </div>
           </div>
-        </div>
 
+          {/* Action Buttons */}
+          <div className="w-full md:w-auto flex flex-col sm:flex-row items-center gap-4 shrink-0">
+            <Link 
+              href="/contact-us" 
+              className="w-full sm:w-auto flex items-center justify-center bg-brand-primary text-white px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:bg-brand-primary/90 transition-colors"
+            >
+              Get in Touch
+              <ArrowRightIcon className="w-4 h-4 ml-2 stroke-2" />
+            </Link>
+            <Link 
+              href="/vacancies" 
+              className="w-full sm:w-auto flex items-center justify-center bg-transparent border border-white/30 text-white px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:bg-white/10 transition-colors"
+            >
+              View Vacancies
+            </Link>
+          </div>
+
+        </div>
       </div>
     </section>
   );
 };
 
-export default MobileAppSection;
+export default GlobalCTA;

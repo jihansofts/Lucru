@@ -42,11 +42,11 @@ export default function PropertyCarousel({
       <div className="md:pl-10 overflow-hidden">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-12 pr-14 ps-6 md:ps-0">
-          <div className="text-2xl md:text-3xl text-brand-dark font-light" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+          <div className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-brand-dark font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
             {titleNode}
           </div>
 
-          <div className="flex items-center gap-6 mt-4 md:mt-0">
+          <div className="flex items-center justify-center w-full md:w-auto md:justify-end gap-6 mt-4 md:mt-0">
             {navigationPosition === 'header' && (
               <div className="flex items-center gap-2">
                  <button 
@@ -63,7 +63,9 @@ export default function PropertyCarousel({
                 </button>
               </div>
             )}
-            {headerActionNode}
+            <div className="scale-90 origin-center md:scale-100">
+              {headerActionNode}
+            </div>
           </div>
         </div>
 

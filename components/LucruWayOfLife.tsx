@@ -50,7 +50,7 @@ export default function LucruWayOfLife() {
 
   return (
     <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
-      <div className="md:px-20 px-4 md:pl-20 mb-8 md:mb-8 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-425">
+      <div className="md:px-20 px-4 md:pl-10 mb-8 md:mb-8 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-425">
         <h2 className="text-3xl md:text-3xl text-center md:text-left w-full md:w-auto text-brand-dark font-light tracking-tight" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
           The <span className="italic">Lucru</span> Process
         </h2>

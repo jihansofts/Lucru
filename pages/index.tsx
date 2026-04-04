@@ -16,15 +16,15 @@ export default function Home() {
       <main className="min-h-screen bg-zinc-50 dark:bg-black overflow-hidden">
         <Hero />
         <div data-aos="fade-up">
-          <OurNewLaunches />
+          <WorldOfLucru />
         </div>
-        
         <div data-aos="fade-up">
           <LucruWayOfLife />
         </div>
         <div data-aos="fade-up">
-          <WorldOfLucru />
+          <OurNewLaunches />
         </div>
+        
         <div data-aos="fade-up">
           <MobileAppSection />
         </div>
