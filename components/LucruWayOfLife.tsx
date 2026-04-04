@@ -72,7 +72,7 @@ export default function LucruWayOfLife() {
         </div>
       </div>
 
-      <div className="relative group/carousel max-w-425 md:pr-20 mx-auto bg-white overflow-hidden">
+      <div className="relative group/carousel max-w-425 md:px-10 mx-auto bg-white overflow-hidden">
 
         <Swiper
           modules={[Navigation]}
